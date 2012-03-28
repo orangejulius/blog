@@ -58,3 +58,7 @@ So far the laptop is working quite well and I have successfully been able to use
 * Backlight adjustment. I tried a patch for this but it still stays pegged at the max. This should be a big helper for battery life.
 
 * Tweak Intel graphics kernel parameters. There are various parameters out there that reportedely improve battery life significantly.
+
+* Debug a USB issue. The last few boots I noticed that for about 5 seconds after the KDE login screen is displayed, no input devices work. Even the capslock key does not light up. This could be related to the fact that I've usd an extra USB mouse for these last few boots.
+
+* Disable the trackpad while typing. I didn't think it would be an issue, but while typing, I often nudge the trackpad and cause Bad Things to happen. There is a fix out there to disable the trackpad while typing.
