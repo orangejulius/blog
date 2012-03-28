@@ -47,12 +47,10 @@ I didn't have to setup any dbus rules to create any device nodes.
 
 I haven't made any functional modifications since last time, booting still works fine using simple patches that allow setting the number of lvms channels manually. However I spent some time digging into the actual development work being done here.
 First I found the [intel-gfx](http://lists.freedesktop.org/archives/intel-gfx/) mailing list while browsing the [mailing lists](http://lists.freedesktop.org/mailman/listinfo) on [freedesktop.org](http://freedesktop.org). I came across a [bug report](https://bugzilla.kernel.org/show_bug.cgi?id=42842) with a cleaner set of patches.
-It turns out that even with enhanced lvms channel detection, the Macbook Pro still doesn't behave, so it was added to a quirks table as a workaround.
+It turns out that even with enhanced lvms channel detection, the Macbook Pro still doesn't behave, so a [patch](https://bugzilla.kernel.org/attachment.cgi?id=72713) adds a quirk entry as a workaround.
 
 It looks like these changes will likely make it into the 3.5 kernel, which is a ways out, but at least progress is being made. Hopefully in the next couple days I will rework my branch of kernel patches to include these much nicer patches.
 As an added bonus, I now know where the development for these drivers happens. In the future I'll keep watching that mailing list as well as the git repos of [Dave Airlie](http://cgit.freedesktop.org/~danvet/drm-intel/) and [Daniel Vetter](http://cgit.freedesktop.org/~danvet/drm-intel/).
-
-
 
 ## Todo
 
