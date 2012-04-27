@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Debugging Amarok Transcoding to iPod
+title: "Debugging Amarok Transcoding to iPod"
 date: 2012-04-27 10:34
 comments: true
 categories: 
@@ -25,3 +25,8 @@ Slightly more surprisingly, the metadata is there as well.
 Okay, so the fix (for my case at least), is as simple as ensuring that the map\_meta\_data option is removed. Amarok has a large codebase but it is actually very friendly to new developers in my opinion. Things are very well (almost too well?) abstracted. The relevant code is in src/transcoding/TranscodingJob.cpp. This class represents a single job to do one transcode, which will be run in the background. Different Transcoders, such as the one found in src/core/transcoding/formats/TranscodingAlacFormat.cpp can set options to the transcoder (in this case it sets the "-acodec alac" option as you would expect), but there are several common options set in the Transcoding::Job::init() method. All that has to be done is create a KProcess object to run a process, and then set the parameters. These are the actual executable (ffmpeg), the source and destination paths, and the map\_meta\_data. (show code). Connect the KProcess signals to the slots and we're done.
 
 So I simply commented out the lines setting the map\_meta\_data parameter, recompiled, and was good to go. Now I can happily copy all my FLAC encoded music to my iPod in ALAC format!
+
+In addition to making this work seamlessly, I've found a couple other pain points that would be great to improve. If possible I'll work on this in the near future.
+
+* When multiple tracks are picked to be transcoded at once, each track is handled in serial. Even on my Core i7 Macbook Pro, CPU is the bottleneck when transcoding a single track. I have painfully watched htop show me one core working dilligently while the other 7 (remember, hyperthreading), and the iPod's disk, sit mostly idle. Ideally multiple tracks could be transcoded at once, perhaps up to the number of cores on the current sytem?
+* Amarok kept telling me about stale tracks on my iPod and telling me I can do something about them. Either I can't find this option or it doesn't exist. Either way the UX at least probably has to be improved.
