@@ -3,7 +3,7 @@ layout: post
 title: "Debugging Amarok Transcoding to iPod"
 date: 2012-04-27 10:34
 comments: true
-categories: 
+categories: amarok
 ---
 Thanks to Matěj Laitl, Amarok now supports transcoding music when copying to iPods and iPhones.
 
