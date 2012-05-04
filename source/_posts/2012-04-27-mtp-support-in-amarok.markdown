@@ -4,6 +4,7 @@ title: "MTP support in Amarok"
 date: 2012-04-27 14:22
 comments: true
 categories: 
+published: false
 ---
 With iPod support(link to previous blog) working, my intercontinental flight continued to be productive. I was finally able to sit down with Amarok and get MTP support working. At current, I haven't made any code changes, but as you'll see there is plenty of room for improvement.
 
