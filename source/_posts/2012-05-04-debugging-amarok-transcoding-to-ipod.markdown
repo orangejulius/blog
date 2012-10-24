@@ -122,7 +122,7 @@ The full set of changes can be found on [Github](https://github.com/orangejulius
 
 During this whole process, I've noticed a couple other pain points that would be great to improve. If possible I'll work on this in the near future:
 
-* When multiple tracks are picked to be transcoded at once, each track is handled in series. Even on my Core i7 Macbook Pro, CPU is the bottleneck when transcoding a single track. I have painfully watched htop show me one core working dilligently while the others, and the iPod's disk, sit mostly idle. Ideally multiple tracks could be transcoded at once, perhaps up to the number of cores on the current sytem?
+* When multiple tracks are picked to be transcoded at once, each track is handled in series. I painfully watched htop show me one core working dilligently while the others, and the iPod's disk, sit mostly idle. Ideally multiple tracks could be transcoded at once.
 * Amarok kept telling me about stale tracks on my iPod and telling me I can do something about them. Either I can't find this option or it doesn't exist. Either way the UX at least probably has to be improved.
 * When selecting a transcoding option, Amarok currently performs this transcode whether or not it makes sense or not based on the source filetypes. For example, if I ask Amarok to transcode to ALAC, any lossy filetype would be converted, which would simply waste space and time. It would be great if Amarok could detect and prevent such "upconverting".
 
