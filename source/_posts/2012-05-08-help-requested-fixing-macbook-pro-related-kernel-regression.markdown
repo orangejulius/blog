@@ -4,8 +4,10 @@ title: "Help requested fixing Macbook Pro related kernel regression"
 date: 2012-05-08 16:00
 comments: true
 published: false
-categories: 
+categories: linux
 ---
+*UPDATE:* The issue mentioned below has been fixed and will be in Kernel version 3.5!
+
 As I mentioned in past posts, I've been working on getting my new 15" MacbookPro working completely with Linux. Good progress has been made on a lot of fronts, but there is a new [regression](https://bugs.freedesktop.org/show_bug.cgi?id=49518) in the i915 drivers that is holding me (and likely others) back. I added a [post](http://ubuntuforums.org/showthread.php?p=11916477&posted=1#post11916477) to the long MacbookPro thread on ubuntuforums. Here's what I posted for anyone who would like to help.
 
 {% blockquote %}
