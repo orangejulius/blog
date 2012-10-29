@@ -3,7 +3,6 @@ layout: post
 title: "Help requested fixing Macbook Pro related kernel regression"
 date: 2012-05-08 16:00
 comments: true
-published: false
 categories: linux
 ---
 *UPDATE:* The issue mentioned below has been fixed and will be in Kernel version 3.5!
