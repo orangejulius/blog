@@ -3,7 +3,6 @@ layout: post
 title: "What does it take to survive an EBS outage?"
 date: 2012-10-29 05:30
 comments: true
-published: false
 categories: scalability
 ---
 On October 22nd, EBS issues in a single availability zone brought down all sorts of websites, big and small.
