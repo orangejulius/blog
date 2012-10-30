@@ -38,13 +38,13 @@ While transfers within the same availability zone are free, Amazon [charges](htt
 
 What's a reasonable expected cost for replicating from one database instance?
 According to Scalyr's EC2 [benchmarks](http://blog.scalyr.com/2012/10/16/a-systematic-look-at-ec2-io/), we can expect a maximum of about 2000 4KB writes per second to a single EBS volume on a small EC2 instance.
-That's only to 8MB/sec, or a maximum of 675GB per day, for which Amazon whill charge you $6.75.
-Meanwhile, those two small instances costs you an on-demand rate of $3.84 per day.
+That's only 8MB/sec, or a maximum of 675GB per day, for which Amazon will charge $6.75.
+Meanwhile, those two small instances have an on-demand rate of $3.84 per day.
 
 Keep in mind 8MB/sec is an absolute maximum. In practice, even with large EC2 instances (which Scalyr showed to have double the EBS throughput, but cost four times as much), a more sustainable throughput is at best half of that.
 It's reasonable to expect that the cost of replicating to another availability zone won't exceed the cost of the database instances.
 
-What about sending data back to non-database instances?
+What about sending data back to non-database instances in another zone?
 Scalyr found that EBS read performance is actually about an order of magnitude worse than write performance.
 Even assuming maximum read AND write performance can be obtained simultaneously, it isn't significantly more expensive than just maxing out on writes.
 
@@ -54,8 +54,8 @@ Amazon [describes](http://aws.amazon.com/ec2/#features) availability zones as "d
 However, there has been at least one incident where an entire region was affected.
 
 If the possibility of downtime from this scenario is unacceptable, you have to consider replicating across regions instead of availability zones.
-Latency will be higher between regions, and bandwith costs will follow the public data transfer pricing, which starts at 12 cents/GB.
-However, if surviving this level of catastrophy is important, the costs are surely worth it.
+Latency will be higher between regions, and bandwidth costs will follow the public data transfer pricing, which starts at 12 cents/GB.
+However, if surviving this level of catastrophe is important, the costs are surely worth it.
 
 ## How to manage failover
 
@@ -88,8 +88,8 @@ There will be very high iowait, and any processes using EBS-backed data may hang
 Importantly, connecting to a database instance with a 'stuck' EBS volume will generally _succeed_.
 However, remote requests for writing, (and reading, depending on the specifics of the database's caching), will generally not return any data.
 
-Most libraries for working with databases will specify both a connection timeout and a "general" timeout, but default the general timeout to unlimited.
-This is a reasonable default, since any specific timeout would limit long-running jobs, but not setting this to a relatively small value can sabotage any failover mechanisms.
+Most libraries for working with databases will specify both a connection timeout and a "general" timeout, but general timeout often defaults to unlimited.
+This is reasonable, since any specific timeout would limit long-running jobs, but not setting this to a relatively small value can sabotage any failover mechanisms.
 
 To see what happens, lets use CouchDB and run a little test using the methodology described above.
 CouchDB uses HTTP as an interface, so its dead simple to work with.
@@ -109,18 +109,26 @@ And here's the result:
 user@machineB ~ $ curl http://127.0.0.1:5001/sampledb/doc1
 {"_id":"doc1","_rev":"1-15f65339921e497348be384867bb940f","hello":"world"}
 #NFSd is stopped on machine A
-#this hangs forever
+#now requests hang forever
 user@machineB ~ $ curl http://127.0.0.1:5001/sampledb/doc1
 ^C
 #this hangs forever too: the connection succeeded
 user@machineB ~ $ curl http://127.0.0.1:5001/sampledb/doc1 --connect-timeout 5
 ^C
 #this correctly times out
-user@pismo ~ $ curl http://127.0.0.1:5001/sampledb/doc1 -m 1
+user@machineB ~ $ curl http://127.0.0.1:5001/sampledb/doc1 -m 1
 curl: (28) Operation timed out after 1001 milliseconds with 0 bytes received
 ```
 
-Any mechanism expecting the `--connect-timeout` option to protect against failed instances will be completely defeated when EBS starts acting up.
+Any mechanism expecting the `--connect-timeout` option to protect against misbehaving instances will be completely defeated when EBS starts acting up.
+
+Be sure to look into specifically what timeout options every DB client library gives.
+The names may differ, but generally there is an option for connection timeouts, and another timeout for the length of the entire request.
+Unfortunately, the connection timeout is often the only one prominintely mentioned in documentation.
+
+Be sure to look into specifically what timeout options every DB client library gives.
+The names may differ, but generally there is an option for connection timeouts, and another timeout for the length of the entire request.
+Unfortunately, the connection timeout is often the only one prominintely mentioned in documentation.
 
 ## Handling everything else
 
