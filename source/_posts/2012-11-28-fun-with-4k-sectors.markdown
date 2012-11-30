@@ -44,7 +44,40 @@ Timothy Miller [investigated](http://www.osnews.com/story/22872/Linux_Not_Fully_
 Curious, and always a sucker for small C programs, I ran his code myself.
 Here's my version:
 
-{% gist 4167529 %}
+``` c testWriteAmplification.c
+#include <unistd.h>
+#include <stdio.h>
+#include <fcntl.h>
+
+char buffer[4096];
+
+int main(int argc, char *argv[])
+{
+    int fd, i, off;
+    long bk, byte;
+
+    if (argc<2) {
+        off = 0;
+    } else {
+        off = atoi(argv[1]);
+    }
+
+    srandom(off);
+
+    fd = open("/dev/sdc", O_RDWR | O_SYNC);
+
+    for (i=0; i<1000; i++) {
+        bk = random() % 200000000;
+        byte = bk * 4096 + off * 512;
+        lseek64(fd, byte, SEEK_SET);
+        write(fd, buffer, 4096);
+    }
+
+    close(fd);
+
+    return 0;
+}
+```
 
 The method is simple: write 4096 bytes to 1000 random locations.
 By default, the program ensures that the write starts and ends at a 4KB sector boundary, but the first argument specifies an offset in 512 byte increments.
@@ -187,18 +220,19 @@ then used rsync to copy the old, and then new snapshot to the same location on d
 For large file performance, I tested copying a 4.4GB file from tmpfs to disk.
 
 Here's the full script that allows me to create and mount a new filesystem, run the tests, and then unmount the filesystem in one step:
+``` bash
+#!/bin/bash -ex
 
-	#!/bin/bash -ex
+mkfs.ext4 /dev/sdc1 > /dev/null
+mount /dev/sdc1 /mnt/test
 
-	mkfs.ext4 /dev/sdc1 > /dev/null
-	mount /dev/sdc1 /mnt/test
+time rsync -aH /root/tmpfs/old/ /mnt/test
+time rsync -aH /root/tmpfs/latest/ /mnt/test
 
-	time rsync -aH /root/tmpfs/old/ /mnt/test
-	time rsync -aH /root/tmpfs/latest/ /mnt/test
+time cp /root/tmpfs/bigfile /mnt/test
 
-	time cp /root/tmpfs/bigfile /mnt/test
-
-	umount /mnt/test
+umount /mnt/test
+```
 
 ## Results
 
