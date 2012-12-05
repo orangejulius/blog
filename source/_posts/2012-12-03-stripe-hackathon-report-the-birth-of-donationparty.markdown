@@ -6,68 +6,125 @@ comments: true
 categories: 
 ---
 Last Saturday was the Stripe [Hack to the Future](https://stripe.com/blog/hack-to-the-future) hackathon.
-Since I live a block away, it seemed like a reasonable choice to attend.
-The night before, I spent a few minutes trying to think of ways to use Stripe to build something, anything really.
-My first thought was that it should be something involving incredibly small amounts of money, and that it should be relatively silly: not something that would look like a "real" business idea.
+I've been working on attending more tech talks and other events lately, and since Stripe is pretty well known and I only live a block away, this one was a no-brainer.
+Naturally, they encouraged people to utilize Stripe, so I spent a few minutes the night before thinking about what to build.
+I quickly decided it should be something involving small transactions, and that it should be relatively silly: not something that would look like a "real" business idea.
 
-As it happened, I thought of a fun ritual from [Hacker Dojo](http://www.hackerdojo.com/) that was a ton of fun.
-At the front of Hacker Dojo is a credit card reader that donates a random amount up to $20 on your behalf when you swipe your card.
+## The idea
+
+Near the front entrance of [Hacker Dojo](http://hackerdojo.com) is a credit card reader, used to accept donations.
+Unlike normal credit card readers, this one donates a random amount up to $20 on your behalf when you swipe your card.
+
 While neat on its own, the real fun starts when you can get a bunch of people to all swipe one after another.
 Often we can arrange to have a little prize like a t-shirt or coffee mug for the "winner" who ends up donating the most.
-The money goes to a good cause, isn't enough to really care about, and is a fun "competition" because the winner is completely out of anyones control.
-It seemed like a web app in the same spirit might be fun to build, and small enough that building it in a day is not too far from impossible.
-I didn't know if anyone would like my idea, but I decided to make it a goal to get some people to build it at the hackathon.
+The money goes to a good cause, isn't large enough to really care about, and the whole experience has a fun air competition: there's a prize at stake, and suspense is high, but the outcome is not under anyones control.
+
+With a little tweaking, I figured building a small web app basically simulating that same experience could be a lot of fun.
+
+## The Hackathon
 
 I went over to Stripe HQ the next day and after having a quick bite to eat thanks to Stripe's amazing culinary team, I set about recruiting people to get building.
-Normally, even at an event like a hackathon where you know you have _something_ in common with almost everyone there, it's a little hard to just start taling to people.
-But with the goal of starting work ASAP, and most people's desire to get working on something too, I ended up talking to quite a few people really quickly
-Most importantly, everyone loved my idea!
-Within about 30 minutes we had a team of four (the perfect size!) more or less comitted to working for the rest of the day.
+Normally, even at an event like a hackathon where you know you have _something_ in common with almost everyone there, it's a little hard to just start talking to people.
+But with the goal of starting work ASAP, and most people's desire to get working on something too, it was easy to get things started.
+
+Within about 30 minutes we had a team of four (the perfect size!) ready to get going.
 Most amazingly, we not only quickly came up with a great name, but a name with an available .com domain name!
+By the end of the night, we actually had made great progress.
+There's a lot more to be done, but there happens to be another hackathon this Saturday at [RISE](https://www.facebook.com/events/512718438746224/) where we plan to finish everything up.
 
-Really, it was amazing how well everyone worked together, and how quickly we moved.
-We spent about 10 minutes getting to know each other, and who had the most experience in which areas.
-Quickly, we settled on using Python with Django running on Heroku, and started dividing up tasks the best we could.
-We all _wanted_ to use something a little more sexy, like node.js or Ruby on Rails, but we admitted that we had to stick with what we all knew well, so without any further debate we moved on.
 
-I happen to have just read [The Passionate Programmer](http://pragprog.com/book/cfcar2/the-passionate-programmer) by Chad Fowler (book report coming soon!), and he talks about how a sense of urgency, like at a hackathon, makes tough decisions happen quickly.
-Based on the example I gave above, as well as almost every other decision we had to make during the night, I have to say this is absolutely correct.
-I have no doubt we all had strong, differing beliefs on everything from programming language, to indentation style, to variable naming, but with only a few hours we all set that aside.
-It wasn't going to make a difference as much as just building stuff as quickly as possible.
-As someone who probably spends way too much time arguing over these sorts of things, it was incredibly refreshing.
-If I can figure out a way to generate the same sense of urgency, and get the same positive results, on longer lasting projects, I'm pretty sure I could take over the world.
+## Lessons Learned
 
-The second really interesting thing that I learned, or really confirmed, is that if you want to move fast, you should outsource everything except the core of your product.
-While our entire team consisted of people who no doubt would love to spend hours tinkering with dedicated virtual machines for hours to come up with the ideal hosting environment, we knew that wasn't what was going to help.
-We pretty quickly used almost every product we could to solve problems for us.
-Need web hosting and source control?
-Don't waste any time setting it up yourself, just use Heroku.
-Later we realized we needed a pub/sub system.
-We didn't even think about building one ourselves: a quick visit to [Pusher](http://pusherapp.com) and we were on our way.
+While what we built was really cool, the actual experience of building it was one of the most valuable experiences I've had in the last few months.
+I've been reading and thinking about all sorts of startup and software development related topics lately, and this was a great chance to reflect upon them.
 
-Finally, the most interesting part of the experience was what sort of work I did.
-As it turns out, starting with a blank slate, there's not possibly four people's worth of code that you can start writing right away.
-One guy started working just on the UI.
-Two others paired to start working on the backend.
-This sounds pretty standard, and was what I expected.
-But what really blew me away was what I worked on.
-I would have felt completely comfortable working on the backend, and would have been able to make a passable UI, but as it turns out I didn't work on either of these things.
-Basically, everything I did that night was work to keep the other three team members rolling.
-First, I set up Heroku to give us source control.
-By the time anyone was ready to really start hacking, I had finished setting up Django, and made sure everyone's development environment was more or less working.
-About the time we were ready to push to "production", our DNS was all set up.
-Later, we realized we needed an SSL cert, so I got that working.
-On the surface, this isn't that notable, because none of the above is hard (although acquiring SSL certs might not rightly be called _easy_).
-Really, the reason this is interesting is because of what I didn't do much: code.
+A few times during the hackathon particularly interesting thoughts crossed my mind.
+They might not be completely unique, but they're still powerful.
 
-I thought about an [article](http://www.inc.com/magazine/20081201/how-hard-could-it-be-my-style-of-servant-leadership.html) by Joel Spolsky that I read long ago.
-Here is an extremely experienced software developer, who could no doubt bill in the hundreds per hour for his time, CEO of a successful well known company, hanging window blinds.
-He even admits he's not good at it.
-For someone who is known for, and loves, writing code, this sounds totally crazy.
 
-But the most interesting thing I learned that day was how this is the most effective thing he could be doing.
-Any time you can proactively (or even reactively) do work to enable others to stay productive and continue making progress, you're doing something incredibly valuable.
-As someone used to being productive mostly through my direct action, this was a pretty cool lesson to learn.
+### Stay flexible
 
-The Donation Party crew will be reassmbling on Saturday, December 8th at the [RISE Hackathon](https://www.facebook.com/events/512718438746224/) to finish everything up.
-Stay tuned!
+Since I was basing my hackathon idea off of a real world experience, I was lucky to have an extremely clear idea of what I wanted to build.
+I had specific interactions, pricing, and even wording in mind from the very start.
+
+By the end of the night, none of the details of what we had built were similar, although the overall premise was preserved.
+
+Initially, I was a little concerned when people started suggesting things directly in conflict with details that were, in my mind, already decided.
+I realized I had to let go of any specific vision I had, and just let our project evolve with input from the entire team.
+
+Partially, this was because I knew I had to ensure everyone on the team *wanted* to keep working, and if I was too firm on any particular detail, they might decide they weren't interested in helping anymore.
+Of course, there was absolutely no reason for me to believe that any preference I had for the direction of our project was automatically correct, and I have no doubt that the combined input of four people made it far better than I ever could have hoped to achieve on my own.
+
+
+### Urgency helps with decision making
+
+Within about 10 minutes of gathering a small team, we had firmly made an incredible number of major decisions.
+
+What language should we use? What hosting provider? Should we build a mobile app?
+
+Those decisions alone could have taken weeks to decide at even a small company.
+Initial versions of user flows and interactions took us about 15 minutes, but could have taken even a fast moving startup a while.
+
+The single hardest choice for any company, what to name your product, was decided in 30 seconds.
+
+There's nothing special about anyone on the team that caused us to make decisions so quickly, we simply didn't have a lot of time, and therefore had a strong sense of urgency.
+
+No doubt there are thousands of smaller decisions we could have worried about, but more important than any of them was our need to just _build stuff_.
+
+We didn't spend any time talking about coding styles, indentation, or any of the other classic programming debates.
+All software developers, of course, have extremely strong opinions on each of these topics, so not having to debate them was extremely refreshing.
+
+Going forward, I'm going to focus on keeping the same sense of urgency for each and every project I work on, and hopefully all of them will be more successful.
+
+
+### Focus on the core of your project, outsource everything else
+
+Another key to moving fast was to only spend time on the part of your project that makes it interesting, and let someone else take care of everything else you can.
+No one cares about the efficiency of our web servers, even if we all would have enjoyed tweaking them, so we used Heroku and were live in minutes.
+When we realized we needed a pub/sub system, we didn't want to have to deal with setting up our own, so we let [Pusher](http://pusherapp.com) take care of it, and went back to working on something else.
+
+For us, and for any team starting out, focusing only on what the user sees is the only way to go.
+Leave everything else to someone else.
+
+
+### Keep your team productive
+
+I came to this hackathon mostly expecting to gather a team, come up with a basic design, and then more or less and sit down and code.
+In fact, for about two thirds of the night, I spent all my time just making sure everyone else could work.
+
+At first, it might seem like this is silly.
+If I too had just gotten to work, there would be four people working instead of three.
+
+But look at it another way: which is better, to have three people working in a productive, uninterrupted state, or four people constantly having to get sidetracked.
+I spent all night setting up dev apps, SSL certs, celery queues, and whatever [else](http://www.inc.com/magazine/20081201/how-hard-could-it-be-my-style-of-servant-leadership.html) needed to be done.
+
+Quite frankly, all the other team members worked on the hard, exciting stuff, and did a great job.
+But they wouldn't have done as awesome of a job without my unglamorous help from the sidelines, and thats a great feeling.
+
+
+## Advice for Stripe
+
+I really want to thank Stripe for hosting this hackathon and letting everyone eat their tasty food, but I also want to give some feedback that might make future events better.
+As a quick disclaimer I want to mention that I was fairly heads down for much of the night, so if I missed something, my apologies.
+
+
+### Do some sort of judging
+
+While the event was ostensibly a hackathon, and indeed much hacking was done by several teams, it would be more correct to call it an office hours session.
+Guests were in attendance, even working on their own projects, but there wasn't much structure imposed by Stripe, and at the end of the day the event fizzled out with no strong conclusion from Stripe.
+
+There's something to be said for a low key gathering, but Stripe, next time you host a hackathon, go all in on actually making it a hackathon.
+Have people register teams, do some sort of judging, give out a prize, the usual.
+Just helping people organize into teams probably would have tripled the number of people seriously working.
+
+On the other hand, a more structured hackathon might have made it harder for me to pick up new team members, so maybe I should be careful what I wish for.
+
+
+### Make your employees more active
+
+As a small team using Stripe for the first time, I can't think of a better place to have been working than _in the Stripe offices_.
+Stripe employees were available to answer any questions we had, and they were overall really eager to help.
+That said, it seemed like we were always having to seek them out.
+
+Maybe I just missed it, but I would have loved to have been bugged by Stripe employees dropping by every couple minutes, just to chat with us about our project.
+They could have quickly checked out how we were using Stripe, warned us before we ran into known problems, and helped us make things better than we could have on our own.
