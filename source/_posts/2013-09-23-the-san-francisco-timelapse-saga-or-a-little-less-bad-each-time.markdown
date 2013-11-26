@@ -128,7 +128,7 @@ Next time, I'll be setting up manual focus before starting the timelapse, so thi
 
 For those that might want to encode their own timelapses, here's the script I used.
 
-{% gist 6681474 %}
+{% include_code bash timelapse %}
 
 
 
