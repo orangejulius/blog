@@ -7,8 +7,8 @@ categories:
 ---
 Months ago, after watching the Nth amazingly beautiful timelapse of San Francisco made by someone else, I realized I had all the tools to do the same thing.
 I have a Panasonic DMC-GF1 which is, if not the world's best camera, perfectly capable of taking beautiful shots at all hours of the day.
-I have a respectable ability to write shell scripts to simpify mundane tasks.
-I have the perseverence and willingness to slog through man pages, google searches, and stackoverflow posts to figure out how to use one of the many video editing tools available.
+I have a respectable ability to write shell scripts to simplify mundane tasks.
+I have the perseverance and willingness to slog through man pages, google searches, and stackoverflow posts to figure out how to use one of the many video editing tools available.
 I didn't have a remote shutter with repeat mode, but I bought one on Amazon.
 
 I figured this would be everything I need to make a timelapse video, and I was right.
@@ -52,7 +52,7 @@ Great news!
 My 64GB memory card arrived (Amazon prime!).
 
 Bad news!
-My camera is too old to suport SDXC, the SD card format variant for capacities of 64GB and up.
+My camera is too old to support SDXC, the SD card format variant for capacities of 64GB and up.
 I'll have to make do with 32GB cards until I get a new camera, and 8GB cards until a 32GB card arrives (anyone want to buy a 64GB SDXC card?).
 
 I decided to shoot in JPEG mode instead of RAW to at least get a little more space out of my memory card.
