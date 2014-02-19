@@ -3,7 +3,7 @@ layout: post
 title: "My Private Pilot Checkride"
 date: 2014-01-05 20:33:58 -0800
 comments: true
-categories: flying, personal-personal-goals-post
+categories: flying personal-personal-goals-post
 ---
 With the tradition going strong over at [r/flying](http://reddit.com/r/flying), I figured I better
 share the story of my checkride before I forget it all.  To get any real suspense out of the way, I

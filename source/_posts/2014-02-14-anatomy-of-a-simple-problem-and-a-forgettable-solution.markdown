@@ -66,4 +66,4 @@ file, and Capistrano will run a task to ensure ssh-agent is running and correctl
 every deploy.
 
 It's a simple gem and I don't expect to have to do much more work on it, but feedback is very
-welcome. Enjoyy!
+welcome. Enjoy!

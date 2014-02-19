@@ -7,7 +7,7 @@ categories: personal-personal-goals-post
 ---
 A few weeks ago I finally added a cast iron skillet to my cooking toolbelt. Since then, I've nearly
 burned myself several times, struggled constantly with its significant weight, and obsessed over the
-delecate cleaning and maintenance it requires. I've also made some of the best food of my life.
+delicate cleaning and maintenance it requires. I've also made some of the best food of my life.
 
 One of the most common formulae for a successful entrepreneur is to build a product or service to
 take the pain and difficulty out of some task. Often though, what's given up for ease of use is
