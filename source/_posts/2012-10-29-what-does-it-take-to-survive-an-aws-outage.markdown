@@ -103,7 +103,7 @@ Here's the test procedure:
 
 And here's the result:
 
-``` bash
+{% codeblock lang:console %}
 #everything works initially
 user@machineB ~ $ curl http://127.0.0.1:5001/sampledb/doc1
 {"_id":"doc1","_rev":"1-15f65339921e497348be384867bb940f","hello":"world"}
@@ -117,7 +117,7 @@ user@machineB ~ $ curl http://127.0.0.1:5001/sampledb/doc1 --connect-timeout 5
 #this correctly times out
 user@machineB ~ $ curl http://127.0.0.1:5001/sampledb/doc1 -m 1
 curl: (28) Operation timed out after 1001 milliseconds with 0 bytes received
-```
+{% endcodeblock %}
 
 Any mechanism expecting the `--connect-timeout` option to protect against misbehaving instances will be completely defeated when EBS starts acting up.
 

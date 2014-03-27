@@ -10,7 +10,7 @@ A few weeks ago, I was given some terrible news: my talk proposal had been accep
 It might seem strange that being granted something I had asked for would be terrible, but given my
 reaction to the news, it's the only logical conclusion.
 
-Here's a short sampling of the things that went through my head after I got the news:
+Here's a short sampling of the things that went through my head:
 * What if my talk is boring and no one likes it?
 * What if no one understands what I'm talking about?
 * What if nothing I say is new at all?

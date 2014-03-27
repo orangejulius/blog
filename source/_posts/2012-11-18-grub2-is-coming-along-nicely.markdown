@@ -17,46 +17,44 @@ Here's some information about how I did it.
 
 I'm using a single EXT4 partition, the simplest possible setup.
 
-```
-pebble ~ # cat /etc/fstab
-# /etc/fstab: static file system information.
-#
-# noatime turns off atimes for increased performance (atimes normally aren't
-# needed); notail increases performance of ReiserFS (at the expense of storage
-# efficiency).  It's safe to drop the noatime options if you want and to
-# switch between notail / tail freely.
-#
-# The root filesystem should have a pass number of either 0 or 1.
-# All other filesystems should have a pass number of 0 or greater than 1.
-#
-# See the manpage fstab(5) for more information.
-#
+    pebble ~ # cat /etc/fstab
+    # /etc/fstab: static file system information.
+    #
+    # noatime turns off atimes for increased performance (atimes normally aren't
+    # needed); notail increases performance of ReiserFS (at the expense of storage
+    # efficiency).  It's safe to drop the noatime options if you want and to
+    # switch between notail / tail freely.
+    #
+    # The root filesystem should have a pass number of either 0 or 1.
+    # All other filesystems should have a pass number of 0 or greater than 1.
+    #
+    # See the manpage fstab(5) for more information.
+    #
 
-# <fs>                  <mountpoint>    <type>          <opts>          <dump/pass>
+    # <fs>                  <mountpoint>    <type>          <opts>          <dump/pass>
 
-# NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
-/dev/sda1               /               ext4            noatime         0 1
-```
+    # NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
+    /dev/sda1               /               ext4            noatime         0 1
 
 ## Installation
 
 I installed Gentoo's GRUB 2.00-rc1 package.
 
-``` bash
-echo "~sys-boot/grub-2.00" >> /etc/portage/package.accept_keywords/grub
-```
+{% codeblock lang:bash %}
+    echo "~sys-boot/grub-2.00" >> /etc/portage/package.accept_keywords/grub
+{% endcodeblock %}
 
 ## Setup
 
 Since I'm using the standard ```make install``` to install kernel images to /boot, simply running ```grub2-mkconfig``` sets everything up:
 
-``` console
+{% codeblock lang:console %}
 pebble ~ # grub2-mkconfig -o /boot/grub2/grub.cfg
 Generating grub.cfg ...
 Found linux image: /boot/vmlinuz-3.5.7-gentoo
 Found linux image: /boot/vmlinuz-3.5.7-gentoo.old
 done
-```
+{% endcodeblock %}
 
 That's it!
 While there's more going on behind the scenes than GRUB1's simple grub.cfg file, in the case of a BIOS driven setup, everything Just Works.

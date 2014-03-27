@@ -3,7 +3,6 @@ layout: post
 title: "Installing Gentoo on a Macbook Pro, Part1"
 date: 2012-03-14 15:23
 comments: true
-published: true
 categories: Gentoo
 ---
 
@@ -17,27 +16,27 @@ Today I purchased a brand new Macbook Pro from the Apple store in Palo Alto. It'
 
 dmidecode identifies it as MacBookPro8,2, and the lspci output is as follows
 
-	00:00.0 Host bridge: Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
-	00:01.0 PCI bridge: Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
-	00:01.1 PCI bridge: Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
-	00:16.0 Communication controller: Intel Corporation 6 Series/C200 Series Chipset Family MEI Controller #1 (rev 04)
-	00:1a.0 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Universal Host Controller #5 (rev 05)
-	00:1a.7 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #2 (rev 05)
-	00:1b.0 Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 05)
-	00:1c.0 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 1 (rev b5)
-	00:1c.1 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 2 (rev b5)
-	00:1c.2 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 3 (rev b5)
-	00:1d.0 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Universal Host Controller #1 (rev 05)
-	00:1d.7 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #1 (rev 05)
-	00:1f.0 ISA bridge: Intel Corporation HM65 Express Chipset Family LPC Controller (rev 05)
-	00:1f.2 IDE interface: Intel Corporation 6 Series/C200 Series Chipset Family 4 port SATA IDE Controller (rev 05)
-	00:1f.3 SMBus: Intel Corporation 6 Series/C200 Series Chipset Family SMBus Controller (rev 05)
-	01:00.0 VGA compatible controller: Advanced Micro Devices [AMD] nee ATI Whistler XT [AMD Radeon HD 6700M Series]
-	01:00.1 Audio device: Advanced Micro Devices [AMD] nee ATI Turks HDMI Audio [Radeon HD 6000 Series]
-	02:00.0 Ethernet controller: Broadcom Corporation NetXtreme BCM57765 Gigabit Ethernet PCIe (rev 10)
-	02:00.1 SD Host controller: Broadcom Corporation NetXtreme BCM57765 Memory Card Reader (rev 10)
-	03:00.0 Network controller: Broadcom Corporation BCM4331 802.11a/b/g/n (rev 02)
-	04:00.0 FireWire (IEEE 1394): Agere Systems FW643 PCI Express 1394b Controller (PHY/Link) (rev 08)
+    00:00.0 Host bridge: Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+    00:01.0 PCI bridge: Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+    00:01.1 PCI bridge: Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+    00:16.0 Communication controller: Intel Corporation 6 Series/C200 Series Chipset Family MEI Controller #1 (rev 04)
+    00:1a.0 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Universal Host Controller #5 (rev 05)
+    00:1a.7 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #2 (rev 05)
+    00:1b.0 Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 05)
+    00:1c.0 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 1 (rev b5)
+    00:1c.1 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 2 (rev b5)
+    00:1c.2 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 3 (rev b5)
+    00:1d.0 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Universal Host Controller #1 (rev 05)
+    00:1d.7 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #1 (rev 05)
+    00:1f.0 ISA bridge: Intel Corporation HM65 Express Chipset Family LPC Controller (rev 05)
+    00:1f.2 IDE interface: Intel Corporation 6 Series/C200 Series Chipset Family 4 port SATA IDE Controller (rev 05)
+    00:1f.3 SMBus: Intel Corporation 6 Series/C200 Series Chipset Family SMBus Controller (rev 05)
+    01:00.0 VGA compatible controller: Advanced Micro Devices [AMD] nee ATI Whistler XT [AMD Radeon HD 6700M Series]
+    01:00.1 Audio device: Advanced Micro Devices [AMD] nee ATI Turks HDMI Audio [Radeon HD 6000 Series]
+    02:00.0 Ethernet controller: Broadcom Corporation NetXtreme BCM57765 Gigabit Ethernet PCIe (rev 10)
+    02:00.1 SD Host controller: Broadcom Corporation NetXtreme BCM57765 Memory Card Reader (rev 10)
+    03:00.0 Network controller: Broadcom Corporation BCM4331 802.11a/b/g/n (rev 02)
+    04:00.0 FireWire (IEEE 1394): Agere Systems FW643 PCI Express 1394b Controller (PHY/Link) (rev 08)
 
 Additionally I made the following upgrades:
 
@@ -80,7 +79,9 @@ So I added a package.keywords entry for grub2, set GRUB\_PLATFORMS="efi-64" in /
 * a garbled screen that looks like it may have been the start of a linux kernel boot (there was the teltale yellow from the tux penguin at the top), but likely resulted in a panic
 
 After some searching, I found the [Ubuntu UEFI Booting](https://help.ubuntu.com/community/UEFIBooting#Apple_Mac_EFI_systems-1) wiki page had a section on video issues. I tried to load the efi\_gop module, but it wasn't found until I specified the full path to the module. Then I needed to load a module it depended on, again specifying the full path. This lead me to believe that something in GRUB2 wasn't configured quite right. After loading this module I can start to boot linux, however it failed fairly quickly with the following error:
-	[drm:intel_dsm_pci_probe] *ERROR* failed to get supported _DSM functions
+
+    [drm:intel_dsm_pci_probe] *ERROR* failed to get supported _DSM functions
+
 I hoped that at the very least this meant that I had finally progressed to kernel configuration issues, so I started looking at kernel patches. I knew ahead of time of quite a few patches mentioned on [Benjamin Lee's blog](http://www.b1c1l1.com/blog/2011/11/19/macbookpro82-kernel-patches-for-linux-311/), so I got to work applying those. They didn't compile, but there is apparently a [patch](https://github.com/fooblahblah/linux-mainline-efi-lvds/blob/master/i915_reverse.patch) to make them work on my current kernel (gentoo-sources-3.2.1-r2).
 
 After making some good progress, I called it a day.

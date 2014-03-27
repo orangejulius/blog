@@ -110,96 +110,96 @@ Sector 40 is the first possible correctly aligned sector, so I used this as the 
 
 Using sector 34 as the starting point, I created the misaligned partition using GNU Parted, and then created an ext4 filesystem:
 
-	ocean ~ # parted /dev/sdc
-	GNU Parted 3.1
-	Using /dev/sdc
-	Welcome to GNU Parted! Type 'help' to view a list of commands.
-	(parted) mkpart ext4 0s -1s
-	Warning: You requested a partition from 0.00B to 3001GB (sectors 0..5860533167).
-	The closest location we can manage is 17.4kB to 3001GB (sectors 34..5860533134).
-	Is this still acceptable to you?
-	Yes/No? y
-	Warning: The resulting partition is not properly aligned for best performance.
-	Ignore/Cancel? i
-	(parted) q
-	Information: You may need to update /etc/fstab.
+    ocean ~ # parted /dev/sdc
+    GNU Parted 3.1
+    Using /dev/sdc
+    Welcome to GNU Parted! Type 'help' to view a list of commands.
+    (parted) mkpart ext4 0s -1s
+    Warning: You requested a partition from 0.00B to 3001GB (sectors 0..5860533167).
+    The closest location we can manage is 17.4kB to 3001GB (sectors 34..5860533134).
+    Is this still acceptable to you?
+    Yes/No? y
+    Warning: The resulting partition is not properly aligned for best performance.
+    Ignore/Cancel? i
+    (parted) q
+    Information: You may need to update /etc/fstab.
 
-	ocean ~ # time mkfs.ext4 /dev/sdc1
-	mke2fs 1.42 (29-Nov-2011)
-	/dev/sdc1 alignment is offset by 3072 bytes.
-	This may result in very poor performance, (re)-partitioning suggested.
-	Filesystem label=
-	OS type: Linux
-	Block size=4096 (log=2)
-	Fragment size=4096 (log=2)
-	Stride=0 blocks, Stripe width=0 blocks
-	183148544 inodes, 732566637 blocks
-	36628331 blocks (5.00%) reserved for the super user
-	First data block=0
-	Maximum filesystem blocks=4294967296
-	22357 block groups
-	32768 blocks per group, 32768 fragments per group
-	8192 inodes per group
-	Superblock backups stored on blocks:
-		32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
-		4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968,
-		102400000, 214990848, 512000000, 550731776, 644972544
+    ocean ~ # time mkfs.ext4 /dev/sdc1
+    mke2fs 1.42 (29-Nov-2011)
+    /dev/sdc1 alignment is offset by 3072 bytes.
+    This may result in very poor performance, (re)-partitioning suggested.
+    Filesystem label=
+    OS type: Linux
+    Block size=4096 (log=2)
+    Fragment size=4096 (log=2)
+    Stride=0 blocks, Stripe width=0 blocks
+    183148544 inodes, 732566637 blocks
+    36628331 blocks (5.00%) reserved for the super user
+    First data block=0
+    Maximum filesystem blocks=4294967296
+    22357 block groups
+    32768 blocks per group, 32768 fragments per group
+    8192 inodes per group
+    Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+        4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968,
+        102400000, 214990848, 512000000, 550731776, 644972544
 
-	Allocating group tables: done
-	Writing inode tables: done
-	Creating journal (32768 blocks): done
-	Writing superblocks and filesystem accounting information: done
+    Allocating group tables: done
+    Writing inode tables: done
+    Creating journal (32768 blocks): done
+    Writing superblocks and filesystem accounting information: done
 
 
-	real    0m29.931s
-	user    0m1.671s
-	sys     0m0.293s
+    real    0m29.931s
+    user    0m1.671s
+    sys     0m0.293s
 
 Here's the same procedure for the aligned partition:
 
-	ocean ~ # parted /dev/sdc
-	GNU Parted 3.1
-	Using /dev/sdc
-	Welcome to GNU Parted! Type 'help' to view a list of commands.
-	(parted) rm 1
-	(parted) mkpart ext4 40s -1s
-	Warning: You requested a partition from 20.5kB to 3001GB (sectors 40..5860533167).
-	The closest location we can manage is 20.5kB to 3001GB (sectors 40..5860533134).
-	Is this still acceptable to you?
-	Yes/No? y
-	Warning: The resulting partition is not properly aligned for best performance.
-	Ignore/Cancel? i
-	(parted) q
-	Information: You may need to update /etc/fstab.
+    ocean ~ # parted /dev/sdc
+    GNU Parted 3.1
+    Using /dev/sdc
+    Welcome to GNU Parted! Type 'help' to view a list of commands.
+    (parted) rm 1
+    (parted) mkpart ext4 40s -1s
+    Warning: You requested a partition from 20.5kB to 3001GB (sectors 40..5860533167).
+    The closest location we can manage is 20.5kB to 3001GB (sectors 40..5860533134).
+    Is this still acceptable to you?
+    Yes/No? y
+    Warning: The resulting partition is not properly aligned for best performance.
+    Ignore/Cancel? i
+    (parted) q
+    Information: You may need to update /etc/fstab.
 
-	ocean ~ # time mkfs.ext4 /dev/sdc1
-	mke2fs 1.42 (29-Nov-2011)
-	Filesystem label=
-	OS type: Linux
-	Block size=4096 (log=2)
-	Fragment size=4096 (log=2)
-	Stride=0 blocks, Stripe width=0 blocks
-	183148544 inodes, 732566636 blocks
-	36628331 blocks (5.00%) reserved for the super user
-	First data block=0
-	Maximum filesystem blocks=4294967296
-	22357 block groups
-	32768 blocks per group, 32768 fragments per group
-	8192 inodes per group
-	Superblock backups stored on blocks:
-		32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
-		4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968,
-		102400000, 214990848, 512000000, 550731776, 644972544
+    ocean ~ # time mkfs.ext4 /dev/sdc1
+    mke2fs 1.42 (29-Nov-2011)
+    Filesystem label=
+    OS type: Linux
+    Block size=4096 (log=2)
+    Fragment size=4096 (log=2)
+    Stride=0 blocks, Stripe width=0 blocks
+    183148544 inodes, 732566636 blocks
+    36628331 blocks (5.00%) reserved for the super user
+    First data block=0
+    Maximum filesystem blocks=4294967296
+    22357 block groups
+    32768 blocks per group, 32768 fragments per group
+    8192 inodes per group
+    Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+        4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968,
+        102400000, 214990848, 512000000, 550731776, 644972544
 
-	Allocating group tables: done
-	Writing inode tables: done
-	Creating journal (32768 blocks): done
-	Writing superblocks and filesystem accounting information: done
+    Allocating group tables: done
+    Writing inode tables: done
+    Creating journal (32768 blocks): done
+    Writing superblocks and filesystem accounting information: done
 
 
-	real    0m14.333s
-	user    0m1.646s
-	sys     0m0.289s
+    real    0m14.333s
+    user    0m1.646s
+    sys     0m0.289s
 
 There are two interesting things to note.
 First, ```mkfs``` warns you when your partition alignment is incorrect.
@@ -220,7 +220,8 @@ then used rsync to copy the old, and then new snapshot to the same location on d
 For large file performance, I tested copying a 4.4GB file from tmpfs to disk.
 
 Here's the full script that allows me to create and mount a new filesystem, run the tests, and then unmount the filesystem in one step:
-``` bash
+
+{% codeblock lang:bash %}
 #!/bin/bash -ex
 
 mkfs.ext4 /dev/sdc1 > /dev/null
@@ -232,7 +233,7 @@ time rsync -aH /root/tmpfs/latest/ /mnt/test
 time cp /root/tmpfs/bigfile /mnt/test
 
 umount /mnt/test
-```
+{% endcodeblock %}
 
 ## Results
 
@@ -240,30 +241,30 @@ I ran my test setup 3 times for both the aligned and misaligned partiton, recrea
 Here's the average of all 3 tests results:
 
 <table>
-	<tr>
-		<th></th>
-		<th>Rsync old snapshot</th>
-		<th>Rsync new snapshot</th>
-		<th>Copy big file</th>
-	</tr>
-	<tr>
-		<th>Misaligned Partition (sector 34)</th>
-		<td>9.046s</td>
-		<td>0.877s</td>
-		<td>45.837s</td>
-	</tr>
-	<tr>
-		<th>Correctly aligned partition (sector 40)</th>
-		<td>7.399s</td>
-		<td>0.939s</td>
-		<td>33.348</td>
-	</tr>
-	<tr>
-		<th>Speedup for correct alignment</th>
-		<td>18.2%</td>
-		<td>-7.0%</td>
-		<td>27.2%</td>
-	</tr>
+    <tr>
+        <th></th>
+        <th>Rsync old snapshot</th>
+        <th>Rsync new snapshot</th>
+        <th>Copy big file</th>
+    </tr>
+    <tr>
+        <th>Misaligned Partition (sector 34)</th>
+        <td>9.046s</td>
+        <td>0.877s</td>
+        <td>45.837s</td>
+    </tr>
+    <tr>
+        <th>Correctly aligned partition (sector 40)</th>
+        <td>7.399s</td>
+        <td>0.939s</td>
+        <td>33.348</td>
+    </tr>
+    <tr>
+        <th>Speedup for correct alignment</th>
+        <td>18.2%</td>
+        <td>-7.0%</td>
+        <td>27.2%</td>
+    </tr>
 </table>
 
 ### Testing Conclusion
@@ -284,16 +285,18 @@ Hopefully in the next couple weeks I'll have time to write another blog post abo
 
 Just for fun, I wanted to see if there was a theoretical performance penalty for 4KB writes on a hard drive with 512 byte physical sectors, so I ran the write amplification script on an old 640GB drive that my new 3TB drive is replacing.
 
-	pismo ~ # time ./testWriteAmplification 0
+{% codeblock lang:bash %}
+pismo ~ # time ./testWriteAmplification 0
 
-	real    0m16.799s
-	user    0m0.000s
-	sys     0m0.046s
-	pismo ~ # time ./testWriteAmplification 1
+real    0m16.799s
+user    0m0.000s
+sys     0m0.046s
+pismo ~ # time ./testWriteAmplification 1
 
-	real    0m22.654s
-	user    0m0.000s
-	sys     0m0.066s
+real    0m22.654s
+user    0m0.000s
+sys     0m0.066s
+{% endcodeblock %}
 
 Surprisingly, there was a performance penalty, although not as significant (I ran the test multiple times and the performance is consistent with the times shown above).
 I imagine even hard drives with 512 byte sectors are optimized for writes aligned at 4KB.
@@ -309,56 +312,56 @@ For reference, here's all the performance data from my test script.
 
 ### Misaligned Partition
 <table>
-	<tr>
-		<th></th>
-		<th>Rsync old snapshot</th>
-		<th>Rsync new snapshot</th>
-		<th>Copy big file</th>
-	</tr>
-	<tr>
-		<th>Test 1</th>
-		<td>8.994s</td>
-		<td>0.878s</td>
-		<td>44.044s</td>
-	</tr>
-	<tr>
-		<th>Test 2</th>
-		<td>9.052s</td>
-		<td>0.878s</td>
-		<td>47.626s</td>
-	</tr>
-	<tr>
-		<th>Test 3</th>
-		<td>9.093s</td>
-		<td>0.876s</td>
-		<td>45.841s</td>
-	</tr>
+    <tr>
+        <th></th>
+        <th>Rsync old snapshot</th>
+        <th>Rsync new snapshot</th>
+        <th>Copy big file</th>
+    </tr>
+    <tr>
+        <th>Test 1</th>
+        <td>8.994s</td>
+        <td>0.878s</td>
+        <td>44.044s</td>
+    </tr>
+    <tr>
+        <th>Test 2</th>
+        <td>9.052s</td>
+        <td>0.878s</td>
+        <td>47.626s</td>
+    </tr>
+    <tr>
+        <th>Test 3</th>
+        <td>9.093s</td>
+        <td>0.876s</td>
+        <td>45.841s</td>
+    </tr>
 </table>
 
 ### Correctly aligned Partition
 <table>
-	<tr>
-		<th></th>
-		<th>Rsync old snapshot</th>
-		<th>Rsync new snapshot</th>
-		<th>Copy big file</th>
-	</tr>
-	<tr>
-		<th>Test 1</th>
-		<td>7.408s</td>
-		<td>1.008s</td>
-		<td>32.945s</td>
-	</tr>
-	<tr>
-		<th>Test 2</th>
-		<td>7.115s</td>
-		<td>0.919s</td>
-		<td>31.746s</td>
-	</tr>
-	<tr>
-		<th>Test 3</th>
-		<td>7.674s</td>
-		<td>0.890s</td>
-		<td>35.461s</td>
-	</tr>
+    <tr>
+        <th></th>
+        <th>Rsync old snapshot</th>
+        <th>Rsync new snapshot</th>
+        <th>Copy big file</th>
+    </tr>
+    <tr>
+        <th>Test 1</th>
+        <td>7.408s</td>
+        <td>1.008s</td>
+        <td>32.945s</td>
+    </tr>
+    <tr>
+        <th>Test 2</th>
+        <td>7.115s</td>
+        <td>0.919s</td>
+        <td>31.746s</td>
+    </tr>
+    <tr>
+        <th>Test 3</th>
+        <td>7.674s</td>
+        <td>0.890s</td>
+        <td>35.461s</td>
+    </tr>
 </table>

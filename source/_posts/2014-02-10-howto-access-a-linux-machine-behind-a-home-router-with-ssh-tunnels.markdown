@@ -88,7 +88,7 @@ tunnel's existence: if our tunnel is down, ssh will fail with a connection error
 One final trick SSH gives us is the ability to set up multiple port forwardings in one command. With
 that, our complete solution can be written in a simple bash script:
 
-{% codeblock %}
+{% codeblock lang:bash %}
 createTunnel() {
     /usr/bin/ssh -f -N -R 10022:localhost:22 -L19922:HostA:22 HostA
     if [[ $? -eq 0 ]]; then
