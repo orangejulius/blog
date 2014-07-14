@@ -4,7 +4,7 @@ title: "Javascript: The Good Parts, a review"
 date: 2014-07-06 22:15
 ---
 
-Today I wrote up what turned out to be a somewhat lengthy [review](https://www.goodreads.com/review/show/566827873) for [Javascript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do). Since it goes a bit beyond strictly reviewing the book and talking about Javascript itself, I figured I'd post it here.
+_Today I wrote up what turned out to be a somewhat lengthy [review](https://www.goodreads.com/review/show/566827873) for [Javascript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do).  Since it goes a bit beyond strictly reviewing the book and talking about Javascript itself, I figured I'd post it here._
 
 I though I had read this book before, but when I sat down to reread it this weekend I found a couple interesting things: 1.) I had never reviewed/rated this book on Goodreads, 2.) I had a bookmark halfway through the book 3.) I didn't remember any of the content for most of the chapters after my bookmark.
 
