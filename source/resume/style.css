@@ -34,45 +34,45 @@ h2 {
 	margin-bottom: 0.3em;
 }
 
-section.job {
+.job {
 	clear:both;
 }
 
-section.job header.row1 {
+.job .row1 {
 	line-height: 1.8em;
 }
 
-section.job header.row1 .company {
+.job .row1 .company {
 	font-size: 1.4em;
 	font-weight: bold;
 }
 
-section.job header.row1 .location {
+.job .row1 .location {
 	color: #555;
 	display: inline-block;
 	width: 15%;
 }
 
-section.job .row2 {
+.job .row2 {
 	line-height: 1.6em;
 }
 
-section.job .row2 .date {
+.job .row2 .date {
 	color: #555;
 	display: inline-block;
 	width: 15%;
 }
 
-section.job .row2 .jobtitle {
+.job .row2 .jobtitle {
 	text-transform: uppercase;
 	margin-left: 0;
 }
 
-section.job .date, section.job .location {
+.job .date, .job .location {
 	font-size: 0.625em;
 }
 
-section.job .description {
+.job .description {
 	clear: both;
 	margin-top: 0.25em;
 	margin-left: 15.4%;
