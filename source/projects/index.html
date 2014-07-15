@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Projects"
+comments: false
+sharing: true
+footer: false
+alias: [/portfolio]
+---
+<h2>College Projects</h2>
+
+<h3>Raytraced Video</h3>
+<h4>Computer Graphics Final Project</h4>
+<a href="/images/472Video1.png"><img src="/images/472Video1.png" alt="Raytraced video screenshot"  width="325px" /></a>
+<p>Our final project for my computer graphics class was to create a raytraced video at least one
+minute in length. Working with three other studends and greatly expanding upon raytracing code we
+had been developing throuought the entire semester, we created a fun, colorful video of a surfer at
+a beach complet with sand, waves, trees, a beach umbrella, and a beach ball being tossed between two
+people. Of course it's not just any ordinary surfer: our professor required that our project include
+reflections, so our video is none other than THE Silver Surfer showing off his skills.</p>
+
+<p>The project was written in C++ and gave us the opportunity to learn all about the intricacies of
+ray tracing and computer graphics. Despite being a simple raytracer by almost any standards, our 60
+second video rendered at a resolution of only 640x480 took 27 computers 9 hours to render. This
+project definitely made us appreciate all the work that goes into big-budget computer generated
+films.</p>
+
+<p>We still have our final <a href="/images/472video.avi">video</a>, a 7.5MB .avi file encoded using
+H.264 (use <a href="http://videolan.org">VLC!</a>). Additionally, I've taken some concepts from the
+source code and put them in <a href="https://github.com/orangejulius/jaytrace">my own raytracer</a>.
+It's not as powerful, but it's one of those projects I always want to go back and work on more
+someday.</p>
+
+<h3>Rubik's Cube Solver</h3>
+<h4>Artificial Intelligence Coding Assignment</h4>
+<a href="/images/rubikscube.png"><img src="/images/rubikscube-small.png" alt="Rubik's Cube Solver" width="250px" /></a>
+<p>One of the projects for my class on artificial intelligence required us to build a Rubik's Cube
+solver.  This was a very fun project since the problem space for the Rubik's Cube is enormous. Of
+course, solvers already exist that will quickly give you a set of moves to solve any state of the
+cube. This is not one of those solvers. The project was designed to be an exercise in searching, and
+therefore instead uses the A* best-first search algorithm to produce an optimal result.</p> <p>My
+solver is a command line application written in Python. It has a simple interface that displays a
+color representation of the cube. There are commands to manipulate the cube just like in real life,
+as well as other commands to randomly scramble the cube as well as try to solve the cube in its
+current state.</p>
+
+<p>This is one of those projects I could have just kept working on forever. There would always be
+more things to tweak. The search algorithm is pretty simple, but it works. Currently there is some
+code in place to try and reduce the number of duplicate states checked (for example if in the last
+step a certain move was made, making the opposite move for the next step does not make sense).
+Everything, helps because the number of states that have to be checked is huge. Just applying 5
+random moves to a cube can put it in one of 1889568 states, although my solver will generally only
+check a fraction of them, and finish in a few seconds. Applying 6 random moves has taken up to 20
+minutes for a relatively fast computer to solve. Go beyond that, and you may be waiting for a while:
+it's not hard to use up several gigabytes of memory.  </p>
+<p>You can find the code on <a href="https://github.com/orangejulius/jcube">Github</a>. I haven't
+touched the code in some time, but it could be fun to improve this a little bit more in the
+future.</p>
+
+<h3>MyPFS</h3>
+<h4>A web monitoring application for the Chrysler Corporation</h4>
+<a href="/images/mypfs.jpg"><img src="/images/mypfs-small.png" alt="MyPFS screenshot" width="400px" /></a>
+<p>MyPFS was a project that I worked on with three other students as part of my MSU Computer Science
+capstone class. We created a JavaScript based web application for viewing reports from Chrysler's
+Performance Feedback System, which is used to monitor assembly plant status. We used a Java backend
+running on Apache Tomcat.</p>
+
+<p>Compared to the old system, MyPFS is much more powerful and includes
+features such as asynchronous background updates so users never need to refresh the page, custom
+user profiles with support for user selected visual themes. Each of the modules on the page can be
+dragged to whatever location the user prefers and can have settings customized depending on the
+user's location.</p>
