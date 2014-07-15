@@ -21,6 +21,8 @@ subscribe_email:
 # RSS feeds can list your email address if you like
 email:
 
+safe: false
+
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
