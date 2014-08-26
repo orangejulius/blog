@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2014-08-25 22:18
+date: 2014-08-25 21:18
 title: The FAA made the right call on plane sharing
 ---
 About two years ago I had just received my [private pilot's license](/blog/2014/01/05/my-private-pilot-checkride/) and
@@ -133,6 +133,7 @@ can all make flying more fun, more popular, and safer with cooperation.
 
 - - -
 
+<div class="footnotes" markdown="1">
 [1] When you mean to ensure your passengers that despite the somewhat ragged appearance a 1970's Cessna may have, the
 engine and components are maintained to the same high level of quality as a new plane, one thing you should never say
 is: "Yeah, they don't really take care of these old planes".
@@ -142,11 +143,13 @@ business, even simply flying employees to meetings. You can't act on a hint from
 will convince him to give you a promotion. You can't offer your mechanic a free flight to get a reduced rates on your
 next annual inspection. You can't even fly your drama teacher in exchange for a more prominent part in the school play.
 
-[2] Perhaps my favorite story is that of [United Airlines Flight
-232](http://en.wikipedia.org/wiki/United_Airlines_Flight_232). One of the plane's engines failed catastrophically
-requiring an emergency landing. Investigators recovered the critical piece of the engine they needed to analyze the
-failure, even though they had to search hundreds of square miles of Iowa farmland around where the accident occurred to
-do it. It was analyzed and despite being damaged from falling several miles, the analysis detected a crack caused by
-fatigue that lead to the accident. The team then investigated the maintenance and production logs for the airplane going
-back 18 years, and determined the part was manufactured with the defect, the defect was detected, but the part was not
-rejected as it should have been. This is the lengths we have to go to if we want to ensure flying is safe.
+[2] Perhaps my favorite story is that of [United Airlines Flight 232](http://en.wikipedia.org/wiki/United_Airlines_Flight_232).
+One of the plane's engines failed catastrophically requiring an emergency landing. Investigators
+recovered the critical piece of the engine they needed to analyze the failure, even though they had
+to search hundreds of square miles of Iowa farmland around where the accident occurred to do it. It
+was analyzed and despite being damaged from falling several miles, the analysis detected a crack
+caused by fatigue that lead to the accident. The team then investigated the maintenance and
+production logs for the airplane going back 18 years, and determined the part was manufactured with
+the defect, the defect was detected, but the part was not rejected as it should have been. This is
+the lengths we have to go to if we want to ensure flying is safe.
+</div>
