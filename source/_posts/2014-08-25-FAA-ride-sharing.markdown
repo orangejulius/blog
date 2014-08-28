@@ -28,7 +28,7 @@ same exception that allows me to share expenses with my friends when I fly.
 And to their credit, both companies were proactive and reached out to the FAA hoping for clarification and a blessing.
 
 Pilots have been trying to cleverly skirt around these regulations forever ("okay, you fly me to New York for free, but
-then I'll buy that pen off you for $500") and the FAA has always stated clearly that there are no loopholes[1]. So when
+then I'll buy that pen off you for $500") and the FAA has always stated clearly that there are no loopholes[2]. So when
 those of us in aviation who also follow the happenings of tech companies heard about Flytenow and Airpooler, many of us
 were hesitant to try it out. We all know the regulations (our flight instructors no doubt drilled it into our heads
 during our training), and there's no mistake that our license in on the line.
@@ -53,7 +53,7 @@ of reading FAA regulations both during and after my private pilot training, I've
 a bit complicated.
 
 It wasn't always the case, but flying today is incredibly safe. Through decades of work, aviation experts have analyzed
-every aspect of flying, from everyday occurrences to the most unusual of incidents[2]. While the taxi industry lobbied
+every aspect of flying, from everyday occurrences to the most unusual of incidents[3]. While the taxi industry lobbied
 to create things like the [medallion system](http://en.wikipedia.org/wiki/Medallion_taxi#Medallions) and car accidents
 grew to one of the [leading causes of death](http://en.wikipedia.org/wiki/List_of_causes_of_death_by_rate) in the United
 States, aviation has become dramatically [safer over time](http://www.aopa.org/About-AOPA/General-Aviation-Statistics/General-Aviation-Safety-Record-Current-and-Historic):
@@ -138,12 +138,12 @@ can all make flying more fun, more popular, and safer with cooperation.
 engine and components are maintained to the same high level of quality as a new plane, one thing you should never say
 is: "Yeah, they don't really take care of these old planes".
 
-[1] The FAA has ruled definitively on all sorts of schemes: you can't use your private pilots license to aid your
+[2] The FAA has ruled definitively on all sorts of schemes: you can't use your private pilots license to aid your
 business, even simply flying employees to meetings. You can't act on a hint from your boss that a ride in your plane
 will convince him to give you a promotion. You can't offer your mechanic a free flight to get a reduced rates on your
 next annual inspection. You can't even fly your drama teacher in exchange for a more prominent part in the school play.
 
-[2] Perhaps my favorite story is that of [United Airlines Flight 232](http://en.wikipedia.org/wiki/United_Airlines_Flight_232).
+[3] Perhaps my favorite story is that of [United Airlines Flight 232](http://en.wikipedia.org/wiki/United_Airlines_Flight_232).
 One of the plane's engines failed catastrophically requiring an emergency landing. Investigators
 recovered the critical piece of the engine they needed to analyze the failure, even though they had
 to search hundreds of square miles of Iowa farmland around where the accident occurred to do it. It
