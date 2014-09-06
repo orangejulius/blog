@@ -71,10 +71,11 @@ convoluted history, why would you inflict that upon your friends, colleagues, an
 don't have to?
 
 So how does it happen? It takes three steps:
-1.) Work is done by you directly on the master branch (or whichever branch will be pulled from
+
+1. Work is done by you directly on the master branch (or whichever branch will be pulled from
 eventually).
-2.) Someone else also works directly on the branch and pushes their changes first.
-3.) `git pull` is run and a merge commit is generated for even trivial and completely independent
+2. Someone else also works directly on the branch and pushes their changes first.
+3. `git pull` is run and a merge commit is generated for even trivial and completely independent
 changes.
 
 Taken on its own, one extra merge commit is not a big deal. But if even two or three people are not
