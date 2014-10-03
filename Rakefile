@@ -32,29 +32,12 @@ if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
   `chcp 65001`
 end
 
-desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
-task :install, :theme do |t, args|
-  if File.directory?(source_dir) || File.directory?("sass")
-    abort("rake aborted!") if ask("A theme is already installed, proceeding will overwrite existing files. Are you sure?", ['y', 'n']) == 'n'
-  end
-  # copy theme into working Jekyll directories
-  theme = args.theme || 'classic'
-  puts "## Copying "+theme+" theme into ./#{source_dir} and ./sass"
-  mkdir_p source_dir
-  cp_r "#{themes_dir}/#{theme}/source/.", source_dir
-  mkdir_p "sass"
-  cp_r "#{themes_dir}/#{theme}/sass/.", "sass"
-  mkdir_p "#{source_dir}/#{posts_dir}"
-  mkdir_p public_dir
-end
-
 #######################
 # Working with Jekyll #
 #######################
 
 desc "Generate jekyll site"
 task :generate do
-  raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "## Generating Site with Jekyll"
   system "compass compile --css-dir #{source_dir}/stylesheets"
   system "jekyll build"
@@ -62,7 +45,6 @@ end
 
 desc "Watch the site and regenerate when it changes"
 task :watch do
-  raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "Starting to watch source with Jekyll and Compass."
   system "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
   jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll build --watch")
@@ -78,7 +60,6 @@ end
 
 desc "preview the site in a web browser"
 task :preview do
-  raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "Starting to watch source with Jekyll and Compass. Starting Rack on port #{server_port}"
   system "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
   jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll build --watch --drafts")
@@ -101,7 +82,6 @@ task :new_post, :title do |t, args|
   else
     title = get_stdin("Enter a title for your post: ")
   end
-  raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   mkdir_p "#{source_dir}/#{posts_dir}"
   filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
   if File.exist?(filename)
@@ -122,7 +102,6 @@ end
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")
 desc "Create a new page in #{source_dir}/(filename)/index.#{new_page_ext}"
 task :new_page, :filename do |t, args|
-  raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   args.with_defaults(:filename => 'new-page')
   page_dir = [source_dir]
   if args.filename.downcase =~ /(^.+\/)?(.+)/
@@ -176,38 +155,6 @@ end
 desc "Clean out caches: .pygments-cache, .gist-cache, .sass-cache"
 task :clean do
   rm_rf [Dir.glob(".pygments-cache/**"), Dir.glob(".gist-cache/**"), Dir.glob(".sass-cache/**"), "source/stylesheets/screen.css"]
-end
-
-desc "Move sass to sass.old, install sass theme updates, replace sass/custom with sass.old/custom"
-task :update_style, :theme do |t, args|
-  theme = args.theme || 'classic'
-  if File.directory?("sass.old")
-    puts "removed existing sass.old directory"
-    rm_r "sass.old", :secure=>true
-  end
-  mv "sass", "sass.old"
-  puts "## Moved styles into sass.old/"
-  cp_r "#{themes_dir}/"+theme+"/sass/", "sass", :remove_destination=>true
-  cp_r "sass.old/custom/.", "sass/custom/", :remove_destination=>true
-  puts "## Updated Sass ##"
-end
-
-desc "Move source to source.old, install source theme updates, replace source/_includes/navigation.html with source.old's navigation"
-task :update_source, :theme do |t, args|
-  theme = args.theme || 'classic'
-  if File.directory?("#{source_dir}.old")
-    puts "## Removed existing #{source_dir}.old directory"
-    rm_r "#{source_dir}.old", :secure=>true
-  end
-  mkdir "#{source_dir}.old"
-  cp_r "#{source_dir}/.", "#{source_dir}.old"
-  puts "## Copied #{source_dir} into #{source_dir}.old/"
-  cp_r "#{themes_dir}/"+theme+"/source/.", source_dir, :remove_destination=>true
-  cp_r "#{source_dir}.old/_includes/custom/.", "#{source_dir}/_includes/custom/", :remove_destination=>true
-  cp "#{source_dir}.old/favicon.png", source_dir
-  mv "#{source_dir}/index.html", "#{blog_index_dir}", :force=>true if blog_index_dir != source_dir
-  cp "#{source_dir}.old/index.html", source_dir if blog_index_dir != source_dir && File.exists?("#{source_dir}.old/index.html")
-  puts "## Updated #{source_dir} ##"
 end
 
 ##############
