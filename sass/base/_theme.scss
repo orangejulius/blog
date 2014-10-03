@@ -31,7 +31,7 @@ $nav-color-hover: darken($nav-color, 25) !default;
 $nav-placeholder: desaturate(darken($nav-bg, 10), 15) !default;
 $nav-border: none;
 $nav-border-top: none;
-$nav-border-bottom: none;
+$nav-border-bottom: darken($nav-bg, 5);
 $nav-border-left: none;
 $nav-border-right: none;
 
