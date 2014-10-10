@@ -25,8 +25,8 @@ These commands are quite popular, but I stand firm, you should never use any of 
 
 On the surface, `git commit -a` is just a timesaver, and who doesn't like to save time? In
 principle, there's nothing wrong with a command to commit everything at once. But in practice, I
-find that inviariably when using `git commit -a`, something not meant to be committed will be
-comitted. Big surprise. It might be a harmless `console.log`, or it could be massive temporary
+find that invariably when using `git commit -a`, something not meant to be committed will be
+committed. Big surprise. It might be a harmless `console.log`, or it could be massive temporary
 simplification of a critical bit of code.
 
 I like to take a second before each commit and review exactly what is going in. I've set up a
@@ -36,15 +36,15 @@ shows me a denser version of `git status`.
 Usually, I'll use one of my favorite little known Git features, `git commit -p` (`git
 checkout`, `git stash`, and many other commands also accept the `-p` flag), which will go through
 each section of changed code and ask whether or not you want to commit it. It comes with handy
-keyboard shorctuts meaning you can go through lots of code in only a few seconds, and if anything is
-there that shouldn't be comitted, you can skip right over it.
+keyboard shortcuts meaning you can go through lots of code in only a few seconds, and if anything is
+there that shouldn't be committed, you can skip right over it.
 
 
 ## git commit -m
 
 There are two reasons why I hate `git commit -m`.
 
-First, it incentivzes short, unhelpful commit messages. On any size team (even a team of one),
+First, it incentives short, unhelpful commit messages. On any size team (even a team of one),
 commit messages are one of the most useful ways to record knowledge from that critical time when code
 is actually written. `git commit -m "fixed big"` throws that opportunity right out the window.
 Please everyone take a second and write awesome commit messages. Did you know Git commit messages
@@ -66,7 +66,7 @@ You get all this for free, unless you use `git commit -m`.
 
 Of the three commands, this is probably the most used. As a result, the negative effects will be
 felt the strongest. And what bad thing happens with `git pull`? Nothing less than a permanently
-confusing history (gasp)! While it's true that one can figure out what happend with even the most
+confusing history (gasp)! While it's true that one can figure out what happened with even the most
 convoluted history, why would you inflict that upon your friends, colleagues, and coworkers if you
 don't have to?
 
@@ -81,11 +81,11 @@ changes.
 Taken on its own, one extra merge commit is not a big deal. But if even two or three people are not
 working to prevent unneeded merge commits, things get nasty real fast.[1]
 
-The dangers of `git pull` come partiall from it's bloated nature: it both fetches updates from
+The dangers of `git pull` come partially from it's bloated nature: it both fetches updates from
 others, and immediately and automatically decides how to reconcile those changes with yours. This
 should be two steps.
 
-My workflow is to periodially run `git fetch`. This ONLY updates my remote branches, so I can see
+My workflow is to periodically run `git fetch`. This ONLY updates my remote branches, so I can see
 what work others have done. Usually, I'll quickly inspect the changes that have been pushed using
 another great [alias](https://github.com/orangejulius/dotfiles/blob/master/gitconfig#L7), `git lg`.
 Finally I decide what to do. Usually I simply want to make a linear history with my changes coming
