@@ -6,95 +6,70 @@ sharing: true
 footer: false
 alias: [/portfolio]
 ---
-<h2>Recent Projects</h1>
-
-<h3>Donation Party</h3>
-<p>Donation Party was born at the Stripe <a href="https://stripe.com/blog/hack-to-the-future">Hack
-to the Future</a> hackathon in December, 2012. Its goal is to allow groups of friends to "compete"
+<h3 class="project">Donation Party</h3>
+<a href="/images/donationparty-screenshot.png"><img src="/images/donationparty-screenshot.png" alt="Donation Party screenshot" /></a>
+<p>Donation Party was born at the Stripe <a href="https://stripe.com/blog/hack-to-the-future">Hack to the Future</a>
+hackathon in December, 2012. Its goal is to allow groups of friends to "compete"
 while donating to charity. To keep things light-hearted, the donation amounts are randomly chosen
 and cannot exceed $20. The person who donates the highest amount is given a small reward using some
 of the money with the vast majority going directly to the chosen charity.</p>
 
-<p>The project's systems are built with Ruby on Rails, Pusher.js, the FirstGiving API, and, of
-course, Stripe. There is a live demo (with payments currently in testing mode) at <a
-href="https://www.donationparty.com">https://www.donationparty.com</a>, and the full source
+<p>During the hackathon itself, we built Donation Party using Python and Django. Saumel Clay hosts
+the original <a href="https://github.com/samuelclay/donationparty">source</a> on Github.</p>
+
+<p>Later, I rewrote the project myself using Ruby on Rails as a learning exercise. The project
+also uses Pusher.js, the FirstGiving API, and, of course, Stripe. There is a live demo (with
+payments currently in testing mode) at <a href="https://www.donationparty.com">https://www.donationparty.com</a>, and the full source
 is on <a href="https://github.com/orangejulius/donationparty">Github</a>.</p>
 
 <p>Invaluable contributions during the hackathon came from <a href="https://twitter.com/samuelclay">@samuelclay</a>,
 <a href="https://twitter.com/tommoor">@tommoor</a> and <a
 href="https://twitter.com/elylerner">@elylerner</a>.</p>
 
-<h3>WebpassMap</h3>
-<p><a href="http://webpassmap.juliansimioni.com">WebpassMap</a> came to be from my frustration with
+<h3 class="project">Jaytrace</h3>
+
+<a href="/images/jaytrace-screenshot.png"><img src="/images/jaytrace-screenshot.png" alt="Jaytrace bunnyscreenshot" /></a>
+<p>Jaytrace is the project I work on when I want to scratch my computer graphics programming itch.
+I've built three raytracers: one in college, one shortly after college (this one was hastily
+assembled and eventually scrapped), and Jaytrace. Jaytrace has been built more slowly, and with a
+little more care. Written in C++ with a CMake build system, Jaytrace uses Qt, Eigen, and
+tinyobjloader so I can focus on the core raytracer algorithms. It actually has quite a few unit
+tests (unusual for graphics programming). The full source with additional information about the
+project is on <a href="https://github.com/orangejulius/jaytrace">Github</a>.
+
+<h3 class="project">WebpassMap</h3>
+<a href="/images/webpassmap-screenshot.png"><img src="/images/webpassmap-screenshot.png" alt="WebpassMap screenshot" /></a>
+
+<p><a href="http://webpassmap.juliansimioni.com">WebpassMap</a> helps you easily find buildings in
+San Francisco with the excellent Webpass internet service. It came to be from my frustration with
 the complete, but user unfriendly list of addresses with Webpass service on Webpass's own website.
 Though it was my first Ruby on Rails project, with a little work I was able to build a scraper that
-periodically checks for new deployments of Webpass service, and displays them on a map.
+periodically checks for new deployments of Webpass service, and displays them using the Google Maps
+API.</p>
 
-<p>It was originally built to help me choose an apartment with fast internet during a recent
-apartment search. As it happens I ended up in an apartment without Webpass, but I've left the
-service up for others to use. Full source is available on <a
-href="https://www.github.com/orangejulius/webpassmap">Github</a>.</p>
+Full source is available on <a href="https://www.github.com/orangejulius/webpassmap">Github</a>.</p>
 
-<h2>College Projects</h2>
+<h3 class="project">Bubblevine</h3>
 
-<h3>Raytraced Video</h3>
-<h4>Computer Graphics Final Project</h4>
-<a href="/images/472Video1.png"><img src="/images/472Video1.png" alt="Raytraced video screenshot"  width="325px" /></a>
-<p>Our final project for my computer graphics class was to create a raytraced video at least one
-minute in length. Working with three other studends and greatly expanding upon raytracing code we
-had been developing throuought the entire semester, we created a fun, colorful video of a surfer at
-a beach complet with sand, waves, trees, a beach umbrella, and a beach ball being tossed between two
-people. Of course it's not just any ordinary surfer: our professor required that our project include
-reflections, so our video is none other than THE Silver Surfer showing off his skills.</p>
+<a href="/images/bubblevine-screenshot.png"><img src="/images/bubblevine-screenshot.png" alt="Bubblevine screenshot" /></a>
 
-<p>The project was written in C++ and gave us the opportunity to learn all about the intricacies of
-ray tracing and computer graphics. Despite being a simple raytracer by almost any standards, our 60
-second video rendered at a resolution of only 640x480 took 27 computers 9 hours to render. This
-project definitely made us appreciate all the work that goes into big-budget computer generated
-films.</p>
+<p><a href="http://bubblevine.io">Bubblevine</a> allows you to quickly and easily display your Instagram pictures on your own website.
+Using Pusher for websockets support, Bubblevine images will update as soon as you upload a new
+picture to Instagram, without even a page refresh. It was built in just a night or two of coding
+with <a href="https://twitter.com/huckpilot">Christopher Black</a>, who came up with the idea.
+Bubblevine uses Sinatra, so it's dead simple, and the
+<a href="https://github.com/orangejulius/bubblevine">source</a> is hosted on Github.</p>
 
-<p>We still have our final <a href="/images/472video.avi">video</a>, a 7.5MB .avi file encoded using
-H.264 (use <a href="http://videolan.org">VLC!</a>). Additionally, I've taken some concepts from the
-source code and put them in <a href="https://github.com/orangejulius/jaytrace">my own raytracer</a>.
-It's not as powerful, but it's one of those projects I always want to go back and work on more
-someday.</p>
+<h3 class="project">NodeRide</h3>
 
-<h3>Rubik's Cube Solver</h3>
-<h4>Artificial Intelligence Coding Assignment</h4>
-<a href="/images/rubikscube.png"><img src="/images/rubikscube-small.png" alt="Rubik's Cube Solver" width="250px" /></a>
-<p>One of the projects for my class on artificial intelligence required us to build a Rubik's Cube
-solver.  This was a very fun project since the problem space for the Rubik's Cube is enormous. Of
-course, solvers already exist that will quickly give you a set of moves to solve any state of the
-cube. This is not one of those solvers. The project was designed to be an exercise in searching, and
-therefore instead uses the A* best-first search algorithm to produce an optimal result.</p> <p>My
-solver is a command line application written in Python. It has a simple interface that displays a
-color representation of the cube. There are commands to manipulate the cube just like in real life,
-as well as other commands to randomly scramble the cube as well as try to solve the cube in its
-current state.</p>
+<a href="/images/noderide-screenshot.png"><img src="/images/noderide-screenshot.png" alt="NodeRide screenshot" /></a>
 
-<p>This is one of those projects I could have just kept working on forever. There would always be
-more things to tweak. The search algorithm is pretty simple, but it works. Currently there is some
-code in place to try and reduce the number of duplicate states checked (for example if in the last
-step a certain move was made, making the opposite move for the next step does not make sense).
-Everything, helps because the number of states that have to be checked is huge. Just applying 5
-random moves to a cube can put it in one of 1889568 states, although my solver will generally only
-check a fraction of them, and finish in a few seconds. Applying 6 random moves has taken up to 20
-minutes for a relatively fast computer to solve. Go beyond that, and you may be waiting for a while:
-it's not hard to use up several gigabytes of memory.  </p>
-<p>You can find the code on <a href="https://github.com/orangejulius/jcube">Github</a>. I haven't
-touched the code in some time, but it could be fun to improve this a little bit more in the
-future.</p>
+<p><a href="http://noderide.juliansimioni.com/">NodeRide</a> was built in early 2012 as a quick
+experiment with NodeJS. As a cyclist, I have a large collection of files with GPS and heart rate
+data from my bike rides, and I wanted to do something with them. NodeRide won't replace Strava, but
+I did learn a bit. Source: <a href="https://github.com/orangejulius/noderide">https://github.com/orangejulius/noderide</a></p>
 
-<h3>MyPFS</h3>
-<h4>A web monitoring application for the Chrysler Corporation</h4>
-<a href="/images/mypfs.jpg"><img src="/images/mypfs-small.png" alt="MyPFS screenshot" width="400px" /></a>
-<p>MyPFS was a project that I worked on with three other students as part of my MSU Computer Science
-capstone class. We created a JavaScript based web application for viewing reports from Chrysler's
-Performance Feedback System, which is used to monitor assembly plant status. We used a Java backend
-running on Apache Tomcat.</p>
+<h3>Older Projects</h3>
 
-<p>Compared to the old system, MyPFS is much more powerful and includes
-features such as asynchronous background updates so users never need to refresh the page, custom
-user profiles with support for user selected visual themes. Each of the modules on the page can be
-dragged to whatever location the user prefers and can have settings customized depending on the
-user's location.</p>
+For a time-machine style look at my words and code from college many years ago, see my <a
+href="/projects/college">college projects</a>.

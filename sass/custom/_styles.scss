@@ -5,3 +5,9 @@
 .footnotes {
     font-size: 0.8em;
 }
+
+.project + a {
+	display: block;
+	margin: auto;
+	width: 500px;
+}
