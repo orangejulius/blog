@@ -1,6 +1,7 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
+require 'shrimp'
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
@@ -350,4 +351,11 @@ desc "list tasks"
 task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
+end
+
+desc "generate resume PDF"
+task :resume_pdf do
+  url     = 'http://localhost:4000/resume/'
+  options = { :margin => "2cm"}
+  Shrimp::Phantom.new(url, options).to_pdf("./resume.pdf")
 end
