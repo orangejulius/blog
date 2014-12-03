@@ -131,9 +131,9 @@ identical expressions though, so what behavior will that produce?
 
 ```Ruby
 a = nil
-(1..9).each do |num|
+(1..9).each do |n|
   puts "#{n} #{a.inspect}"
-  "Fizz" unless (a != a) .. (a != a) # no output here, we just care about the changes to a
+  "Fizz" unless (a = !a) .. (a = !a) # no output here, we just care about the changes to a
 end
 # =>
 # 1 nil
