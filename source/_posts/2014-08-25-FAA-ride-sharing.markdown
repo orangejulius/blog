@@ -136,12 +136,12 @@ can all make flying more fun, more popular, and safer with cooperation.
 <div class="footnotes" markdown="1">
 [1] When you mean to ensure your passengers that despite the somewhat ragged appearance a 1970's Cessna may have, the
 engine and components are maintained to the same high level of quality as a new plane, one thing you should never say
-is: "Yeah, they don't really take care of these old planes".
+is: "Yeah, they don't really take care of these old planes".<br>
 
 [2] The FAA has ruled definitively on all sorts of schemes: you can't use your private pilots license to aid your
 business, even simply flying employees to meetings. You can't act on a hint from your boss that a ride in your plane
 will convince him to give you a promotion. You can't offer your mechanic a free flight to get a reduced rates on your
-next annual inspection. You can't even fly your drama teacher in exchange for a more prominent part in the school play.
+next annual inspection. You can't even fly your drama teacher in exchange for a more prominent part in the school play.<br>
 
 [3] Perhaps my favorite story is that of [United Airlines Flight 232](http://en.wikipedia.org/wiki/United_Airlines_Flight_232).
 One of the plane's engines failed catastrophically requiring an emergency landing. Investigators
@@ -151,5 +151,5 @@ was analyzed and despite being damaged from falling several miles, the analysis 
 caused by fatigue that lead to the accident. The team then investigated the maintenance and
 production logs for the airplane going back 18 years, and determined the part was manufactured with
 the defect, the defect was detected, but the part was not rejected as it should have been. This is
-the lengths we have to go to if we want to ensure flying is safe.
+the lengths we have to go to if we want to ensure flying is safe.<br>
 </div>
