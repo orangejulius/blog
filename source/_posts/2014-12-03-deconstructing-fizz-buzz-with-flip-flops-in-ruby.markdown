@@ -46,7 +46,7 @@ their value then? Let's run a simple test script to find out:
 a = (1..2).each do |num|
   puts a.inspect # => nil
 end
-puts a.inspect # => (1..10)
+puts a.inspect # => (1..2)
 ```
 
 Aha, it just is set to nil. Of course a variable that isn't first initialized will throw an error,
