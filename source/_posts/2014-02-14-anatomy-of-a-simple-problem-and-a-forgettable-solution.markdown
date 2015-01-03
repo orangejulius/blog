@@ -3,7 +3,7 @@ layout: post
 title: "Anatomy of a simple problem and a forgettable solution"
 date: 2014-02-14 22:33:33 -0800
 comments: true
-categories: personal-personal-goals-post
+categories: personal-personal-goals-post ssh
 ---
 About once a week at work, someone hits an error while trying to deploy code. It's always the same
 one: permission denied early in the Capistrano deploy process. The solution is always extremely

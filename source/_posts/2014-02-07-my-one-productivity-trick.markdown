@@ -3,7 +3,7 @@ layout: post
 title: "My only productivity trick"
 date: 2014-02-07 09:27:07 -0800
 comments: true
-categories: productivity, personal-personal-goals-post
+categories: productivity personal-personal-goals-post
 ---
 
 I am a horrible procrastinator. Starting up new tasks can be next to impossible. My mind's ability

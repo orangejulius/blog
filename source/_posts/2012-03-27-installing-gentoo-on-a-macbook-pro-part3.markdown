@@ -3,7 +3,7 @@ layout: post
 title: "Installing Gentoo on a Macbook Pro, Part 3"
 date: 2012-03-27 17:33
 comments: true
-categories: 
+categories: gentoo linux
 ---
 Since last time I've made steady progress on various fronts.
 

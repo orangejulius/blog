@@ -3,7 +3,7 @@ layout: post
 title: "Thank you RailsConf!"
 date: 2014-04-28 14:23:04 -0700
 comments: true
-categories: 
+categories: speaking ruby
 ---
 I'm finally back home and settled in from a crazy and amazing week in Chicago. I just wanted to say
 thanks to everyone for an amazing time. Speakers, attendees, staff, everyone.

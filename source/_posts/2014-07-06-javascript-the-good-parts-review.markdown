@@ -2,6 +2,7 @@
 layout: post
 title: "Javascript: The Good Parts, a review"
 date: 2014-07-06 22:15
+categories: book-reviews javascript
 ---
 
 _Today I wrote up what turned out to be a somewhat lengthy [review](https://www.goodreads.com/review/show/566827873) for [Javascript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do).  Since it goes a bit beyond strictly reviewing the book and talking about Javascript itself, I figured I'd post it here._

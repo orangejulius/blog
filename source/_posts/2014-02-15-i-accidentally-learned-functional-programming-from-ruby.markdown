@@ -3,7 +3,7 @@ layout: post
 title: "I accidentally learned functional programming from ruby"
 date: 2014-02-15 23:46:10 -0800
 comments: true
-categories: personal-personal-goals-post
+categories: personal-personal-goals-post functional-programming ruby
 ---
 
 About a year and a half ago, over ten years into my career as web developer, but with only about six

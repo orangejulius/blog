@@ -3,7 +3,7 @@ layout: post
 title: "GRUB2 is coming along nicely"
 date: 2012-11-18 21:01
 comments: true
-categories: gentoo
+categories: gentoo linux
 ---
 Today I decided to resurrect an old piece of hardware I've had sitting useless for a while: an Asus Eee PC [1005PE]( http://ca.asus.com/en/Eee/Eee_PC/Eee_PC_1005PE_Seashell/#specifications).
 

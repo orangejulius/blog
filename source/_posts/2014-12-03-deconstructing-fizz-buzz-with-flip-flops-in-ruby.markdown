@@ -3,7 +3,7 @@ layout: post
 title: "Deconstructing Fizz Buzz with Flip-Flops in Ruby"
 date: 2014-12-03 15:53:52 +0100
 comments: true
-categories: 
+categories: ruby
 ---
 Ruby is small. If it's not your first programming language, picking up all the basic syntax in a
 weekend isn't out of the question. I've been writing and reading Ruby code for several years now,

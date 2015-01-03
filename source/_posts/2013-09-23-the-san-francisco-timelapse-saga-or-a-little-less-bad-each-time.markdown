@@ -3,7 +3,7 @@ layout: post
 title: "The San Francisco timelapse saga (or: a little less bad each time)"
 date: 2013-09-23 23:07
 comments: true
-categories: 
+categories: linux tutorial photography
 ---
 Months ago, after watching the Nth amazingly beautiful timelapse of San Francisco made by someone else, I realized I had all the tools to do the same thing.
 I have a Panasonic DMC-GF1 which is, if not the world's best camera, perfectly capable of taking beautiful shots at all hours of the day.

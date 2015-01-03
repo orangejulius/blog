@@ -3,7 +3,7 @@ layout: post
 title: "Howto access a Linux machine behind a home router with SSH tunnels"
 date: 2014-02-10 08:41:00 -0800
 comments: true
-categories: 
+categories: linux ssh tutorials
 ---
 Recently, I had the need to set up a Linux machine so that I could put it behind a home router with
 no special configuration, and still access the machine from anywhere. Machines behind home routers

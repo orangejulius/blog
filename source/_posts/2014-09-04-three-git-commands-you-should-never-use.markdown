@@ -2,6 +2,7 @@
 layout: post
 date: 2014-09-04 21:17
 title: Three Git commands you should never use
+categories: git
 ---
 
 Ahh, Git. One of the most powerful tools of our time. Also, one of the most confusing. There's no

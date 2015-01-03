@@ -3,7 +3,7 @@ layout: post
 title: "Fun with 4K sectors"
 date: 2012-11-28 16:49
 comments: true
-categories:
+categories: linux
 ---
 Today I received in the mail a brand new 3TB hard drive for storing my multitudes of bits.
 

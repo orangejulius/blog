@@ -3,7 +3,7 @@ layout: post
 title: "Installing Gentoo on a Macbook Pro, Part1"
 date: 2012-03-14 15:23
 comments: true
-categories: Gentoo
+categories: gentoo linux
 ---
 
 Today I purchased a brand new Macbook Pro from the Apple store in Palo Alto. It's a 15" model with the following specs:

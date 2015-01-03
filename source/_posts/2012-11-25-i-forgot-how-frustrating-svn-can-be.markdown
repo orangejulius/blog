@@ -3,7 +3,7 @@ layout: post
 title: "I forgot how frustrating SVN can be"
 date: 2012-11-25 18:09
 comments: true
-categories: 
+categories: git
 ---
 Yesterday, I was installing the latest KDE 4.10 beta, which is built from source.
 The Gentoo KDE overlay already has ebuilds, which use KDE's SVN as the source, rather than a tarball.

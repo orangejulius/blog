@@ -3,7 +3,7 @@ layout: post
 title: "Installing Gentoo on a Macbook Pro, Part2"
 date: 2012-03-21 17:52
 comments: true
-categories: 
+categories: gentoo linux
 ---
 It's been a couple days since I could sit down with my fancy new Macbook, but last night and today I've made some good progress. After [part 1](/blog/2012/03/14/installing-gentoo-on-a-macbook-pro/) I a nearly booting sytem, but not quite everthing was working yet. While I could get a kernel to load from grub2, it would hang almost immediately. Also grub2 was clearly misconfigured, as it was spewing many errors about missing commands, and I had to manually type in the path to my kernel image on each boot.
 
