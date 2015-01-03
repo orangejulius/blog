@@ -16,7 +16,7 @@ blog post._
 Whenever you have a loop that is modifying a variable in each iteration of the
 loop, consider a functional programming approach. It will usually result in less
 code setting up and returning variables, which makes the code that actually does
-the intersting stuff stand out more.
+the interesting stuff stand out more.
 
 Any time you are taking every element of an array and want to produce another
 array with modified variables, you can use `map`. And any time you have an array
@@ -61,7 +61,7 @@ The `.map` method on Enumerable does a bit more for you: it uses the return
 value of the block you pass to it, and collects all the return values from
 running the block with each element, turning that into a new array. You don't
 have to bother creating a variable and assigning it into an empty array,
-explitly updating the array, or even returning the array. The return
+explicitly updating the array, or even returning the array. The return
 value of `.map` is the array that results.
 
 It also tells everyone reading the code something very important: the code that
