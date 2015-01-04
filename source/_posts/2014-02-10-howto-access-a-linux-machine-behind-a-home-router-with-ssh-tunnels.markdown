@@ -83,7 +83,7 @@ from HostB, but now, we can also SSH to HostA from HostB with the following comm
     ssh localhost -p 19922
 
 Since port 19922 is only active when our ssh tunnel is in place, this allows us to check for the
-tunnel's existence: if our tunnel is down, ssh will fail with a connection error.
+tunnel's existence: if our tunnel is down, SSH will fail with a connection error.
 
 One final trick SSH gives us is the ability to set up multiple port forwardings in one command. With
 that, our complete solution can be written in a simple bash script:
