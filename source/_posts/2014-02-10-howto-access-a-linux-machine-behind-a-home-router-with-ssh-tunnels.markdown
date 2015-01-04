@@ -22,18 +22,18 @@ router.
 
 Here's the different pieces of hardware that play into the story:
 
-HostA: This is a Linux machine with a known and publicly accessible IP address. Its best if the IP
+**HostA**: This is a Linux machine with a known and publicly accessible IP address. Its best if the IP
 address is static. In my case it's a VPS on Linode, but any Linux machine accessible via SSH can
 work. No root access or special configurations are required.
 
-Router: This is the home router. For our purposes it's just a standard Linksys router with no
+**Router**: This is the home router. For our purposes it's just a standard Linksys router with no
 special configuration, and we do not have access to its control panel.
 
-HostB: This is the Linux machine you will put behind the home router. Again, full root access is not
+**HostB**: This is the Linux machine you will put behind the home router. Again, full root access is not
 required, only a user account. It's assumed that we will lose physical access to this machine once
 its placed behind the home router, but can configure it as we wish before then.
 
-HostC: another Linux machine of any type and network location, where we have direct physical access.
+**HostC**: another Linux machine of any type and network location, where we have direct physical access.
 
 Given these machines, the requirement is simple: allow us to SSH from HostC to HostB.
 
