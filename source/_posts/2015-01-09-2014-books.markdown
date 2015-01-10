@@ -1,0 +1,95 @@
+---
+layout: post
+title: "2014 Books"
+date: 2015-01-09 18:20:42 -0800
+comments: true
+categories: book-reviews
+---
+Its a few days late, but like many others, I want to take a moment and give a quick summary of the
+books I read this year. I've got quite a few more partially finished, so the 2015 follow up post
+should be great too!
+
+##<strong>[Digital Apollo: Human and Machine in Spaceflight](https://www.goodreads.com/book/show/2422710.Digital_Apollo) by David Mindel</strong>
+
+According to Goodreads, I actually finished this book on December 31st, 2013. But I'm putting it
+here because I easily re-read it twice in 2014: I based most of my talk from [Mountain West
+Ruby](/talks/#apolloMWRC) and [RailsConf](/talks/#apolloRailsConf). _Digital Apollo_ does an
+excellent job of covering development of hardware and software during the Apollo Program, and really
+all the projects leading up to it. There are technical sections, but they aren't overly in depth and
+the main narrative isn't dependent on understanding every detail.
+
+##<strong>[The Adventures of Sherlock Holmes](https://www.goodreads.com/book/show/20899335-the-adventures-of-sherlock-holmes) by Sir Arthur Conan Doyle</strong>
+
+I have to credit Star Trek: The Next Generation for really making me aware of these excellent
+stories years ago, and while I've read a few here and there, it was only this year when I sat down
+and finished this 12 story collection. They're amazing bits of writing, and hugely refreshing from
+non-fiction, which is what I generally read the most. Some of the plots that must have been original
+when these stories were published seem cliché today, but surely they didn't when first published.
+
+
+##[Failure Is Not An Option](https://www.goodreads.com/book/show/141499.Failure_is_not_an_Option) by Gene Kranz</strong>
+
+Far more than an interesting story about the space program, this is a great read for anyone who has
+ever wanted to accomplish something extremely challenging that no one has done before.  Kranz does
+an incredible job of describing the details not just of all the technical challenges and
+accomplishments of manned space flight, but of the emotions and team dynamics as well. Anyone
+doubting that any person can, with the right amount of determination and teamwork, accomplish
+anything should read this book.
+
+##[The Path Between the Seas](https://www.goodreads.com/book/show/2372.The_Path_Between_the_Seas) by David McCulloug
+
+I've been reading this book on and off for almost two years (I started in early 2013). It's truly a
+monstrosity, covering the building of the Panama Canal in incredible, but interesting detail. To be
+honest, I found the first half of the book, which details the comically failure-ridden initial efforts by
+the French, much more entertaining and useful. The second half, where the Americans basically come
+in, fix all the problems, and triumph, is great for national pride, but there's not as much to learn
+from it.
+
+##[The Day the World Discovered the Sun](https://www.goodreads.com/book/show/13237720-the-day-the-world-discovered-the-sun) by Mark Anderson
+
+Astronomy and history are both long time interests of mine, but I found this book mediocre at best.
+It covered too many characters, interweaving their stories in a way that was hard to follow, and the
+writing felt like it was trying to be too "grand". Still, it's a short book, and describes a very
+interesting and dramatic series of scientific endeavours spanning the entire globe, so I can't say I
+didn't enjoy it a little.
+
+##[Javascript: The Good Parts](https://www.goodreads.com/book/show/2998152-javascript) by Douglas Crockford
+
+I re-read this book after working more deeply with Javascript this year than ever before. Having
+considerably improved with the language and many of its core concepts, I found the re-read so
+valuable I wrote up an entire [review](/blog/2014/07/06/javascript-the-good-parts-review/).
+
+##[How to Win Friends and Influence People](https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People) by Dale Carnegie
+
+In some senses, everything in this book is obvious and self-evident to anyone who has ever had
+feelings. On the other hand, the writing style is quite enjoyable and it's at least a great reminder
+of how to work with others. For most of us, is probably a deeper exploration into describing what
+makes humans happy and angry than we've thought about before. If you're turned off by the
+social-engineering-sounding title, one of my friends proposed a more accurate, alternate title:
+_How to Be Friendly and Be an Influencer_.
+
+
+##[The Guns of August](https://www.goodreads.com/book/show/11366.The_Guns_of_August) by Barbara Tuchman
+
+While I found it hard to follow at times, there can be no doubt after a chapter or two why this book
+won a Pulitzer: the depth of research and fantastic writing style make this book practically a work
+of art. I was pretty tired of epic history books after reading _The Path Between the Seas_ this
+year, and <i>[Embers of War](https://www.goodreads.com/book/show/13155847-embers-of-war)</i> last
+year, but still had to finish this book once I started. While both have similar themes, I preferred _Embers of War_.
+
+
+##[All the Shah's Men](https://www.goodreads.com/book/show/46347.All_the_Shah_s_Men) by Stephen Kinzer
+
+After _The Guns of August_, the straightforward but extremely captivating writing style of this book
+was refreshing, and I finished it in just a day or two. Anyone looking for a lens into the cultures
+of the middle east would benefit from reading this short but exciting book.
+
+##[One Minute to Midnight](https://www.goodreads.com/book/show/2606779-one-minute-to-midnight) by Michael Dobbs
+
+Yet another captivating history, this time on the Cuban missile crisis. Unlike _The Day the World
+Discovered the Sun_ this book is not hard to follow despite covering dozens of events all over the
+globe happening just minutes apart. As yet another book documenting the folly of war, this time
+because of the inability of even leaders like Kennedy and Khrushchev to control their own forces
+enough to avoid terrible outcomes, I've pretty much got that genre covered for a while. Fortunately,
+next on my reading list is _Moby Dick_: a complete departure the trend. I didn't quite finish it in
+2014 though.
