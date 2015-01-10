@@ -3,6 +3,7 @@ layout: page
 title: "Talks"
 ---
 
+<a id="apolloRailsConf"></a>
 ## Software Development Lessons from the Apollo Program
 ### RailsConf 2014 - The Sheraton Hotel - Chicago, IL - April 24th, 2014
 
@@ -14,6 +15,7 @@ incredibly fun.
 {% youtube hrsT9wmPVoo %}
 [Slides](https://speakerdeck.com/orangejulius/software-development-lessons-from-the-apollo-program)
 
+<a id="apolloMWRC"></a>
 ## Software Development Lessons from the Apollo Program
 ### Mountain West Ruby Conference 2014 - The City Library - Salt Lake City, UT - March 21, 2014
 
@@ -27,6 +29,7 @@ The MWRC crowd was a great, small group and giving this talk was a blast.
 [Slides](http://www.slideshare.net/spectre256/software-development-lessons-from-the-apollo-program)
 
 
+<a id="webServerRailsBridge"></a>
 ## You Too Can be a Web Server
 ### RailsBridge Lighting Talks - Github - San Francisco, CA - December 4th, 2013
 
