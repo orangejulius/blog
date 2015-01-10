@@ -12,8 +12,8 @@ should be great too!
 ##<strong>[Digital Apollo: Human and Machine in Spaceflight](https://www.goodreads.com/book/show/2422710.Digital_Apollo) by David Mindel</strong>
 
 According to Goodreads, I actually finished this book on December 31st, 2013. But I'm putting it
-here because I easily re-read it twice in 2014: I based most of my talk from [Mountain West
-Ruby](/talks/#apolloMWRC) and [RailsConf](/talks/#apolloRailsConf). _Digital Apollo_ does an
+here because I easily re-read it twice in 2014: I based much of my talk from [Mountain West Ruby](/talks/#apolloMWRC)
+and [RailsConf](/talks/#apolloRailsConf) on content from the book. _Digital Apollo_ does an
 excellent job of covering development of hardware and software during the Apollo Program, and really
 all the projects leading up to it. There are technical sections, but they aren't overly in depth and
 the main narrative isn't dependent on understanding every detail.
