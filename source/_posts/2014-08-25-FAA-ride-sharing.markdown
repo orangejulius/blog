@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2014-08-25 21:18
+date: 2014-08-25 21:18 -0700
 title: The FAA made the right call on plane sharing
 categories: flying
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fun with 4K sectors"
-date: 2012-11-28 16:49
+date: 2012-11-28 16:49 -0800
 comments: true
 categories: linux
 ---

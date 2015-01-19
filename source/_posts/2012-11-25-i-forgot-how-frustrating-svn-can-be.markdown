@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I forgot how frustrating SVN can be"
-date: 2012-11-25 18:09
+date: 2012-11-25 18:09 -0800
 comments: true
 categories: git
 ---
