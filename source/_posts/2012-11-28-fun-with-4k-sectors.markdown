@@ -4,6 +4,7 @@ title: "Fun with 4K sectors"
 date: 2012-11-28 16:49 -0800
 comments: true
 categories: linux
+redirect_from: /blog/2012/11/28/fun-with-4k-sectors/
 ---
 Today I received in the mail a brand new 3TB hard drive for storing my multitudes of bits.
 

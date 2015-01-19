@@ -4,6 +4,7 @@ title: "Where are you going next?"
 date: 2012-11-27 16:30 -0800
 comments: true
 categories: 
+redirect_from: /blog/2012/11/27/where-are-you-going-next/
 ---
 Whenever you leave a job, the most important question is "where are you going next?".
 Having quit my last job in March, and not yet permanentely settled on anything, I have put considerable thought into this question.

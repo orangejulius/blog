@@ -2,6 +2,7 @@
 layout: post
 date: 2014-08-25 21:18 -0700
 title: The FAA made the right call on plane sharing
+redirect_from: /blog/2014/08/25/FAA-ride-sharing/
 categories: flying
 ---
 About two years ago I had just received my [private pilot's license](/blog/2014/01/05/my-private-pilot-checkride/) and
