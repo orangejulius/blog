@@ -49,7 +49,7 @@ it really wise to exclude 50% of the population from contributing?
 
 Most importantly, even if we did some day conclusively prove that on average the biology of a woman
 makes her less adept at writing code, who cares? Men do things that women are supposedly better at
-all the time, and no one bats an eye. [Let them code](www.youtube.com/watch?v=kRUS8Zvg3sg).
+all the time, and no one bats an eye. [Let them code](https://www.youtube.com/watch?v=kRUS8Zvg3sg).
 
 ## On the Definition of the Profession of "coding"
 
@@ -87,9 +87,13 @@ What definitely ISN'T in that toolkit is cherry-picking a handful of stories fro
 personally have had a long and significant influence over, and using those stories to support a
 belief we've had since before those people existed.
 
+- - -
+
+<div class="footnotes" markdown="1">
 [1] For a great collection of mostly sound scientific research into what we DO know about reading
-software, watch Greg Wilson's video
-[What We Actually Know About About Software Development, and Why We Believe It's True](vimeo.com/9270320),
-and then read the resulting book:
-[Making Software: What Really Works, and Why We Believe it](https://www.goodreads.com/book/show/8553359-making-software)
+software, watch Greg Wilson's fantastic talk
+<a href="https://vimeo.com/9270320">What We Actually Know About About Software Development, and Why We Believe It's True</a>,
+and then read the resulting book: <a href="https://www.goodreads.com/book/show/8553359-making-software">Making Software: What Really Works, and Why We Believe It</a>.<br>
+
 [2] You could even say the joy of nurturing something.
+</div>

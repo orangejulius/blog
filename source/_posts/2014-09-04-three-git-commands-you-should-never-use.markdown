@@ -114,5 +114,5 @@ them.
 
 <div class="footnotes" markdown="1">
 [1] For a great example of good and bad merge commits: check out
-[this](https://gist.github.com/jbenet/ee6c9ac48068889b0912) helpful Gist.
+<a href="https://gist.github.com/jbenet/ee6c9ac48068889b0912">this</a> helpful Gist.
 </div>
