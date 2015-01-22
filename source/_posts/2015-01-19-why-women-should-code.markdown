@@ -83,8 +83,8 @@ have today to help. Sample sizes should be large, biases in selecting the sample
 into account, and the study itself should be administered as a double-blind trial, all to make sure
 we aren't tricking ourselves.
 
-What definitely ISN'T in that toolkit is cherry-picking a handful of stories from people who's lives we
-personally have had a long and significant influence over, and using those stories to support a
+What definitely ISN'T in that toolkit is cherry-picking a handful of stories from people who's lives
+we personally have had a long and significant influence over, and using those stories to support a
 belief we've had since before those people existed.
 
 - - -
