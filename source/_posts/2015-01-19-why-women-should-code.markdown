@@ -24,7 +24,7 @@ After all this I was really wondering if I should even publish anything about th
 article. The internet is already full of men telling women what to do or think. Finally I decided
 that it is worth speaking up about, if nothing else because I want to make it clear, on my own blog,
 what my own opinions are. But also, _Why Women Shouldn't Code_ has some seriously wrong assumptions
-about the nature of coding, something I hold very near and dear. So lets talk.
+about the nature of coding, something I hold very near and dear. So let's talk.
 
 ## On the Innate Differences Between Men and Women
 Sure, you don't need to do a brain scan to discover there are biological differences between men and

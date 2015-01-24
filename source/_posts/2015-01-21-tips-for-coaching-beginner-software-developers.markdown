@@ -315,7 +315,7 @@ gratification. Let me give some examples:
 
 ### Does _Show And Tell_ Help or Harm?
 
-Here's something interesting I've been thinking about: a lot of events for ids
+Here's something interesting I've been thinking about: a lot of events for kids
 have a big demo at the end where all the kids get up on some sort of stage in
 front of everyone and show off what they've built. I can see how this can be
 really helpful: telling kids their work is worth showing off, and giving them an
