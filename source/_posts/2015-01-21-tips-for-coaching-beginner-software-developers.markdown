@@ -187,7 +187,7 @@ Then, we can reason about each bit of code independently.
 Around this time students often get confused by function arguments and local
 variables passed to those functions that share the same name. I would love to
 hear peoples thoughts on whether these names should be changed to be unique, or
-kept the same variables.
+kept the same.
 
 In any case, when students can't see both functions on their screen, they
 usually seem to be able to skirt around this area. I do know its helpful to
