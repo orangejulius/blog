@@ -11,7 +11,7 @@ share of moments that showed just how little one knows even after training with 
 
 I learned a lot from those first few flights, and I still learn something new with every flight. That should come as no
 surprise: pilots that have been flying for decades, and logged tens of thousands of hours in all types of aircraft say
-the same. I made a few passengers nervous early on[1], but over time I've improve not just my flying but my ability to
+the same. I made a few passengers nervous early on{% fn %}, but over time I've improve not just my flying but my ability to
 make my passengers feel calm and safe. I've had one friend say she overcame her fear of flying commercial just from
 flying with me once!
 
@@ -30,7 +30,7 @@ same exception that allows me to share expenses with my friends when I fly.
 And to their credit, both companies were proactive and reached out to the FAA hoping for clarification and a blessing.
 
 Pilots have been trying to cleverly skirt around these regulations forever ("okay, you fly me to New York for free, but
-then I'll buy that pen off you for $500") and the FAA has always stated clearly that there are no loopholes[2]. So when
+then I'll buy that pen off you for $500") and the FAA has always stated clearly that there are no loopholes{% fn %}. So when
 those of us in aviation who also follow the happenings of tech companies heard about Flytenow and Airpooler, many of us
 were hesitant to try it out. We all know the regulations (our flight instructors no doubt drilled it into our heads
 during our training), and there's no mistake that our license in on the line.
@@ -55,7 +55,7 @@ of reading FAA regulations both during and after my private pilot training, I've
 a bit complicated.
 
 It wasn't always the case, but flying today is incredibly safe. Through decades of work, aviation experts have analyzed
-every aspect of flying, from everyday occurrences to the most unusual of incidents[3]. While the taxi industry lobbied
+every aspect of flying, from everyday occurrences to the most unusual of incidents{% fn %}. While the taxi industry lobbied
 to create things like the [medallion system](http://en.wikipedia.org/wiki/Medallion_taxi#Medallions) and car accidents
 grew to one of the [leading causes of death](http://en.wikipedia.org/wiki/List_of_causes_of_death_by_rate) in the United
 States, aviation has become dramatically [safer over time](http://www.aopa.org/About-AOPA/General-Aviation-Statistics/General-Aviation-Safety-Record-Current-and-Historic):
@@ -135,17 +135,22 @@ can all make flying more fun, more popular, and safer with cooperation.
 
 - - -
 
-<div class="footnotes" markdown="1">
-[1] When you mean to ensure your passengers that despite the somewhat ragged appearance a 1970's Cessna may have, the
+{% footnotes %}
+{% fnbody %}
+When you mean to ensure your passengers that despite the somewhat ragged appearance a 1970's Cessna may have, the
 engine and components are maintained to the same high level of quality as a new plane, one thing you should never say
-is: "Yeah, they don't really take care of these old planes".<br>
+is: "Yeah, they don't really take care of these old planes".
+{% endfnbody %}
 
-[2] The FAA has ruled definitively on all sorts of schemes: you can't use your private pilots license to aid your
+{% fnbody %}
+The FAA has ruled definitively on all sorts of schemes: you can't use your private pilots license to aid your
 business, even simply flying employees to meetings. You can't act on a hint from your boss that a ride in your plane
 will convince him to give you a promotion. You can't offer your mechanic a free flight to get a reduced rates on your
-next annual inspection. You can't even fly your drama teacher in exchange for a more prominent part in the school play.<br>
+next annual inspection. You can't even fly your drama teacher in exchange for a more prominent part in the school play.
+{% endfnbody %}
 
-[3] Perhaps my favorite story is that of [United Airlines Flight 232](http://en.wikipedia.org/wiki/United_Airlines_Flight_232).
+{% fnbody %}
+Perhaps my favorite story is that of <a href="http://en.wikipedia.org/wiki/United_Airlines_Flight_232">United Airlines Flight 232</a>.
 One of the plane's engines failed catastrophically requiring an emergency landing. Investigators
 recovered the critical piece of the engine they needed to analyze the failure, even though they had
 to search hundreds of square miles of Iowa farmland around where the accident occurred to do it. It
@@ -153,5 +158,6 @@ was analyzed and despite being damaged from falling several miles, the analysis 
 caused by fatigue that lead to the accident. The team then investigated the maintenance and
 production logs for the airplane going back 18 years, and determined the part was manufactured with
 the defect, the defect was detected, but the part was not rejected as it should have been. This is
-the lengths we have to go to if we want to ensure flying is safe.<br>
-</div>
+the lengths we have to go to if we want to ensure flying is safe.
+{% endfnbody %}
+{% endfootnotes %}

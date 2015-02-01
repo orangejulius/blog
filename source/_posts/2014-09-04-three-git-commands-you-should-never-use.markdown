@@ -80,7 +80,7 @@ eventually).
 changes.
 
 Taken on its own, one extra merge commit is not a big deal. But if even two or three people are not
-working to prevent unneeded merge commits, things get nasty real fast.[1]
+working to prevent unneeded merge commits, things get nasty real fast.{% fn %}
 
 The dangers of `git pull` come partially from it's bloated nature: it both fetches updates from
 others, and immediately and automatically decides how to reconcile those changes with yours. This
@@ -112,7 +112,8 @@ them.
 
 - - -
 
-<div class="footnotes" markdown="1">
-[1] For a great example of good and bad merge commits: check out
-<a href="https://gist.github.com/jbenet/ee6c9ac48068889b0912">this</a> helpful Gist.
-</div>
+{% footnotes %}
+{% fnbody %}
+For a great example of good and bad merge commits: check out <a href="https://gist.github.com/jbenet/ee6c9ac48068889b0912">this</a> helpful Gist.
+{% endfnbody %}
+{% endfootnotes %}

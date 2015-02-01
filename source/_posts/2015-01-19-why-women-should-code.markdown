@@ -44,7 +44,7 @@ requirements, different groups of developers won't even build the same thing. On
 even build the same thing given a second chance.
 
 Part of what makes creating software hard is that we don't conclusively know what makes a team good
-or bad at it, even though we've been doing it for at least 70 years[1]. Under those conditions, is
+or bad at it, even though we've been doing it for at least 70 years{% fn %}. Under those conditions, is
 it really wise to exclude 50% of the population from contributing?
 
 Most importantly, even if we did some day conclusively prove that on average the biology of a woman
@@ -69,7 +69,7 @@ own, or with some friends, or even random strangers from the internet.
 Even after robots have taken over the world and humans just sit back on their space cruise ships,
 someone will surely still be writing code for fun (probably even code that a million other people
 have already written). No one needs to tell you what to code, and you don't even need to ask
-permission.  That's why it's awesome. It's the pure joy of creation[2].
+permission.  That's why it's awesome. It's the pure joy of creation{% fn %}.
 
 ## On 16 "Data Points" Being Enough to Prove Something
 
@@ -89,11 +89,15 @@ belief we've had since before those people existed.
 
 - - -
 
-<div class="footnotes" markdown="1">
-[1] For a great collection of mostly sound scientific research into what we DO know about reading
+{% footnotes %}
+{% fnbody %}
+For a great collection of mostly sound scientific research into what we DO know about reading
 software, watch Greg Wilson's fantastic talk
 <a href="https://vimeo.com/9270320">What We Actually Know About About Software Development, and Why We Believe It's True</a>,
-and then read the resulting book: <a href="https://www.goodreads.com/book/show/8553359-making-software">Making Software: What Really Works, and Why We Believe It</a>.<br>
+and then read the resulting book: <a href="https://www.goodreads.com/book/show/8553359-making-software">Making Software: What Really Works, and Why We Believe It</a>.
+{% endfnbody %}
 
-[2] You could even say the joy of nurturing something.
-</div>
+{% fnbody %}
+You could even say the joy of nurturing something.
+{% endfnbody %}
+{% endfootnotes %}

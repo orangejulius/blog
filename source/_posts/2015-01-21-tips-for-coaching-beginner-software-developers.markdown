@@ -34,7 +34,7 @@ like math or writing, most students are terrified of anything that possibly has
 a mathematical foundation.
 
 Women, kids, older people (according to Silicon Valley logic, anyone past 25 is
-probably considered "old"), and minorities are usually especially worried[1],
+probably considered "old"), and minorities are usually especially worried{% fn %},
 but you'd also be surprised how much fear a few lines of Ruby can impart on
 young, well educated white guys.
 
@@ -88,7 +88,7 @@ The reason why asking questions works so great for teaching is that in the
 process of coming up with an answer (any answer, not even a correct one!),
 forces students to think hard about something, and that's how you learn. A
 talented mentor can ask questions that guide a student towards understanding
-without actually _telling_ them anything[2].
+without actually _telling_ them anything{% fn %}.
 
 But being asked questions on the border of your knowledge is extremely taxing,
 and sometimes students just don't come up with a good answer. Sometimes the
@@ -199,7 +199,7 @@ a while to be able to calculate in their head what values a variable will take
 during each iteration of a loop, for example. Perhaps it's the fact that a line
 like `i = i + 1;` looks much like an algebraic formula, but of course isn't
 valid, or maybe it's the idea of the same line of code executing multiple times
-with a variable having a different value each time that's confusing[3].
+with a variable having a different value each time that's confusing{% fn %}.
 
 ## Teach by Modifying Existing Code
 
@@ -269,7 +269,7 @@ got that working, lets make a quick change so that your code is easier to work
 with later".
 
 New students aren't generally concerned with the "beauty" or "elegance" of their
-code[4], so motivating them with those sorts of concerns probably won't work.
+code{% fn %}, so motivating them with those sorts of concerns probably won't work.
 However, students generally ARE receptive to the idea of simplifying code, and
 offering ways to make their job easier later is often much appreciated.
 
@@ -377,27 +377,37 @@ _Thanks to [Charlotte Chang](https://twitter.com/pushorpull) and
 
 ---
 
-<div class="footnotes" markdown="1">
-[1] Without a doubt, coaching events targeting specific groups like
+{% footnotes %}
+
+{% fnbody %}
+Without a doubt, coaching events targeting specific groups like
 BlackGirlsCode, RailsBridge, etc. are an enormous help and are absolutely
 necessary. I'd encourage anyone to volunteer at these events: it's an eye
 opening experience for those of us who got here without the explicit
-discouragement many groups of people face.<br>
+discouragement many groups of people face.
+{% endfnbody %}
 
-[2] Its probably not a good idea as a coach to only ask questions, but they're
+{% fnbody %}
+Its probably not a good idea as a coach to only ask questions, but they're
 a great start, and knowing what extra bits of clarifying information to add when
 a student has figured out something on their own can really help. Adding too
-much information can hurt as well, so it's a balancing act like many things.<br>
+much information can hurt as well, so it's a balancing act like many things.
+{% endfnbody %}
 
-[3] A lot of people will probably say the solution is to teach functional
+{% fnbody %}
+A lot of people will probably say the solution is to teach functional
 programming, all variables should be immutable, and all functions pure. I think
 this might actually be helpful, at least in some cases. Students definitely are
 comfortable with the idea of a function that takes some inputs and just does
 something with them. Functions or methods that maintain their own state often
-perplex them.<br>
+perplex them.
+{% endfnbody %}
 
-[4] According to Charlotte Chang, who recently went through a developer bootcamp
+{% fnbody %}
+According to Charlotte Chang, who recently went through a developer bootcamp
 program, many developers quickly do become very focused on code aesthetics, so
 if you're coaching more experienced students, this may not be the case. And if
 you are coaching very new students: enjoy it while it lasts!
-</div>
+{% endfnbody %}
+
+{% endfootnotes %}

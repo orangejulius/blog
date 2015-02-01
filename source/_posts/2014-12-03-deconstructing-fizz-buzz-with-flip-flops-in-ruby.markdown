@@ -24,7 +24,7 @@ a=b=c=(1..100).each do |num|
 end
 ```
 
-This code clearly came from an obfuscation contest[1], and I'm not even going to attempt to suggest
+This code clearly came from an obfuscation contest{% fn %}, and I'm not even going to attempt to suggest
 that I understood how this code worked after first reading it. But I was intrigued.  Never mind the
 flip-flop operator, most of this code looks unfamiliar to someone used to reading idiomatic Ruby,
 and I wanted to know how it all worked. So lets break it down piece by piece, and see if some sense
@@ -83,7 +83,7 @@ the little known sibling of the newline. Even in the 21st century, our computer 
 basically behave like a typewriter. Advancing to the next line and moving the cursor to the start
 of the line are two distinct actions, and so they have distinct character codes. Of course, the fact
 that Windows requires both a carriage return and a newline character, whereas Linux and OS X systems
-assume a carriage return with just a newline,[2] creates more than a little confusion.
+assume a carriage return with just a newline{% fn %}, creates more than a little confusion.
 
 So, in any case, what sort of behavior can a carriage return character give us? Let's run a few
 experiments:
@@ -292,9 +292,13 @@ flip-flops in production code any time soon.
 
 - - -
 
-<div class="footnotes" markdown="1">
-[1] If anyone knows or is the author, let me know!<br>
+{% footnotes %}
+{% fnbody %}
+If anyone knows or is the author, let me know!
+{% endfnbody %}
 
-[2] Probably a gross simplification or outright lie. If anyone wants to suggest a more accurate
+{% fnbody %}
+Probably a gross simplification or outright lie. If anyone wants to suggest a more accurate
 explanation that is also concise, please do!
-</div>
+{% endfnbody %}
+{% endfootnotes %}
