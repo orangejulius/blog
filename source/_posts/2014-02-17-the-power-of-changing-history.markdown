@@ -21,7 +21,7 @@ The advantage is simple: with Git, you can rewrite history.
 As a simple example, consider the common "forgot to check in a file" commit. With Subersion, there's
 no way to fix this simple mistake, no matter how soon after committing you catch it. For all time
 one logical group of changes will be split into two places. With git, a simple ```git commit
---amend``` makes things right[1].
+--amend``` makes things right{% fn %}.
 
 The damage done by not repairing this sort of commit is real: the history of a project is an
 extremely valuable source of context and understanding. Every commit is a chance to record
@@ -47,7 +47,7 @@ change. This is the most basic requirement of source control, but not the only o
 What's often missed is that with Git, you can have the best of both worlds. Develop your feature
 however you want. Create dozens of messy, disorderly commits. Use commit messages that convey no
 information whatsoever. Stow these changes away somewhere. Use a tag, or a branch specifically for
-changes made during active development[2].
+changes made during active development{% fn %}.
 
 Now that you know how your code should be written, take just a couple minutes and reorganize,
 reorder, and coalesce. The details of how the code came to be are no longer important. The priority
@@ -58,8 +58,15 @@ Everyone on your team will be asking questions your commits can answer. Even fut
 need reminders about the history of your code. Don't make anyone have to figure out your code on their
 own, give them all the help you can! You're not using Git to the fullest if you don't.
 
-[1] With the usual warning to not use ```git push --force``` if it would disrupt others.
-[2] An awesome feature of git branches is that they can contain nearly any character, including
+- - -
+{% footnotes %}
+{% fnbody %}
+With the usual warning to not use ```git push --force``` if it would disrupt others.
+{% endfnbody %}
+{% fnbody %}
+An awesome feature of git branches is that they can contain nearly any character, including
 slashes. I've seen projects that use this to split branches into categories. There can be categories for bug
 fixes, experiments, development, etc. The initial, unstructured writing of code done during early
 development can certainly be a category.
+{% endfnbody %}
+{% endfootnotes %}

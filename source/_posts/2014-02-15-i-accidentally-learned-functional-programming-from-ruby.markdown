@@ -13,7 +13,7 @@ Ruby. My reasoning was short and simple: I had heard far too many people say goo
 on Rails, and how it was better than Django (that's a debate for another blog post).
 
 I didn't really care for Ruby's syntax, thought Bundler, RVM, rbenv, and co were far more confusing
-than pip and virtualenv[1], and especially thought the entire mantra of writing code to almost read
+than pip and virtualenv{% fn %}, and especially thought the entire mantra of writing code to almost read
 like English was laughable (things like ```5.times``` especially irritated me).
 
 In short, I expected to essentially carry on programming just like before, except possibly with
@@ -60,7 +60,13 @@ It was then that I realized many of the things I loved about Ruby weren't Ruby t
 were functional programming things. Underscore didn't bring the power of Ruby to Javascript, it
 brought the power of functional programming.
 
-[1] I've completely reversed that decision and can't imagine leaving my Gemfiles behind for
+- - -
+
+{% footnotes %}
+{% fnbody %}
+I've completely reversed that decision and can't imagine leaving my Gemfiles behind for
 requirements.txt. It seems silly that one would install packages, then
 write the list of installed packages to a file for later, instead of just writing a list of packages
 to install.
+{% endfnbody %}
+{% endfootnotes %}

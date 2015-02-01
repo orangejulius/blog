@@ -44,12 +44,18 @@ Giving a talk requires a lot of work. More importantly, giving a talk requires a
 work with a hard deadline. You have to spend many hours preparing, but you can't spend an infinite
 amount of time. You can't practice your talk until it's perfect. At some point, it's the day of your
 talk and you're as ready as you can be. The trick then, is to prepare efficiently with the limited
-amount of time you have[1].
+amount of time you have{% fn %}.
 
 I'm learning a lot preparing for my talk. I know I'll learn a lot more by actually presenting. And
 overall, the process has been, and will continue to be a lot of fun. All this motivates me to work
 on my talk, but I have to admit, there's one thing that motivates me most of all: to be done with my
 talk.
 
-[1] If you think the time between your proposal's acceptance and the conference is anything but
+- - -
+
+{% footnotes %}
+{% fnbody %}
+If you think the time between your proposal's acceptance and the conference is anything but
 limited, just wait.
+{% endfnbody %}
+{% endfootnotes %}

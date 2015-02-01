@@ -26,7 +26,7 @@ everyone to see.
 Writing, as it turns out, is exactly the same. In fact, it's even more difficult to ship your
 writing. The inevitable flaws you expose when sharing your words are deeper and more personal than
 any code. And most writing is much more permanent than software: once shared, it generally doesn't
-change very much, except perhaps to fix a few typos[1].
+change very much, except perhaps to fix a few typos{% fn %}.
 
 So, really, blogging has been the best practice for shipping software I could have chosen. I've
 intentionally tried to embrace imperfection. Every one of my posts needs more work. It would have
@@ -40,5 +40,11 @@ work on will have flaws, and whenever I'm writing I'll be focusing on those flaw
 Every once in a while though, I'll look back on an old post or two. That's when I'll see how far
 I've come.
 
-[1] Which, I believe, is why engineers invented the wiki. It's much more comfortable to keep
+- - -
+
+{% footnotes %}
+{% fnbody %}
+Which, I believe, is why engineers invented the wiki. It's much more comfortable to keep
 something an eternal work in progress.
+{% endfnbody %}
+{% endfootnotes %}
