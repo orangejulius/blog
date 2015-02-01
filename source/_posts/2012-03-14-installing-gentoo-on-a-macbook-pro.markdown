@@ -43,7 +43,7 @@ Additionally I made the following upgrades:
 * Replaced the stock HD with an [Intel SDD 520](http://www.anandtech.com/show/5508/intel-ssd-520-review-cherryville-brings-reliability-to-sandforce)
 * Upgraded to 8GB RAM
 
-# Setting up for installation
+## Setting up for installation
 
 I of course started with the [Gentoo Wiki](http://en.gentoo-wiki.com/wiki/Macbook_Pro) page on the Macbook Pro, which appears to be lacking information on the latest models. I knew a couple things going in from my earlier research.
 
@@ -61,14 +61,14 @@ After booting into the newer gparted CD, everything worked fine. X loaded withou
 
 Or so I thought. It turns out gparted (reasonably) was using the x86 architecture, so I couldn't chroot into the Gentoo install. Booting from my trusty USB stick also didn't work, but fortunately I had been downloading a LiveCD of Ubuntu 11.10. Unfortunately, it was a 32 bit image. I downloaded a 64 bit image, and that didn't work either. Then I checked and the new Ubuntu 12.04 [daily build LiveCDs](http://cdimage.ubuntu.com/daily-live/current/) include a Mac specific version. This didn't work. Neither did the standard 64 bit Ubuntu 12.04 daily. Neither did a [weekly snapshot](http://distfiles.gentoo.org/releases/amd64/autobuilds/20120223/) of the Gentoo minimal amd64 installer. Finally I tried the [Gentoo 2012 amd64 multilib LiveDVD](http://gentoo.mneisen.org//releases/amd64/12.0/). It didn't work when booting with the standard options (garbled X output), but when I booted using the -nofb option, KDE loaded up fine, except that the mouse didn't work. Switching to the console I was able to set a root password and start SSHD to complete the installation remotely, which is my usual method.
 
-# Sidetrack setup
+## Sidetrack setup
 When I install Gentoo I usually diverge a bit from the instructions and install some key utilities. In this case I simply installed htop, eix, vim, dmidecode, and pciutils. None of these are huge packages, but I definitely got a feel of how fast working on this machine is going to be. I imagine it's mostly the SSD, but htop reminded me that thanks to hyperthreading, Linux sees a total of 8 cores :)
 
-# Initial Kernel config
+## Initial Kernel config
 
 My first pass at the kernel config was fairly quick. I removed some things I knew I didn't need, and followed the suggestions on the [kernel config](http://en.gentoo-wiki.com/wiki/Apple_Macbook_Pro/Configuration_Files/Kernel) page from the Gentoo Wiki article. I wasn't too concerned with getting every little piece of hardware working right away. Mostly learning GRUB2, which I had never used before, and booting with EFI was my main concern.
 
-# GRUB2 installation
+## GRUB2 installation
 
 Before starting, I took a long look at the [Gentoo GRUB 2 guide](http://dev.gentoo.org/~scarabeus/grub-2-guide.xml) (work in progress) and the [GRUB 2 Gentoo wiki page](http://en.gentoo-wiki.com/wiki/Grub2). I noticed a couple interesting things. I knew that GRUB 2 suggests using a small script to generate the bootloader configuration, instead of manually editing a file like with GRUB1. But I didn't know that GRUB2 seems to keep this configuration all over the place. A little annoying to be honest. Also, everything I read suggested creating a separate partition (using FAT32 as the filesystem), for bootloader related stuff. I preferred just using a single big filesystem in the past, and had done the same back when partitioning the SSD earlier. I decided to attempt to make things work with one partition, knowing I could always go back and make a new partition with gparted if I had to.
 

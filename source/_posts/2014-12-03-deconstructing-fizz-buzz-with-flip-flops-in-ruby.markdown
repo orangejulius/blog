@@ -99,7 +99,7 @@ line, essentially decide to erase that text. Remembering the requirements of the
 and how one must ONLY print a number when neither Fizz nor Buzz are printed, the utility of this
 behavior is obvious.
 
-# Finally, flip-flop
+## Finally, flip-flop
 
 At this point we can easily describe the overall structure of the code: it loops through the numbers
 1 to 100, using control characters to optimistically print the number, and then based on the logic
@@ -209,7 +209,7 @@ returns false. This allows "Fizz" to be printed, exactly when needed.
 So an interesting property of the flip-flop is that it returns true if it starts open, but then
 closes.
 
-# Buzz!
+## Buzz!
 
 After dissecting the logic for printing "Fizz", we can describe without even reading the code
 how "Buzz" will be printed: two variables will be used with some flip-flops to create a cycle that
@@ -282,7 +282,7 @@ On the fifth iteration, the flip-flop starts closed, `b` is currently true. The 
 conditional of the flip-flop is evaluated, and the result is false! This means the flip-flop doesn't
 open, returns false, and finally, "Buzz" is printed, exactly when we need it.
 
-# Fin
+## Fin
 
 Wow, that was some serious thought for just a few lines of code. I've put all the example code 
 on [Github](https://github.com/orangejulius/ruby-flip-flop), feel free to fool around further.

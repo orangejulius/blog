@@ -99,7 +99,7 @@ This has lead many other tools to copy this default, leading to misalignment and
 Some hard drives even internally shift all sectors by one so that such systems default to correct alignment.
 
 
-# Testing different alignments
+## Testing different alignments
 
 While the test above showed serious theoretical performance reduction from misaligned writes, I wanted to know what would happen in the real world, so I devised some simple testing to investigate.
 
@@ -277,12 +277,12 @@ I'm going to assume this test wasn't valid: I grabbed portage snapshots only a f
 It's doubtful that program execution times below one second are even accurate to be meaningful.
 If someone else can come up with an explanation though, I'd love to hear it.
 
-# Future work?
+## Future work?
 
 After doing all this testing, I started to wonder if the partitions on my SSDs are aligned correctly. SSDs are even more prone to write amplification, partially due to the fact that flash storage generally has to erase in large blocks (up to 256kb).
 Hopefully in the next couple weeks I'll have time to write another blog post about it.
 
-# Unaligned performance with 512 byte sectors
+## Unaligned performance with 512 byte sectors
 
 Just for fun, I wanted to see if there was a theoretical performance penalty for 4KB writes on a hard drive with 512 byte physical sectors, so I ran the write amplification script on an old 640GB drive that my new 3TB drive is replacing.
 
@@ -303,11 +303,11 @@ Surprisingly, there was a performance penalty, although not as significant (I ra
 I imagine even hard drives with 512 byte sectors are optimized for writes aligned at 4KB.
 The takeaway here is that it's important for all partitions, regardless of the underlying sector size, to be aligned correctly.
 
-# Reference
+## Reference
 
 For a full summary of the state of 4KB sector issues, the Linux ATA wiki has a comprehensive [page](https://ata.wiki.kernel.org/index.php/ATA_4_KiB_sector_issues).
 
-##Full data from real world testing
+## Full data from real world testing
 
 For reference, here's all the performance data from my test script.
 

@@ -68,7 +68,7 @@ consequences of even a minor oversight dire. Things that don't work have a much 
 That's not to say all in aviation is perfect, but more than any other part of the government I can think of, the aviation
 industry uses real data and real science to make decisions.
 
-# A Question of Scale
+## A Question of Scale
 
 Many argued that there is no difference between asking a few friends if they want to go on a weekend flying trip,
 posting a paper ad on the bulletin board of your local airport offering to share flight expenses, and using the
