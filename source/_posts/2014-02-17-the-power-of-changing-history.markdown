@@ -2,7 +2,7 @@
 layout: post
 title: "The power of changing history"
 date: 2014-02-17 18:34:51 -0800
-redirect_from: /blog/2014/02/17/the-power-of-changing-history/
+redirect_from: /blog/2014/02/18/the-power-of-changing-history/
 comments: true
 categories: git personal-personal-goals-post
 ---

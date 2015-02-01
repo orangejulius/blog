@@ -4,7 +4,7 @@ title: "In defense of configuration"
 date: 2013-12-28 19:57 -0800
 comments: true
 categories: personal-personal-goals-post
-redirect_from: /blog/2013/12/28/in-defense-of-configuration/
+redirect_from: /blog/2013/12/29/in-defense-of-configuration/
 ---
 
 Today I stumbled across Rands' [article](http://randsinrepose.com/archives/do-you-want-to-write/) praising simple design and criticizing the multitudes of options most products, especially software products, seem to offer us. Considering I write and code only in [VIM](http://vim.org), compile Linux on all my computers from [source](http://gentoo.org), and don't even have a GUI of any kind on the computer I'm using to write these particular words, it should be clear where I stand.
