@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Debugging Amarok Transcoding to iPod"
-date: 2012-05-04 21:22
+date: "2012-05-04 21:22 0700"
 comments: true
 categories: amarok
 ---

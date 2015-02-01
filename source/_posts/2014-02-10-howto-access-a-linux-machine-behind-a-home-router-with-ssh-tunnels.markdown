@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Howto access a Linux machine behind a home router with SSH tunnels"
-date: 2014-02-10 08:41:00 -0800
+date: "2014-02-10 08:41:00 -0800"
 comments: true
 categories: linux ssh tutorials
 ---

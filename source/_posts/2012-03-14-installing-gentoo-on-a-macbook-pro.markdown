@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Installing Gentoo on a Macbook Pro, Part1"
-date: 2012-03-14 15:23
+date: "2012-03-14 15:23 -0800"
 comments: true
 categories: gentoo linux
 ---

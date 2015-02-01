@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My only productivity trick"
-date: 2014-02-07 09:27:07 -0800
+date: "2014-02-07 09:27:07 -0800"
 comments: true
 categories: productivity personal-personal-goals-post
 ---

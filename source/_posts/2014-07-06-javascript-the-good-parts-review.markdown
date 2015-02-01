@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Javascript: The Good Parts, a review"
-date: 2014-07-06 22:15 -0700
+date: "2014-07-06 22:15 -0700"
 categories: book-reviews javascript
 ---
 

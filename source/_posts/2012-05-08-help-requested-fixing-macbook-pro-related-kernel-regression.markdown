@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Help requested fixing Macbook Pro related kernel regression"
-date: 2012-05-08 16:00
+date: "2012-05-08 16:00 -0800"
 comments: true
 categories: linux
 ---

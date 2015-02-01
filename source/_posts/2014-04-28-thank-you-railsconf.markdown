@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thank you RailsConf!"
-date: 2014-04-28 14:23:04 -0700
+date: "2014-04-28 14:23:04 -0700"
 comments: true
 categories: speaking ruby
 ---

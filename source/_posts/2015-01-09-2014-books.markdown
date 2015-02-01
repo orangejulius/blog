@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2014 Books"
-date: 2015-01-09 18:20:42 -0800
+date: "2015-01-09 18:20 -0800"
 redirect_from: /blog/2015/01/10/2014-books/
 comments: true
 categories: book-reviews

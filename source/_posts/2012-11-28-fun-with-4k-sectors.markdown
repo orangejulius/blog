@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fun with 4K sectors"
-date: 2012-11-28 16:49 -0800
+date: "2012-11-28 16:49 -0800"
 comments: true
 categories: linux
 redirect_from: /blog/2012/11/29/fun-with-4k-sectors/

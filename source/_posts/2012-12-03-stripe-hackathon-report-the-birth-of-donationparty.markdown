@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Stripe hackathon report: the birth of Donation Party"
-date: 2012-12-03 23:45
+date: "2012-12-03 23:45 -0700"
 comments: true
 categories: 
 ---

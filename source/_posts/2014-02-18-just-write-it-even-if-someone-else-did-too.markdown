@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Just write it. Even if someone else did too"
-date: 2014-02-18 23:13:10 -0800
+date: "2014-02-18 23:13:10 -0800"
 redirect_from: /blog/2014/02/19/just-write-it-even-if-someone-else-did-too/
 comments: true
 categories: writing personal-personal-goals-post

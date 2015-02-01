@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GRUB2 is coming along nicely"
-date: 2012-11-18 21:01 -0800
+date: "2012-11-18 21:01 -0800"
 comments: true
 categories: gentoo linux
 redirect_from: /blog/2012/11/19/grub2-is-coming-along-nicely/

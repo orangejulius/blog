@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Women Should Code"
-date: 2015-01-19 16:01:04 +0100
+date: "2015-01-19 16:01:04 +0100"
 comments: true
 categories: women-in-tech
 ---

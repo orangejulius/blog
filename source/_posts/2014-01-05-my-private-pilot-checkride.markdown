@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Private Pilot Checkride"
-date: 2014-01-05 20:33:58 -0800
+date: "2014-01-05 20:33:58 -0800"
 comments: true
 categories: flying personal-personal-goals-post
 ---

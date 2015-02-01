@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The San Francisco timelapse saga (or: a little less bad each time)"
-date: 2013-09-23 23:07
+date: "2013-09-23 23:07 -0700"
 comments: true
 categories: linux tutorial photography
 ---

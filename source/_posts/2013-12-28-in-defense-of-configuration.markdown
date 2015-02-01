@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In defense of configuration"
-date: 2013-12-28 19:57 -0800
+date: "2013-12-28 19:57 -0800"
 comments: true
 categories: personal-personal-goals-post
 redirect_from: /blog/2013/12/29/in-defense-of-configuration/

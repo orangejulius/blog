@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tips For Coaching Beginner Software Developers"
-date: 2015-01-21 18:13:04 +0100
+date: "2015-01-21 18:13:04 +0100"
 comments: true
 categories: mentoring
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I accidentally learned functional programming from ruby"
-date: 2014-02-15 23:46:10 -0800
+date: "2014-02-15 23:46:10 -0800"
 comments: true
 categories: personal-personal-goals-post functional-programming ruby
 redirect_from: /blog/2014/02/16/i-accidentally-learned-functional-programming-from-ruby/

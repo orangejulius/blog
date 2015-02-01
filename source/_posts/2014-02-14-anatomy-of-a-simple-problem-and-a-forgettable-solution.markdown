@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Anatomy of a simple problem and a forgettable solution"
-date: 2014-02-14 22:33:33 -0800
+date: "2014-02-14 22:33:33 -0800"
 comments: true
 categories: personal-personal-goals-post ssh
 redirect_from: /blog/2014/02/15/anatomy-of-a-simple-problem-and-a-forgettable-solution/

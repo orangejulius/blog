@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Where are you going next?"
-date: 2012-11-27 16:30 -0800
+date: "2012-11-27 16:30 -0800"
 comments: true
 categories: 
 redirect_from: /blog/2012/11/28/where-are-you-going-next/

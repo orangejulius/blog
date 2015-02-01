@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Deconstructing Fizz Buzz with Flip-Flops in Ruby"
-date: 2014-12-03 15:53:52 +0100
+date: "2014-12-03 15:53:52 +0100"
 comments: true
 categories: ruby
 ---

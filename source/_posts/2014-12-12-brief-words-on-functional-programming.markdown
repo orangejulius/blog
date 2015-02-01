@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Brief Words on Functional Programming"
-date: 2014-12-12 10:31:43 +0100
+date: "2014-12-12 10:31:43 +0100"
 comments: true
 categories: ruby functional-programming
 ---
