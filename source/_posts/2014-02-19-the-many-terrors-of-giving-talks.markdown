@@ -5,7 +5,7 @@ date: "2014-02-19 11:34:53 -0800"
 comments: true
 categories: speaking personal-personal-goals-post
 ---
-A few weeks ago, I was given some terrible news: my talk proposal had been accepted.
+A few weeks ago, I was given some terrible news\: my talk proposal had been accepted.
 
 It might seem strange that being granted something I had asked for would be terrible, but given my
 reaction to the news, it's the only logical conclusion.
