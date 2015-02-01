@@ -16,6 +16,7 @@ group :development do
   gem 'stringex', '~> 1.4.0'
   gem 'shrimp'
   gem 'jekyll-redirect-from'
+  gem 'jekyll-footnotes'
 end
 
 gem 'sinatra', '~> 1.4.2'
