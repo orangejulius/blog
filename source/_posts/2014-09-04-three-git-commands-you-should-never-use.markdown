@@ -3,6 +3,7 @@ layout: post
 date: "2014-09-04 21:17 -0800"
 title: "Three Git Commands You Should Never Use"
 categories: git
+comments: true
 ---
 
 Ahh, Git. One of the most powerful tools of our time. Also, one of the most confusing. There's no
