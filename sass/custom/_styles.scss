@@ -2,8 +2,11 @@
 // Add styles here to make changes without digging in too much
 @import "custom/rve";
 
-.footnotes {
+.footnotelist {
     font-size: 0.8em;
+	.backlink {
+		text-decoration: none;
+	}
 }
 
 .project + a {
