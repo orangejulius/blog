@@ -6,15 +6,15 @@ comments: true
 categories: security
 ---
 For well over a year now, my website has been using an extremely simple setup:
-Nginx hosting static files from [Octopress](http://octopress.org). It uses far
-fewer resources on my server, is simpler conceptually, and is easier to manage
-than the old setup with Apache and a bunch of modules. However, I never bothered
-to set up HTTPS.
+Nginx hosting static files from [Octopress](http://octopress.org). Compared to
+my old setup (a heavy Apache install with tons of modules), it's a breeze to
+setup and maintain.
 
-Several years ago, the consensus was that HTTPS was only needed in a few
-sensitive places. A static site definitely wasn't one of them. 
+When I made the switch, the consensus was that HTTPS was only needed in a few
+sensitive places. A static site definitely wasn't one of them, so I never
+bothered with it{% fn %}.
 
-A [lot has happened since then](http://en.wikipedia.org/wiki/Global_surveillance_disclosures_%282013%E2%80%93present%29)
+Well, a [lot has happened since then](http://en.wikipedia.org/wiki/Global_surveillance_disclosures_%282013%E2%80%93present%29)
 and people are [changing their mind](http://blog.codinghorror.com/should-all-web-traffic-be-encrypted/).
 Both the [EFF](https://www.eff.org/encrypt-the-web) and
 [W3C](http://www.w3.org/blog/TAG/2015/01/23/securing-the-web/) have started
@@ -29,7 +29,8 @@ The basic setup is simple, but I also spent a lot of time researching what sort
 of configuration changes can be made to increase security and performance. These
 are my notes for setting up an HTTPS server that scores
 [A+](https://www.ssllabs.com/ssltest/analyze.html?d=juliansimioni.com) on the
-Qualys SSL Report, and costs zero dollars to implement.
+[Qualys SSL Report](https://www.ssllabs.com/ssltest/),
+and costs zero dollars to implement{% fn %}.
 
 ![A+ score on juliansimioni.com](/images/nginx-https/website-aplus.png)
 
@@ -220,7 +221,7 @@ Authorities will offer to "help" you by generating a private key and CSR for you
 in the browser.  Decline their offer, since we've already generated a private
 key, and we don't need that potential breach of security.
 
-The following command will generate a nice CSR for you
+The following command will generate a nice CSR for you:
 ```bash
 openssl req -new -sha256 -key /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/yourwebsite.com.csr
 ```
@@ -245,6 +246,13 @@ you achieve an A+ rating. Stay tuned!
 
 ----------------------------------------------------
 {% footnotes %}
+  {% fnbody %}
+My server didn't even respond to HTTPS, or anything on port 443, for this entire
+time!
+  {% endfnbody %}
+  {% fnbody %}
+Beyond the basic hosting costs, obviously.
+  {% endfnbody %}
   {% fnbody %}
 For truly secure communication, three things are needed: verification the
 message came from who you thought it did (authentication), obfuscation of the
