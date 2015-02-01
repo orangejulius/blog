@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The power of changing history"
+title: "The Power of Changing History"
 date: "2014-02-17 18:34:51 -0800"
 redirect_from: /blog/2014/02/18/the-power-of-changing-history/
 comments: true

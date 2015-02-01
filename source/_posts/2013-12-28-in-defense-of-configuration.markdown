@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "In defense of configuration"
+title: "In Defense of Configuration"
 date: "2013-12-28 19:57 -0800"
 comments: true
 categories: personal-personal-goals-post

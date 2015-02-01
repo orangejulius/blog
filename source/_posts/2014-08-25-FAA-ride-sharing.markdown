@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2014-08-25 21:18 -0700"
-title: The FAA made the right call on plane sharing
+title: "The FAA Made the Right Call on Plane Sharing"
 redirect_from: /blog/2014/08/26/FAA-ride-sharing/
 categories: flying
 ---

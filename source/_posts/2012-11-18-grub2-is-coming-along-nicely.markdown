@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GRUB2 is coming along nicely"
+title: "GRUB2 is Coming Along Nicely"
 date: "2012-11-18 21:01 -0800"
 comments: true
 categories: gentoo linux

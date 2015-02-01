@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Easy to use isn't always a good thing"
+title: "Easy to Use Isn't Always a Good Thing"
 date: "2014-02-06 09:33:50 -0800"
 comments: true
 categories: personal-personal-goals-post

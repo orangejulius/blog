@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2014-09-04 21:17 -0800"
-title: Three Git commands you should never use
+title: "Three Git Commands You Should Never Use"
 categories: git
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What does it take to survive an EBS outage?"
+title: "What Does it Take to Survive an EBS Outage?"
 date: "2012-10-29 05:30 -0700"
 comments: true
 categories: scalability

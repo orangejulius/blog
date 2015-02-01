@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Anatomy of a simple problem and a forgettable solution"
+title: "Anatomy of a Simple Problem and a Forgettable Solution"
 date: "2014-02-14 22:33:33 -0800"
 comments: true
 categories: personal-personal-goals-post ssh

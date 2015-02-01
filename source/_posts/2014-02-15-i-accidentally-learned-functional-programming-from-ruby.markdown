@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I accidentally learned functional programming from ruby"
+title: "I Accidentally Learned Functional Programming From Ruby"
 date: "2014-02-15 23:46:10 -0800"
 comments: true
 categories: personal-personal-goals-post functional-programming ruby

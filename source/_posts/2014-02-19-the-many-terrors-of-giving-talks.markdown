@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The many terrors of giving talks"
+title: "The Many Terrors of Giving Talks"
 date: "2014-02-19 11:34:53 -0800"
 comments: true
 categories: speaking personal-personal-goals-post

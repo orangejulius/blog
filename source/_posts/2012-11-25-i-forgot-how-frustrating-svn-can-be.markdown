@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I forgot how frustrating SVN can be"
+title: "I Forgot How Frustrating SVN Can Be"
 date: "2012-11-25 18:09 -0800"
 comments: true
 categories: git

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Drafts are evil: write and be done"
+title: "Drafts are Evil: Write and Be Done"
 date: "2014-02-19 14:04:38 -0800"
 comments: true
 categories: writing personal-personal-goals-post
