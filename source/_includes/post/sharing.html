@@ -1,6 +1,77 @@
 <div class="sharing">
   <a href="https://twitter.com/juliansimioni" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @juliansimioni</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <script>
+window.twttr = (function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0],
+		t = window.twttr || {};
+		if (d.getElementById(id)) return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "https://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js, fjs);
+
+		t._e = [];
+		t.ready = function(f) {
+		t._e.push(f);
+		};
+
+		return t;
+		}(document, "script", "twitter-wjs"));
+
+// Define our custom event handlers
+function clickEventToAnalytics (intentEvent) {
+	if (!intentEvent) return;
+	var label = intentEvent.region;
+	_gaq.push(['_trackEvent', 'twitter_web_intents', intentEvent.type, label]);
+}
+
+function tweetIntentToAnalytics (intentEvent) {
+	if (!intentEvent) return;
+	var label = "tweet";
+	_gaq.push([
+			'_trackEvent',
+			'twitter_web_intents',
+			intentEvent.type,
+			label
+			]);
+}
+
+function favIntentToAnalytics (intentEvent) {
+	tweetIntentToAnalytics(intentEvent);
+}
+
+function retweetIntentToAnalytics (intentEvent) {
+	if (!intentEvent) return;
+	var label = intentEvent.data.source_tweet_id;
+	_gaq.push([
+			'_trackEvent',
+			'twitter_web_intents',
+			intentEvent.type,
+			label
+			]);
+}
+
+function followIntentToAnalytics (intentEvent) {
+	if (!intentEvent) return;
+	var label = intentEvent.data.user_id + " (" + intentEvent.data.screen_name + ")";
+	_gaq.push([
+			'twitter_web_intents',
+			intentEvent.type,
+			label
+			]);
+}
+
+// Wait for the asynchronous resources to load
+twttr.ready(function (twttr) {
+		// Now bind our custom intent events
+		twttr.events.bind('click', clickEventToAnalytics);
+		twttr.events.bind('tweet', tweetIntentToAnalytics);
+		twttr.events.bind('retweet', retweetIntentToAnalytics);
+		twttr.events.bind('favorite', favIntentToAnalytics);
+		twttr.events.bind('follow', followIntentToAnalytics);
+});
+</script>
+
   {% if site.twitter_tweet_button %}
   <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
   {% endif %}
