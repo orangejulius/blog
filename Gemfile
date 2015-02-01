@@ -19,4 +19,4 @@ group :development do
   gem 'jekyll-footnotes'
 end
 
-gem 'sinatra', '~> 1.4.2'
+gem 'sinatra', '~> 1.4'
