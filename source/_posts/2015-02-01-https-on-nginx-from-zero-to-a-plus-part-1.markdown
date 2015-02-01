@@ -153,7 +153,7 @@ openssl x509 -in /etc/nginx/ssl/nginx.pem -text -noout | grep "Signature\|Public
 #	Signature Algorithm: sha256WithRSAEncryption
 ```
 _(Adapted from
-[this](serverfault.com/questions/325467/i-have-a-keypair-how-do-i-determine-the-key-length)
+[this](https://serverfault.com/questions/325467/i-have-a-keypair-how-do-i-determine-the-key-length)
 ServerFault Answer)_
 
 If it shows `sha1WithRSAEncryption` or `(1024 bit)` instead, go back and
