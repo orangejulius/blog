@@ -18,6 +18,7 @@ about how to do it.
 
 While I by no means consider myself an expert, I want to share some of what I've
 learned so far.
+<!-- more -->
 
 ## Praise Often, and Remind Learners that Getting Stuck is Normal
 This is the most basic and core concept I've learned about teaching.
