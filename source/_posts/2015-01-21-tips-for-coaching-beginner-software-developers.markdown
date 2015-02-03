@@ -6,20 +6,16 @@ comments: true
 categories: mentoring
 ---
 For most of my time as a programmer, I've thought about learning in exactly one
-context: teaching myself more stuff. In the past few years though, I've made an
+context: teaching myself more stuff. But In the past few years I've made an
 explicit effort to focus on the opposite problem: teaching others, especially
 complete beginners.
 
-And I'm so glad I've made this effort, because it's been _extremely_ fun and
-rewarding. It's not easy, and I'm certain I come home from a day of teaching at
-least as exhausted as I have ever come home from a day of coding, but it's been
-worth it. I don't just help others into the field of software, but I myself
-become a better software developer: so much of what we do involves working with
-each other rather than computers themselves.
+Sharing the joy and power of programming with more people is perhaps one of the
+most significant challenges in the world right now, so I've tried to learn as
+much as possible about how to do it.
 
-My goal here is to share as much of what I've learned so that anyone looking
-to start coaching can benefit from my experience. I hope experienced mentors
-will share their own thoughts too.
+While I by no means consider myself an expert, I want to share some of what I've
+learned so far.
 
 ## Praise Often, and Remind Learners that Getting Stuck is Normal
 This is the most basic and core concept I've learned about teaching.
