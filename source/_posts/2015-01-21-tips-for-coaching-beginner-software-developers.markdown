@@ -377,7 +377,8 @@ _Thanks to [Charlotte Chang](https://twitter.com/pushorpull) and
 
 {% fnbody %}
 Without a doubt, coaching events targeting specific groups like
-BlackGirlsCode, RailsBridge, etc. are an enormous help and are absolutely
+<a href="http://www.blackgirlscode.com/">BlackGirlsCode</a>, <a href="http://railsbridge.org/">RailsBridge</a>,
+<a href="http://railsgirls.com/">RailsGirls</a>, etc. are an enormous help and are absolutely
 necessary. I'd encourage anyone to volunteer at these events: it's an eye
 opening experience for those of us who got here without the explicit
 discouragement many groups of people face.
