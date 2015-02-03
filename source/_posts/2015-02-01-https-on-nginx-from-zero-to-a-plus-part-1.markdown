@@ -5,41 +5,39 @@ date: "2015-02-01 18:26:02 +0100"
 comments: true
 categories: security
 ---
-For well over a year now, my website has been using an extremely simple setup:
-Nginx hosting static files from [Octopress](http://octopress.org). Compared to
-my old setup (a heavy Apache install with tons of modules), it's a breeze to
-setup and maintain.
+A few years ago, the web at large was unencrypted. HTTPS was reserved for only
+the most critical sections of a web page. The consensus was only sensitive user
+data needed to be encrypted; public parts of a web page were okay to send in the
+clear.
 
-When I made the switch, the consensus was that HTTPS was only needed in a few
-sensitive places. A static site definitely wasn't one of them, so I never
-bothered with it{% fn %}.
+Well,
+[things](http://en.wikipedia.org/wiki/Global_surveillance_disclosures_%282013%E2%80%93present%29)
+are
+[different](http://arstechnica.com/security/2015/01/gogo-issues-fake-https-certificate-to-users-visiting-youtube/)
+[now](https://www.eff.org/deeplinks/2014/11/verizon-x-uidh).
+Today we know it's not a good idea for any web traffic to be unencrypted, and
+anyone running a website, no matter the content, should configure a strong HTTPS
+setup today.
 
-Well, a [lot has happened since then](http://en.wikipedia.org/wiki/Global_surveillance_disclosures_%282013%E2%80%93present%29)
-and people are [changing their mind](http://blog.codinghorror.com/should-all-web-traffic-be-encrypted/).
-Both the [EFF](https://www.eff.org/encrypt-the-web) and
-[W3C](http://www.w3.org/blog/TAG/2015/01/23/securing-the-web/) have started
-large campaigns to encourage developers to make encryption the default
-everywhere, where previously the perception was there was no benefit.
+Embarrassingly, my own website has not supported HTTPS at all for almost two years{% fn %}.
 
-Finally encouraged by [Eric Mill](https://konklone.com/)'s
-fantastic _[Switch to HTTPS Now, For Free](https://konklone.com/post/switch-to-https-now-for-free)_,
-I spent a good part of my holidays setting up HTTPS.
-
-The basic setup is simple, but I also spent a lot of time researching what sort
-of configuration changes can be made to increase security and performance. These
-are my notes for setting up an HTTPS server that scores
+[Eric Mill](https://konklone.com/)'s fantastic
+_[Switch to HTTPS Now, For Free](https://konklone.com/post/switch-to-https-now-for-free)_
+finally gave me the kick in the pants I needed, and over the holidays I spent
+the time to set up HTTPS and tweak the configuration to achieve an
 [A+](https://www.ssllabs.com/ssltest/analyze.html?d=juliansimioni.com) on the
-[Qualys SSL Report](https://www.ssllabs.com/ssltest/),
-and costs zero dollars to implement{% fn %}.
+[Qualys SSL Report](https://www.ssllabs.com/ssltest/).
 
 ![A+ score on juliansimioni.com](/images/nginx-https/website-aplus.png)
 
-Besides the actual configuration, I've included background on what each change
-means, and why the consensus says it's the best option.
+It took a good amount of research, but I've settled on a close to optimal setup,
+and want to share how I've achieved it on Nginx. Besides the actual
+configuration, I've included explanations of what all the components of a secure
+setup do, and why it's the best option.
 
-This is part 1, which will cover initial setup and getting your SSL certificate.
+This is part 1, where we'll talk about basics and deal with setting up certificates.
 
-Part 2 will cover further Nginx configuration and cyphersuite setup.
+Part 2 will cover more Nginx configuration, especially ciphersuite setup.
 
 ## Initial Setup: Use a Self-Signed Certificate
 Simply enabling HTTPS requires very little: a server needs an encryption key and
