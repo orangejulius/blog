@@ -1,23 +1,20 @@
 ---
 layout: default
 redirect_from: [/photos/index.php/photos/211/, /php/cacti/graph_view.php/]
+title: Blog
 ---
-
 <div class="blog-index">
   {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
+  {% for post in site.posts reverse %}
+    {% assign content = post.content %}
+    {% if forloop.index < 3 %}
+      <article>
+        {% include article.html %}
+      </article>
+	{% else %}
+     <article class="archive">
+       {% include archive_post.html %}
+     </article>
+	{% endif %}
   {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page_path}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
 </div>
