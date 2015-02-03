@@ -248,9 +248,6 @@ My server didn't even respond to HTTPS, or anything on port 443, for this entire
 time!
   {% endfnbody %}
   {% fnbody %}
-Beyond the basic hosting costs, obviously.
-  {% endfnbody %}
-  {% fnbody %}
 For truly secure communication, three things are needed: verification the
 message came from who you thought it did (authentication), obfuscation of the
 message contents so that no one but the intended recipient can read the message
