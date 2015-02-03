@@ -10,6 +10,7 @@ headline, was posted on Medium. There were already great responses by
 [Kelly Ellis](https://medium.com/@hardaway/why-women-shouldnt-code-82205165e64a) and
 [Jenn Schiffer](http://negativitysandwiches.com/post/108299473795/a-quick-and-dirty-annotation-of-why-women)
 by the time I read it, but I quickly started drafting up my own comments.
+<!-- more -->
 
 I wrote my response assuming that the author of _Why Women Shouldn't Code_ was just another "old
 white dude" telling women what to do. Embarrassingly, I discovered that in fact the author was a

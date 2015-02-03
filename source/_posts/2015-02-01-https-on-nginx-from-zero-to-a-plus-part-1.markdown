@@ -18,6 +18,7 @@ are
 Today we know it's not a good idea for any web traffic to be unencrypted, and
 anyone running a website, no matter the content, should configure a strong HTTPS
 setup today.
+<!-- more -->
 
 Embarrassingly, my own website has not supported HTTPS at all for almost two years{% fn %}.
 
