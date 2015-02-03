@@ -6,8 +6,6 @@ $pad-narrow: 25px !default;
 $pad-medium: 35px !default;
 $pad-wide: 85px !default;
 
-$indented-lists: false !default;
-
 $header-font-size: 1em !default;
 $header-padding-top: 1.5em !default;
 $header-padding-bottom: 1.5em !default;
@@ -111,10 +109,3 @@ body {
     }
   }
 }
-
-@if $indented-lists == false {
-  @media only screen and (min-width: 768px) {
-    ul, ol { margin-left: 0; }
-  }
-}
-
