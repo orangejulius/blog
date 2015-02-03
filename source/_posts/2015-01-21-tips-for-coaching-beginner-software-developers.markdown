@@ -10,9 +10,10 @@ context: teaching myself more stuff. But In the past few years I've made an
 explicit effort to focus on the opposite problem: teaching others, especially
 complete beginners.
 
-Sharing the joy and power of programming with more people is perhaps one of the
-most significant challenges in the world right now, so I've tried to learn as
-much as possible about how to do it.
+Sharing the joy and power of building software with more people is perhaps one
+of the [most significant](http://www.chris-granger.com/2015/01/26/coding-is-not-the-new-literacy/)
+challenges in the world right now, so I've tried to learn as much as possible
+about how to do it.
 
 While I by no means consider myself an expert, I want to share some of what I've
 learned so far.
