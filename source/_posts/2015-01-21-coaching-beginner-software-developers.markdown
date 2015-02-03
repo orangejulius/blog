@@ -74,7 +74,7 @@ touch.
 
 ## Teach by Asking Lots of Questions, Carefully
 No less a teacher (and learner!) than Socrates ensured that asking questions
-will always be core to every teacher's tool belt, but there's some nuance here
+will always be core to every teacher's tool belt{% fn %}, but there's some nuance here
 that is extremely important to remember to keep it from backfiring.
 
 Remember that every student is almost completely convinced they aren't cut out
@@ -384,6 +384,11 @@ Without a doubt, coaching events targeting specific groups like
 necessary. I'd encourage anyone to volunteer at these events: it's an eye
 opening experience for those of us who got here without the explicit
 discouragement many groups of people face.
+{% endfnbody %}
+
+{% fnbody %}
+In fact there's a great term for this form of teaching:
+<a href="http://www.csun.edu/~vceed002/ref/pedagogy/scaffolding/index.html">scaffolding</a>.
 {% endfnbody %}
 
 {% fnbody %}
