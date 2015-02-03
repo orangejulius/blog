@@ -5,7 +5,7 @@
 </header>
 
 <div class="content">
-{{ post.content | strip_html | condense_spaces | truncate:150 }}
+{{ content | strip_html | condense_spaces | truncate:150 }}
 </div>
 
 {% if category != '0' %}
