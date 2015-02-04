@@ -83,7 +83,7 @@ article + article {
     background: $img-border top left repeat-x;
   }
 }
-#content .blog-index {
+#content .blog-index, #content .home {
   padding: { top: 0; bottom: 0; }
   article header { background: none; padding-bottom: 0; }
   article h1 {
