@@ -1,20 +1,14 @@
 ---
 layout: default
 redirect_from: [/photos/index.php/photos/211/, /php/cacti/graph_view.php/]
-title: Blog
 ---
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in site.posts reverse %}
-    {% assign content = post.content %}
-    {% if forloop.index < 3 %}
-      <article>
-        {% include article.html %}
-      </article>
-	{% else %}
-     <article class="archive">
-       {% include archive_post.html %}
-     </article>
-	{% endif %}
-  {% endfor %}
+<div class="home">
+	<article>
+		<h1>Hi, I'm Julian!</h1>
+
+		<p>I'm a <a href="/resume">software developer</a> from San Francisco, now living in Berlin.</p>
+
+		<p>When I'm not coding you can find me riding a bicycle or flying a plane</p>
+		<img src="/images/julian_simioni.png">
+	</article>
 </div>

@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Blog"
+---
+<div class="blog-index">
+  {% assign index = true %}
+  {% for post in site.posts reverse %}
+    {% assign content = post.content %}
+    {% if forloop.index < 3 %}
+      <article>
+        {% include article.html %}
+      </article>
+	{% else %}
+     <article class="archive">
+       {% include archive_post.html %}
+     </article>
+	{% endif %}
+  {% endfor %}
+</div>
