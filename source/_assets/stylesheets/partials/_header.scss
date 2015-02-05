@@ -14,7 +14,7 @@ body > header {
     font-size: 1em;
     font-weight: normal;
     a, a:visited, a:hover {
-      color: $text-color-light;
+      @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
       text-decoration: none;
     }
   }
