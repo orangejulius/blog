@@ -15,7 +15,6 @@ article {
       color: $text-color-light;
       margin: 0;
       &.meta {
-        @extend .sans;
         text-transform: uppercase;
       }
     }
@@ -103,9 +102,6 @@ article + article {
       text-shadow: none;
       color: $main-bg;
     }
-  }
-  footer {
-    @extend .sans;
   }
 }
 
