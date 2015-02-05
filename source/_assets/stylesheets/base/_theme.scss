@@ -20,7 +20,7 @@ $text-color-light: #aaa !default;
 $type-border: #ddd !default;
 
 $title-color: $text-color;
-$subtitle-color: $text-color;
+$subtitle-color: $text-color-light;
 
 /* Navigation */
 $nav-bg: $main-bg;
