@@ -16,12 +16,8 @@ $header-subtitle-font-family: $heading-font-family !default;
 
 body > header h1 {
   @extend .heading;
-  font-family: $header-title-font-family;
   font-weight: normal;
   line-height: 1.2em;
-}
-body > header h2 {
-  font-family: $header-subtitle-font-family;
 }
 
 body {
