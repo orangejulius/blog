@@ -39,19 +39,6 @@ task :generate do
   system "jekyll build"
 end
 
-desc "Watch the site and regenerate when it changes"
-task :watch do
-  puts "Starting to watch source with Jekyll and Compass."
-  jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll build --watch")
-
-  trap("INT") {
-    [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
-    exit 0
-  }
-
-  [jekyllPid].each { |pid| Process.wait(pid) }
-end
-
 desc "preview the site in a web browser"
 task :preview do
   puts "Starting to watch source with Jekyll and Compass. Starting Rack on port #{server_port}"
@@ -207,17 +194,6 @@ def ask(message, valid_options)
     answer = get_stdin(message)
   end
   answer
-end
-
-def blog_url(user, project, source_dir)
-  cname = "#{source_dir}/CNAME"
-  url = if File.exists?(cname)
-    "http://#{IO.read(cname).strip}"
-  else
-    "http://#{user.downcase}.github.io"
-  end
-  url += "/#{project}" unless project == ''
-  url
 end
 
 desc "list tasks"
