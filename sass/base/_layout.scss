@@ -56,6 +56,20 @@ body {
     padding-top: $header-padding-top;
     padding-bottom: $header-padding-bottom;
   }
+  figure {
+	  margin-bottom: 0.5em;
+	  img {
+		  margin-bottom: 0;
+	  }
+
+	  figcaption {
+		  text-align: center;
+		  margin-top: 0;
+		  padding-top: 0;
+		  font-style: italic;
+		  font-size: 0.9em;
+	  }
+  }
 }
 
 #content {
