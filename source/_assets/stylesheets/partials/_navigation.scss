@@ -4,36 +4,34 @@ body > nav {
   @include background($nav-bg-front, $nav-bg-back);
   border: {
     top: 1px solid $nav-border-top;
-    bottom: 1px solid $nav-border-bottom; }
+  bottom: 1px solid $nav-border-bottom; }
   padding-top: .35em;
   padding-bottom: .35em;
-  @media only screen and (min-width: 550px) {
-    font-size: .9em;
-    ul {
-      @include horizontal-list(0);
-      float: left;
-      display: block;
-      padding-top: .15em;
-    }
-    ul li {
-      margin: 0;
-    }
+  font-size: .9em;
+  ul {
+    @include horizontal-list(0);
+    float: left;
+    display: block;
+    padding-top: .15em;
+  }
+  ul li {
+    margin: 0;
+  }
+  a {
+    @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
+    font-family: $sans;
+    float: left;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: .1em 0;
+    line-height: 1.5em;
+  }
+  li + li {
+    border-left: 1px solid $nav-border-left;
+    margin-left: .8em;
     a {
-      @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
-      font-family: $sans;
-      float: left;
-      text-decoration: none;
-      font-size: 1.1em;
-      padding: .1em 0;
-      line-height: 1.5em;
-    }
-    li + li {
-      border-left: 1px solid $nav-border-left;
-      margin-left: .8em;
-      a {
-        padding-left: .8em;
-        border-left: 1px solid $nav-border-right;
-      }
+      padding-left: .8em;
+      border-left: 1px solid $nav-border-right;
     }
   }
 }
