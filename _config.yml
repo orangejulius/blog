@@ -30,6 +30,8 @@ safe: false
 gems:
     - jekyll-redirect-from
     - jekyll/footnotes
+    - jekyll-assets
+    - jekyll-compass
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /

@@ -74,10 +74,3 @@ body > nav {
     fieldset[role=search]{ width: 99%; }
   }
 }
-.no-placeholder {
-  body > nav .search {
-    background: lighten($nav-bg, 15) image-url('search.png') .3em .25em no-repeat;
-    text-indent: 1.3em;
-  }
-}
-
