@@ -17,6 +17,8 @@ group :development do
   gem 'shrimp'
   gem 'jekyll-redirect-from'
   gem 'jekyll-footnotes'
+  gem 'jekyll-assets'
+  gem 'jekyll-compass'
 end
 
 gem 'sinatra', '~> 1.4'
