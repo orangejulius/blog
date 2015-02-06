@@ -20,10 +20,11 @@ tweaks that improve performance and user experience.
 ![A+ score on juliansimioni.com](/images/nginx-https/website-aplus.png)
 
 In addition to the descriptions and code snippets here, I've compiled a
-ready to go SSL configuration file for Nginx, a nearly ready to go example site
-configuration file, and a complete list of all the sources I used
-while researching for these articles, and posted them for anyone to use freely
-on Github.
+ready to go [SSL configuration file](https://github.com/orangejulius/https-on-nginx/blob/master/ssl.conf)
+for Nginx, a nearly ready to go [example site configuration file](https://github.com/orangejulius/https-on-nginx/blob/master/example-site.conf),
+and a [complete list](https://github.com/orangejulius/https-on-nginx/blob/master/resources.md)
+of all the sources I used while researching for these articles, and posted them
+for anyone to use freely on Github.
 
 <!-- more -->
 ## Disable SSLv3
