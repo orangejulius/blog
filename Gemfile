@@ -4,7 +4,7 @@ group :development do
   gem 'rake', '~> 10.4'
   gem 'jekyll', '~> 2.5'
   gem 'octopress-hooks', '~> 2.4'
-  gem 'octopress-date-format', '~> 3.0'
+  gem 'octopress-date-format', '~> 3.0', github: 'orangejulius/date-format'
   gem 'jekyll-sitemap'
   gem 'rdiscount', '~> 2.1'
   gem 'sass-globbing', '~> 1.1'
