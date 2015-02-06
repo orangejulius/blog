@@ -3,6 +3,7 @@ layout: post
 title: "HTTPS on Nginx: From Zero to A+ (Part 2) - Configuration, Ciphersuites, and Performance"
 date: "2015-02-06 17:37:04 +0100"
 comments: true
+categories: security
 image: /images/nginx-https/website-aplus.png
 ---
 _On the internet today, [all our web sites](https://www.eff.org/encrypt-the-web)
