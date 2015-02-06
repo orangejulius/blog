@@ -2,17 +2,26 @@
 layout: post
 title: "HTTPS on Nginx: From Zero to A+ (Part 2) - Configuration, Ciphersuites, and Performance"
 comments: true
+image: /images/nginx-https/website-aplus.png
 ---
+_On the internet today, [all our web sites](https://www.eff.org/encrypt-the-web)
+need a strong, secure HTTPS setup, even the most basic static sites. This is
+part two of a series on how to set up Nginx securely._
+
 When we left off after [part 1](/blog/https-on-nginx-from-zero-to-a-plus-part-1/),
-we had a server with a valid, signed certificate running, but it was using the
-default Nginx configuration, which leaves quite a bit to be desired.
+we had a server with a valid, signed certificate, but it was using the default
+Nginx configuration. This configuration is far from optimal.
 
-Now we'll significantly tweak the Nginx configuration to improve both the
-security and performance.
-
-Of course the real benefit here is enhanced security, but we also get an A+
-rating on the SSL Labs report.
+At the end of this post we'll have a secure HTTPS configuration on
+Nginx that scores an A+ rating on the SSL Labs report. We'll even do a few extra
+tweaks that improve performance and user experience.
 ![A+ score on juliansimioni.com](/images/nginx-https/website-aplus.png)
+
+In addition to the descriptions and code snippets here, I've compiled a
+ready to go SSL configuration file for Nginx, a nearly ready to go example site
+configuration file, and a complete list of all the sources I used
+while researching for these articles, and posted them for anyone to use freely
+on Github.
 
 <!-- more -->
 ## Disable SSLv3
@@ -75,9 +84,8 @@ sure the message was not tampered with or corrupted).
 There are many of each of these algorithms, all with varying features,
 performance, cryptographic strength, and browser support. Many of the algorithms
 have known weaknesses that make them unsuitable for use today. Using the latest
-version of a browser is usually enough to protect an individual user against
-vulnerable ciphersuites. Unfortunately, a lot of older browsers are still
-configured to use insecure settings.
+version of a browser is usually enough to protect an individual user but,
+unfortunately, a lot of older browsers have insecure defaults.
 
 The goal of cipher suite configuration is to ensure compatibility with as many
 browsers as possible, without compromising security or, to a lesser
@@ -88,9 +96,9 @@ our Nginx configuration. To keep thing simple here's the relevant configuration
 lines:
 
 ```nginx
-# make the server choose the best cipher instead of the browser                                                                                                                        
-# PFS is frequently compromised without this                                                                                                                                           
-ssl_prefer_server_ciphers on; 
+# make the server choose the best cipher instead of the browser
+# Perfect Forward Secrecy(PFS) is frequently compromised without this
+ssl_prefer_server_ciphers on;
 
 # support only believed secure ciphersuites using the following priority:
 # 1.) prefer PFS enabled ciphers
@@ -103,7 +111,7 @@ ssl_prefer_server_ciphers on;
 # 3.) fixed ECDH cipher (does not allow for PFS)
 # 4.) known vulnerable cypers (MD5, RC4, etc)
 # 5.) little-used ciphers (Camellia, Seed)
-ssl_ciphers 'kEECDH+ECDSA+AES128 kEECDH+ECDSA+AES256 kEECDH+AES128 kEECDH+AES256 kEDH+AES128 kEDH+AES256 DES-CBC3-SHA +SHA !aNULL !eNULL !LOW !kECDH !DSS !MD5 !EXP !PSK !SRP !CAMELLIA !SEED'; 
+ssl_ciphers 'kEECDH+ECDSA+AES128 kEECDH+ECDSA+AES256 kEECDH+AES128 kEECDH+AES256 kEDH+AES128 kEDH+AES256 DES-CBC3-SHA +SHA !aNULL !eNULL !LOW !kECDH !DSS !MD5 !EXP !PSK !SRP !CAMELLIA !SEED';
 ```
 
 Now I'll explain the rationale that went into crafting it.
@@ -114,10 +122,10 @@ own. The first directive ensures your server will choose from the list of
 ciphersuites supported by both the browser and server.
 
 ### Disable null and low security ciphersuites
-Strangely, it's possible for SSL/TLS to actually use no encryption if configured
-improperly.  Fortunately it is easy to disable this ability, as well as force
-OpenSSL to disable any cipher suites of known low security, which is a
-reasonable starting point.
+Strangely, it's possible for SSL/TLS to use no encryption if configured
+improperly.  Fortunately it is easy to disable this.  OpenSSL also has its own
+internal list of ciphersuites with known low security, and disabling those is a
+good starting point.
 
 ### Disable insecure algorithms
 Some algorithms have known or suspected vulnerabilities, and we can disable or
@@ -141,8 +149,7 @@ that it's possible the NSA has the ability to break RC4.
 
 Combined with research showing theoretical vulnerabilities in RC4, the possibility
 that there are working attacks against RC4 in the wild is too plausible to
-ignore. Microsoft has issued a [security advisory to disable
-RC4](http://blogs.technet.com/b/srd/archive/2013/11/12/security-advisory-2868725-recommendation-to-disable-rc4.aspx),
+ignore. Microsoft has issued a [security advisory to disable RC4](http://blogs.technet.com/b/srd/archive/2013/11/12/security-advisory-2868725-recommendation-to-disable-rc4.aspx),
 and the IETF is
 [drafting a memo to require clients and servers never use RC4](https://tools.ietf.org/html/draft-ietf-tls-prohibiting-rc4-01).
 
@@ -151,31 +158,13 @@ and the IETF is
 In [part 1](/blog/https-on-nginx-from-zero-to-a-plus-part-1/) we generated a
 certificate request using [SHA256](http://en.wikipedia.org/wiki/SHA-2)
 instead of [SHA1](http://en.wikipedia.org/wiki/SHA-1).  For the same reasons, we
-also have to disable ciphersuites that use SHA1 as the hashing algorithm.
+also have to disable ciphersuites that use SHA1 as the hashing algorithm. No
+attacks against SHA1 have succeeded as of today, as far as we know, but it
+probably [won't be long](https://www.schneier.com/blog/archives/2012/10/when_will_we_se.html).
 
 ### Disable little-used ciphers
 These are not common, and disabling them just simplifies things and reduces the
-surface area for attacks.
-
-### Optimize for performance where appropriate
-Despite some algorithms occasionally being found vulnerable, modern browsers
-actually support a comprehensive suite of extremely powerful security tools. All
-four algorithms specified by NIST [Suite B cryptography](https://www.nsa.gov/ia/programs/suiteb_cryptography/index.shtml)
-for use protecting NSA TOP SECRET documents, including AES and SHA2, are
-currently supported by a good portion of the browsers in use today.
-
-Many security experts consider that using the longest key lengths currently
-supported does not have any
-[measurable impact on security](http://www.mail-archive.com/dev-tech-crypto@lists.mozilla.org/msg11247.html),
-and simply reduces performance{% fn %}.
-
-A common configuration that takes this into account is to support these most
-secure variants, but prefer more reasonable key lengths. For example, the
-configuration above supports both the  `ECDHE-ECDSA-AES256-SHA384` and
-`ECDHE-ECDSA-AES128-SHA256` ciphersuites, but prefers the shorter variant. Both
-provide excellent security with no known attacks. This makes the default for
-most users secure and reasonably performant, but allows users to demand the most
-secure ciphersuites if they so desire.
+surface area for attacks{% fn %}.
 
 ### Support perfect forward secrecy whenever possible
 [Perfect forward secrecy](https://en.wikipedia.org/wiki/Forward_secrecy) allows
@@ -191,12 +180,45 @@ your server.
 
 A great recent example of this is Heartbleed: with perfect forward
 secrecy, the Heartbleed vulnerability can only expose
-[individual sessions](
-https://twitter.com/ivanristic/status/453280081897467905). You'd still have to
-update your server's private key, but almost all user data would be safe.
+[individual sessions](https://twitter.com/ivanristic/status/453280081897467905).
+You'd still have to update your server's private key, but almost all user data
+would be safe even if your private key were exposed.
 
 Most reasonably modern browsers, with the notable exception of IE8, support key
 exchange algorithms with perfect forward secrecy.
+
+There is one additional configuration change that needs to be made to keep PFS
+ciphersuites secure. By default Nginx will generate 1024-bit RSA keys for PFS
+ciphers, but that can be overridden. Use the configuration changes below and be
+sure to use `openssl` to generate the 2048 bit keys (it can take a few minutes).
+
+```nginx
+# Use 2048 bit Diffie-Hellman RSA key parameters
+# (otherwise Nginx defaults to 1024 bit, lowering the strength of encryption # when using PFS)
+# Generated by OpenSSL with the following command:
+# openssl dhparam -outform pem -out /etc/nginx/ssl/dhparam2048.pem 2048
+ssl_dhparam /etc/nginx/ssl/dhparam2048.pem;
+```
+
+### Optimize for performance where appropriate
+Despite some algorithms occasionally being found vulnerable, modern browsers
+actually support a comprehensive suite of extremely powerful security tools. All
+four algorithms specified by NIST for [Suite B cryptography](https://www.nsa.gov/ia/programs/suiteb_cryptography/index.shtml)
+, including AES and SHA2, are currently supported by a good portion of the
+browsers in use today.
+
+Many security experts consider that using the longest key lengths currently
+supported does not have any
+[measurable impact on security](http://www.mail-archive.com/dev-tech-crypto@lists.mozilla.org/msg11247.html),
+and simply reduces performance{% fn %}.
+
+A common configuration that takes this into account is to support these most
+secure variants, but prefer more reasonable key lengths. For example, the
+configuration above supports both the `ECDHE-ECDSA-AES256-SHA384` and
+`ECDHE-ECDSA-AES128-SHA256` ciphersuites, but prefers the shorter key length
+variant. Both provide excellent security with no known attacks. This makes the
+default for most users secure and reasonably performant, but allows users to
+demand the most secure ciphersuites if they so desire.
 
 ## Enable HSTS
 Many concepts in security involve correctly implementing a specific, precise
@@ -205,7 +227,7 @@ level of security.
 [HSTS](http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security) is not one of them.
 
 Enabling HSTS simply tells browsers not to make any plain text requests to a
-server _ever again_. 
+server _ever again_.
 
 In theory, this provides no benefits over a server properly configured to
 require a valid HTTPS connection for all resources, at all times. In practice,
@@ -228,16 +250,17 @@ server will correctly respond to HTTPS requests until the header expires. This
 means its probably **not something that should be enabled on day one of an HTTPS
 roll out**.
 
-Once you're convinced that enabling HTTPS going forward is possible, you can
+Once you're comfortably set up running HTTPS with no problems, you can
 also [submit your site](https://hstspreload.appspot.com/) for HSTS Preload,
 allowing the latest versions of popular browsers to ship already knowing your
-server expects only HTTPS requests. This is incredible: **browsers will not have
-to make even one HTTP request to your server when initially connecting**.
+server expects only HTTPS requests. This is incredible: **modern browsers will
+never make even one HTTP request to your server**.
 
-By the way, HSTS is the final step towards that A+ rating!
+The security benefits of HSTS are profound enough that SSL Labs requires it as
+the final prerequisite of an A+ SSL rating.
 
 ## Improve Performance
-There are a few more configuration changes that should be made to improve
+Finally, there are a few more configuration changes that should be made to improve
 performance. As far as I know these either have no detrimental impact on
 security, or actually help improve it.
 
@@ -253,14 +276,46 @@ revocation information for. OCSP stapling allows your server to do this ahead of
 time. The OCSP responses are signed by your Certification Authority, so browsers
 will be able to trust them, even if they come directly from your server.
 
-This also cuts down on traffic to OCSP servers (a nice thing for you to do), and
+This also cuts down on traffic to OCSP servers(a nice thing for you to do), and
 protects your server against unexpected interruptions because of
 downtime or denial of service attacks against your OCSP server.
 
+```nginx
+# allow Nginx to send OCSP results during the connection process
+ssl_stapling on;
+```
+
 ## Support SSL Session Caching
+By far the biggest concern when moving to HTTPS is performance: both extra load
+on servers, and slower page load times on the user side. By large, the overhead
+for an established secure session is [not significant](https://www.imperialviolet.org/2010/06/25/overclocking-ssl.html)
+anymore.
+
+However, the process of initially connecting via HTTPS involves many more round
+trips between client and server than HTTP, so there is still definitely a
+noticeable impact on page load times.
+
+With that in mind, it makes sense to cache SSL sessions for at least a few
+minutes, so that users only have to pay that cost once. Nginx is _almost_
+configured correctly out of the box to do this. The only change needed is
+setting a time limit for the session cache:
+
+```nginx
+# Cache SSL Sessions for up to 10 minutes
+# This improves performance by avoiding the costly session negotiation process where possible
+ssl_session_cache builtin:1000 shared:SSL:10m;
+```
 
 ## Resources and Thanks
+I hope this guide can be considered comprehensive enough to be useful, but I
+would be lying if I said it was even close to covering everything. Security is a
+complicated, rapidly changing challenge. With that in mind I want to call out
+some of the best resources I've found both to provide more information and thank
+the authors of these great works.
 
+* Eric Mill's [Switch to HTTPS Now, For Free](https://konklone.com/post/switch-to-https-now-for-free), which first set me down this path
+* SSL Lab's [SSL/TLS Deployment Best Practices](https://www.ssllabs.com/projects/best-practices/index.html) - a really great and understandable deep dive
+* Mozilla's extremely complete [Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS) wiki page
 
 - - -
 {% footnotes %}
@@ -276,6 +331,12 @@ downtime or denial of service attacks against your OCSP server.
     intermediate certificate, and your server's certificate together into one
     file. This works just fine, but I prefer keeping the files separate for
     clarity. Use whichever method works better for you.
+  {% endfnbody %}
+
+  {% fnbody %}
+    Some of these ciphersuites are more common in a few contries, and if you're
+    serving traffic to primarily one of them, it may make sense for you to
+    enable them.
   {% endfnbody %}
 
   {% fnbody %}
