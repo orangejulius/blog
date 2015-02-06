@@ -4,6 +4,7 @@ title: "HTTPS on Nginx: From Zero to A+ (Part 1)"
 date: "2015-02-01 18:26:02 +0100"
 comments: true
 categories: security
+image: /images/nginx-https/website-aplus.png
 ---
 A few years ago, the web at large was unencrypted. HTTPS was reserved for only
 the most critical sections of a web page. The consensus was only sensitive user
