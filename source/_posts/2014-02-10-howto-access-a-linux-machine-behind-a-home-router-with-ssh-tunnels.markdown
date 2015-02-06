@@ -107,5 +107,42 @@ fi
 The meat of the script is in the createTunnel function, which creates the tunnel as described above.
 The canary tunnel is checked on line 9, and if the connection fails, a new tunnel is created.
 
+Run this code in a cron job every few minutes, and that will take care of
+keeping the tunnel in place at all times.
+
+## Connecting
+
+Now that `HostB` has the createTunnel code running periodically, it's time to
+use it!
+
+The simplest way is to simply chain multiple ssh commands together, as follows:
+
+```bash
+ssh -t HostA 'ssh localhost -p 10022'
+```
+
+The `-t` parameter is needed to allocate a pseudo-TTY to be allocated. Without
+it there won't be any output.
+
+Better still, if you install `netcat` on HostA, is to set up a ProxyCommand in
+your SSH config:
+
+```bash
+# ~/.ssh/config
+
+Host HostB
+  ProxyCommand ssh -q HostA nc -q0 localhost 10022
+```
+
+Now you can simply run `ssh HostB` directly{% fn %}.
+
 I've been running this code myself for several months and haven't had any problems, but would love
 to hear from anyone else using something similar. Happy coding!
+
+- - -
+{% footnotes %}
+  {% fnbody %}
+    Thanks to the <a href="http://sshmenu.sourceforge.net/articles/transparent-mulithop.html">SSHMenu</a>
+    blog for those last two commands.
+  {% endfnbody %}
+{% endfootnotes %}
