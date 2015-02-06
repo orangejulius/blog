@@ -39,7 +39,8 @@ setup do, and why it's the best option.
 
 This is part 1, where we'll talk about basics and deal with setting up certificates.
 
-[Part 2](/blog/https-on-nginx-from-zero-to-a-plus-part-2-configuration-ciphersuites-and-performance/) covers more Nginx configuration, especially ciphersuite setup.
+[Part 2](/blog/https-on-nginx-from-zero-to-a-plus-part-2-configuration-ciphersuites-and-performance/)
+covers more Nginx configuration, especially ciphersuite setup.
 
 ## Initial Setup: Use a Self-Signed Certificate
 Simply enabling HTTPS requires very little: a server needs an encryption key and
