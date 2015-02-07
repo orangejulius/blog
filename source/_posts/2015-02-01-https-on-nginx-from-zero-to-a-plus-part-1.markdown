@@ -117,7 +117,7 @@ so mistakes later on are more costly and time consuming.
 
 The most important certificate configuration setting is the fingerprint hashing
 algorithm.  Until recently, most certificates were signed using
-[SHA1](grade-c-immediately-after-certificate-registration.png).  However,
+[SHA1](http://en.wikipedia.org/wiki/SHA1).  However,
 [Google](http://blog.chromium.org/2014/09/gradually-sunsetting-sha-1.html),
 [Microsoft](https://technet.microsoft.com/library/security/2880823), and
 [security researchers](https://www.schneier.com/blog/archives/2012/10/when_will_we_se.html)
