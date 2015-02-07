@@ -2,20 +2,23 @@ source "https://rubygems.org"
 
 group :development do
   gem 'rake', '~> 10.4'
-  gem 'jekyll', '~> 2.5'
-  gem 'octopress-hooks', '~> 2.4'
-  gem 'octopress-date-format', '~> 3.0', github: 'orangejulius/date-format'
-  gem 'jekyll-sitemap'
   gem 'rdiscount', '~> 2.1'
   gem 'sass-globbing', '~> 1.1'
   gem 'rubypants', '~> 0.2.0'
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
-  gem 'shrimp'
+
+  gem 'jekyll', '~> 2.5'
+  gem 'jekyll-sitemap'
   gem 'jekyll-redirect-from'
   gem 'jekyll-footnotes'
   gem 'jekyll-assets'
   gem 'jekyll-compass'
+
+  gem 'octopress-hooks', '~> 2.4'
+  gem 'octopress-date-format', '~> 3.0', github: 'orangejulius/date-format'
+
+  gem 'shrimp'
 end
 
 gem 'sinatra', '~> 1.4'
