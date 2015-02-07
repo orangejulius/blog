@@ -5,7 +5,7 @@ title: "The FAA Made the Right Call on Plane Sharing"
 redirect_from: [/blog/2014/08/26/FAA-ride-sharing/, /blog/faa-ride-sharing/, /blog/FAA-ride-sharing/]
 categories: flying
 ---
-About two years ago I had just received my [private pilot's license](/blog/2014/01/05/my-private-pilot-checkride/) and
+About two years ago I had just received my [private pilot's license](/blog/my-private-pilot-checkride/) and
 was excited to share my love of aviation with my friends. My first few flights were never unsafe, but they had their
 share of moments that showed just how little one knows even after training with an excellent instructor.
 

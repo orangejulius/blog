@@ -58,7 +58,7 @@ didn't enjoy it a little.
 
 I re-read this book after working more deeply with Javascript this year than ever before. Having
 considerably improved with the language and many of its core concepts, I found the re-read so
-valuable I wrote up an entire [review](/blog/2014/07/06/javascript-the-good-parts-review/).
+valuable I wrote up an entire [review](/blog/javascript-the-good-parts-review/).
 
 ##[How to Win Friends and Influence People](https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People) by Dale Carnegie
 

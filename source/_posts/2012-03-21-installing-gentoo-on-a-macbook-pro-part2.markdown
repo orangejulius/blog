@@ -5,7 +5,7 @@ date: "2012-03-21 17:52 -0800"
 comments: true
 categories: gentoo linux
 ---
-It's been a couple days since I could sit down with my fancy new Macbook, but last night and today I've made some good progress. After [part 1](/blog/2012/03/14/installing-gentoo-on-a-macbook-pro/) I a nearly booting sytem, but not quite everthing was working yet. While I could get a kernel to load from grub2, it would hang almost immediately. Also grub2 was clearly misconfigured, as it was spewing many errors about missing commands, and I had to manually type in the path to my kernel image on each boot.
+It's been a couple days since I could sit down with my fancy new Macbook, but last night and today I've made some good progress. After [part 1](/blog/installing-gentoo-on-a-macbook-pro/) I a nearly booting sytem, but not quite everthing was working yet. While I could get a kernel to load from grub2, it would hang almost immediately. Also grub2 was clearly misconfigured, as it was spewing many errors about missing commands, and I had to manually type in the path to my kernel image on each boot.
 
 I didn't know enough about grub2 to hope to debug things there yet, and I was sick of the long cycle of waiting for the livecd to load, mounting filesystems required to chroot, and then making changes, so I hoped to be able to simply get a kernel to boot. As it turns out, this was not too hard.
 
