@@ -5,7 +5,6 @@ group :development do
   gem 'rdiscount', '~> 2.1'
   gem 'sass-globbing', '~> 1.1'
   gem 'rubypants', '~> 0.2.0'
-  gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
 
   gem 'jekyll', '~> 2.5'
