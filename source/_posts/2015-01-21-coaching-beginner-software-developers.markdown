@@ -4,7 +4,7 @@ title: "Coaching Beginner Software Developers"
 date: "2015-01-21 18:13:04 +0100"
 comments: true
 categories: mentoring
-redirect_from: /blog/2015/01/21/tips-for-coaching-beginner-software-developers/
+redirect_from: /blog/tips-for-coaching-beginner-software-developers/
 ---
 For most of my time as a programmer, I've thought about learning in exactly one
 context: teaching myself more stuff. But In the past few years I've made an
