@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/juliansimioni
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://juliansimioni.com
+  * I am juliansimioni (https://keybase.io/juliansimioni) on keybase.
+  * I have a public key with fingerprint C970 12C1 ECEB 6E88 38E3  67BF B9EE B0C6 EE09 10A1
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "c97012c1eceb6e8838e367bfb9eeb0c6ee0910a1",
+            "host": "keybase.io",
+            "key_id": "b9eeb0c6ee0910a1",
+            "kid": "0101710519961d6e3b7e8f74528e4add617e8185eb2a8cf050e8eedc97cf62fbecb70a",
+            "uid": "62e2231c40fbcab50675849fcd808e19",
+            "username": "juliansimioni"
+        },
+        "service": {
+            "hostname": "juliansimioni.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1426271384,
+    "expire_in": 157680000,
+    "prev": "807bf47310119dcfcc03fd1c1c7b9c2d012033752b9a5b82c53184c82f54c761",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owFtkmtMFFcUx5fdCstjhWwJsY2iTrAaec2d2XmtwRaLrUJjSAuhYBqYuXOHHXbZ
+wd1lK7JIkKQIWRpp0D42IASqwSbKS4v1ESq0ojRF26olVIkQJAqVIhYwmrQzpP3m
+/XJzzvmf3z33f+8Rk0GnDzr/uPPHx6FRrUHDDwVdtiGhrRwTFLEMs5ZjdrSySbKz
+ELlKXLLTg1kxyDE4ICBAEAk0YlmSRSTNCJLAISTgkEYI5wDOAywBsylurUPFCLwb
+JcmKmlODfFlUsy/R21cKOMABA3AKcBwNRBqRAoNYibFQBIssvCjSQI0BSyGB4Fko
+4RSOWIREdS4o0YQkICgwOK/iSldwNIEIggTQgksC5AUKpxmKtXASFFmcRYDThG7k
+cvLFSFUXlTpk3umWi2XFKWMVCZha8soQaT5o13mZLAkqxSqlxKV4FKg41LLN4ylx
+W7V2T1mJpv8YCfn/kfIF2SmqjqodXuRyqwDMClQl9MgaGlgImmAAyVoSMLS/RHah
+fFlTUAzN4urSzkFeFcniqukWhlTdApwIJQhxUhIBBJAROEiI6iPhJMlQhMDxlMAS
+kCIBa4EsIVEWyNCa3260z6lgVlIdky9UkRFuudDJe0pdCKsIq9WvfUUXpNcFr9Jr
+v0IXFhr1/1e5cTRKd9k24uhvPjRRUXNnKS5x9vivtw5e2WjuebBlcax+qO+3S0+m
+mjAmbVtj3Se1yb2RyRnW0S/PtXvJe093zx1j/XfeXP3+X2EbP7+99+7ImsBxW/za
+7+ajZ5zfkMEHivF7bebRB6b4d1OXI/h1781fjI71+BVzS/rVd17b9byVMU3eLPjl
+jcPJS4cas8LPlb/a4VPynH8Pdn3t7Qt45ktNk9+fyDAig6/9am5qVp9hfe8XRcOL
+L4TIafupToPvn7TqzCB5VxWI+LNhrhY72P52jg/398cMTGcubU/Ji79RkJ7nXV/A
+ty3UjG1diNsaO9GTNnbXkHA/dhnff7YsfHt6ytG6y92BDUPVZHPcVOTkUErlXOgj
+T0bb77lFAudt7h6MST8/uPtbrs5uCp866bcbO5a32cajQ44YTYlSB71m85m+s8bA
+mQ0nZ7cky67xHf07UWoLbHj6+rJ+0qH/aDrEMbo4eyV2wbgqbufemj/Kez8Dm7qM
+l/Zk7/Ftul5fb26tCO9cRC2L47dymn5oqnxhiS1vzbv/8BSR87xhs19OG032DMw8
+oosmbNNPermvKi8sxw+3X2y8VuW9/VMgGI73tBT2hSTl8rh/1PfztXVvhXzKfPhs
+avWJnMSRrO7egBlzHDZnDmRYXfUxz3JPF9gvHNt3JGQmKft0VVfkB/ETOw5UXw/P
+vPkv
+=n8uu
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/juliansimioni
+
+==================================================================
