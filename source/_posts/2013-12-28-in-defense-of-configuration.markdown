@@ -7,7 +7,7 @@ categories: personal-personal-goals-post
 redirect_from: /blog/2013/12/29/in-defense-of-configuration/
 ---
 
-Today I stumbled across Rands' [article](http://randsinrepose.com/archives/do-you-want-to-write/) praising simple design and criticizing the multitudes of options most products, especially software products, seem to offer us. Considering I write and code only in [VIM](http://vim.org), compile Linux on all my computers from [source](http://gentoo.org), and don't even have a GUI of any kind on the computer I'm using to write these particular words, it should be clear where I stand.
+Today I stumbled across Rands' [article](http://randsinrepose.com/archives/do-you-want-to-write/) praising simple design and criticizing the multitudes of options most products, especially software products, seem to offer us. Considering I write and code only in [VIM](http://www.vim.org), compile Linux on all my computers from [source](http://gentoo.org), and don't even have a GUI of any kind on the computer I'm using to write these particular words, it should be clear where I stand.
 While great to a point, I find the idea of extreme simplicity in product design ultimately unhelpful.
 
 Okay, first, lets get some things out of the way where we agree. Is there a lot of software out there that is unnecessarily complicated? Yes. Does radically simplifying a user interface and providing intelligent defaults lead to wins for everyone? Absolutely. Did anyone really want separate "Apply" and "Save" buttons in their option dialogs, instead of everything saving automatically? Hell no.
