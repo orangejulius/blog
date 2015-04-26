@@ -1,14 +1,15 @@
 body > header {
   background: $header-bg;
-  h1 {
+  .page-title {
     display: inline-block;
+	font-size: 1.5em;
     margin: 0;
     a, a:visited, a:hover {
       color: $title_color;
       text-decoration: none;
     }
   }
-  h2 {
+  .twitter-link {
     margin: .2em 2em 0;
     display: inline-block;
     font-size: 1em;
