@@ -47,7 +47,7 @@ The next task was perhaps the most daunting: get a desktop environment working. 
            linux   /boot/vmlinuz-3.1.1-00002-g77b9830 root=/dev/sda1 ro i915.lvds_channels=2 reboot=pci acpi_backlight=vendor
        }
 
-Pretty easy, right? Well there's some problems. Linux 3.1.1 isn't exactly the newest. Among other things, it doesn't support the Macbook Pro's wireless card. Fortunately there's a [patch](http://dentifrice.poivron.org/laptops/macbookpro8,2/files/3.1.0-bcm4331.patch) for that. But it would be nice to be able to use a newer kernel with all the latest updates, right? Plus, all that power in the Radeon graphics card is going to waste all the time. I'll have to conquer those hurdles another day.
+Pretty easy, right? Well there's some problems. Linux 3.1.1 isn't exactly the newest. Among other things, it doesn't support the Macbook Pro's wireless card. Fortunately there's a patch for that. But it would be nice to be able to use a newer kernel with all the latest updates, right? Plus, all that power in the Radeon graphics card is going to waste all the time. I'll have to conquer those hurdles another day.
 
 Since I had a working desktop environment now, I decided quickly to see how things were working. Firefox and Amarok worked just fine, but when I tried to watch a few minutes of Firefly, I realized there was no sound! I fiddled with model=mb5 and other settings in /etc/modprobe.d/alsa.conf but it turns out all I had to do was enable SND\_HDA\_CODEC\_CIRRUS. It's the only Intel HDA coded that's required actually.
 
