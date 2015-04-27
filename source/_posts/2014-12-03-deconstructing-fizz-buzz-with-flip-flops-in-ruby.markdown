@@ -70,7 +70,7 @@ behavior of the code.
 ## Fun with Printing
 
 The next line is actually the entire body of the block passed to `each`: the
-[print](http://ruby-doc.org/core-2.0/Kernel.html#method-i-print) method takes multiple arguments,
+[print](http://ruby-doc.org/core-2.0.0/Kernel.html#method-i-print) method takes multiple arguments,
 and notably, does not automatically print a newline at the end (`puts` on the other hand, does
 always print a newline).
 
