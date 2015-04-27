@@ -22,9 +22,11 @@ The next task was perhaps the most daunting: get a desktop environment working. 
 1. Start with a Linux 3.3.1 kernel. Using my existing linux git repo, I added another remote for linux-stable pointing to git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
 2. Apply the lvds\_dual\_channel and apple\_bl patches. Few others seem to have shared their work, so I pushed a branch with the patches to my [linux github repo](https://github.com/orangejulius/linux/tree/v3.1.1-patches).
 3. Build and install the kernel. Make sure the i915 driver is compiled into the kernel and kernel modesetting is enabled by default. In other words, set the following config options:
+
         CONFIG_DRM_I915=y
         CONFIG_DRM_I915_KMS=y
 4. Update your grub.cfg to disable the Radeon card and pass required parameters to the kernel. The menuentry for my kernel ended up looking like this:
+
        menuentry 'Gentoo GNU/Linux, with Linux 3.1.1-00002-g77b9830' --class gentoo --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-3.1.1-00002-g77b9830-advanced-1f2dc33c-2639-42f9-8502-9c7d3f24e7ec' {
            load_video
            set gfxpayload=keep
