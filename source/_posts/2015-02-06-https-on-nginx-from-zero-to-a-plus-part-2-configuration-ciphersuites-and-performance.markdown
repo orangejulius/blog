@@ -64,8 +64,10 @@ along when users first connect. In fact, your SSL score is capped at a B if you
 don't.
 
 Your Certificate Authority probably provided you with links to download your
-intermediate certificate, so once you've found it, put it somewhere safe on your
-server, and tell Nginx about it like this{% fn %}:
+intermediate certificate, so once you've found it, put it somewhere safe on
+your server, ~~and tell Nginx about it like this~~, and then make a new file
+that concatenates your certificate and the intermediate certificate together.
+Then tell Nginx about that one like this{% fn %}:
 
 ```nginx
 # send intermediate certificate during new sessions
@@ -330,11 +332,15 @@ the authors of these great works.
   {% endfnbody %}
 
   {% fnbody %}
-    Many tutorials, like Eric Mill's <a href="https://konklone.com/post/switch-to-https-now-for-free#generating-the-certificate">Switch to HTTPS Now, For free</a>
+    <del>Many tutorials, like Eric Mill's <a href="https://konklone.com/post/switch-to-https-now-for-free#generating-the-certificate">Switch to HTTPS Now, For free</a>
     suggest performing something equivalent by concatenating the root certificate,
     intermediate certificate, and your server's certificate together into one
     file. This works just fine, but I prefer keeping the files separate for
-    clarity. Use whichever method works better for you.
+    clarity. Use whichever method works better for you.</del>
+
+	I asked about this on the <a href="http://forum.nginx.org/read.php?2,256613,256621#msg-256621">Nginx mailing list</a>
+	and it turns out this works, but only by accident, and may break in future
+	versions of OpenSSL or Nginx at any time. Use the standard concatenation method.
   {% endfnbody %}
 
   {% fnbody %}
