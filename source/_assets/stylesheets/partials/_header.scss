@@ -1,5 +1,6 @@
 body > header {
   background: $header-bg;
+  min-width: 320px;
   .page-title {
     display: inline-block;
 	font-size: 1.5em;

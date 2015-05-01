@@ -73,6 +73,7 @@ body {
 }
 
 #content {
+  min-width: 320px;
   overflow: hidden;
   > div, > article { width: 100%; }
 }

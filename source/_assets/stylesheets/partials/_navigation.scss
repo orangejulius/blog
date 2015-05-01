@@ -1,5 +1,6 @@
 body > nav {
   position: relative;
+  min-width: 320px;
   background-color: $nav-bg;
   @include background($nav-bg-front, $nav-bg-back);
   border: {
