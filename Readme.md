@@ -12,4 +12,10 @@ my life easier (sometimes).
 
 # License
 
+## Code
+
 MIT - If this code can help you, by all means go for it!
+
+## Words and Photos
+
+[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
