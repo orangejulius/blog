@@ -9,7 +9,7 @@ group :development do
 
   gem 'jekyll', '~> 2.5'
   gem 'jekyll-sitemap'
-  gem 'jekyll-redirect-from'
+  gem 'jekyll-redirect-from', '~> 0.8.0'
   gem 'jekyll-footnotes'
   gem 'jekyll-assets'
   gem 'jekyll-compass'
