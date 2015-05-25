@@ -13,6 +13,7 @@ group :development do
   gem 'jekyll-footnotes'
   gem 'jekyll-assets'
   gem 'jekyll-compass'
+  gem 'jekyll-picture-tag'
 
   gem 'octopress-hooks', '~> 2.4'
   gem 'octopress-date-format', '~> 3.0', github: 'orangejulius/date-format'
