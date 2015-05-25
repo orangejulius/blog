@@ -66,6 +66,7 @@ google_analytics_tracking_id: UA-35876353-1
 
 picture:
   markup: "picture"
+  output: ""
   presets:
     default:
       ppi: [1, 1.5, 2.0]
