@@ -63,3 +63,20 @@ disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id: UA-35876353-1
+
+picture:
+  markup: "picture"
+  presets:
+    default:
+      ppi: [1, 1.5, 2.0]
+      attr:
+        class: "gallery-pict"
+        itemprop: "image"
+      source_full:
+        media: "(min-width: 830px)"
+        width: "830"
+      source_medium:
+        media: "(min-width: 600px)"
+        width: "600"
+      source_default:
+        width: "320"
