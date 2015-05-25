@@ -140,7 +140,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-compass
   jekyll-footnotes
-  jekyll-redirect-from
+  jekyll-redirect-from (~> 0.8.0)
   jekyll-sitemap
   octopress-date-format (~> 3.0)!
   octopress-hooks (~> 2.4)
