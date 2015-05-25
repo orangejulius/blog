@@ -22,18 +22,18 @@ window.twttr = (function(d, s, id) {
 function clickEventToAnalytics (intentEvent) {
 	if (!intentEvent) return;
 	var label = intentEvent.region;
-	_gaq.push(['_trackEvent', 'twitter_web_intents', intentEvent.type, label]);
+	ga('send', 'event', 'twitter_web_intents', intentEvent.type, label);
 }
 
 function tweetIntentToAnalytics (intentEvent) {
 	if (!intentEvent) return;
 	var label = "tweet";
-	_gaq.push([
-			'_trackEvent',
+	ga('send',
+			'event',
 			'twitter_web_intents',
 			intentEvent.type,
 			label
-			]);
+			);
 }
 
 function favIntentToAnalytics (intentEvent) {
@@ -43,22 +43,23 @@ function favIntentToAnalytics (intentEvent) {
 function retweetIntentToAnalytics (intentEvent) {
 	if (!intentEvent) return;
 	var label = intentEvent.data.source_tweet_id;
-	_gaq.push([
-			'_trackEvent',
+	ga( 'send',
+			'event',
 			'twitter_web_intents',
 			intentEvent.type,
 			label
-			]);
+			);
 }
 
 function followIntentToAnalytics (intentEvent) {
 	if (!intentEvent) return;
 	var label = intentEvent.data.user_id + " (" + intentEvent.data.screen_name + ")";
-	_gaq.push([
+	ga( 'send',
+	        'event',
 			'twitter_web_intents',
 			intentEvent.type,
 			label
-			]);
+			);
 }
 
 // Wait for the asynchronous resources to load
