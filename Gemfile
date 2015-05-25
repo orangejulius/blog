@@ -6,6 +6,7 @@ group :development do
   gem 'sass-globbing', '~> 1.1'
   gem 'rubypants', '~> 0.2.0'
   gem 'stringex', '~> 1.4.0'
+  gem 'uglifier'
 
   gem 'jekyll', '~> 2.5'
   gem 'jekyll-sitemap'
