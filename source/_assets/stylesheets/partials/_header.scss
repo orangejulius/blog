@@ -13,8 +13,6 @@ body > header {
   .twitter-link {
     margin: .2em 2em 0;
     display: inline-block;
-    font-size: 1em;
-    font-weight: normal;
     a, a:visited, a:hover {
       @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
       text-decoration: none;
