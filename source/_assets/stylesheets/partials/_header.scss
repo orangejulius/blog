@@ -11,7 +11,7 @@ body > header {
     }
   }
   .twitter-link {
-    margin: .2em 2em 0;
+    margin: .2em 0 0 1em;
     display: inline-block;
     a, a:visited, a:hover {
       @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
