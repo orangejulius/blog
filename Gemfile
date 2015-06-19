@@ -9,6 +9,10 @@ group :development do
   gem 'uglifier'
 
   gem 'jekyll', '~> 2.5'
+  gem 'shrimp'
+end
+
+group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-redirect-from', '~> 0.8.0'
   gem 'jekyll-footnotes'
@@ -18,8 +22,6 @@ group :development do
 
   gem 'octopress-hooks', '~> 2.4'
   gem 'octopress-date-format', '~> 3.0', github: 'orangejulius/date-format'
-
-  gem 'shrimp'
 end
 
 gem 'sinatra', '~> 1.4'
