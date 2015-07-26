@@ -304,12 +304,15 @@ noticeable impact on page load times.
 With that in mind, it makes sense to cache SSL sessions for at least a few
 minutes, so that users only have to pay that cost once. Nginx is _almost_
 configured correctly out of the box to do this. The only change needed is
-setting a time limit for the session cache:
+setting a size limit for the session cache. The actual timeout is specified with
+`ssl_session_timeout`, which defaults to 5 minutes. The 10MB cache size limit is suggested by
+[Nginx's own HTTPS configuration guide](http://nginx.org/en/docs/http/configuring_https_servers.html):
 
 ```nginx
 # Cache SSL Sessions for up to 10 minutes
 # This improves performance by avoiding the costly session negotiation process where possible
 ssl_session_cache builtin:1000 shared:SSL:10m;
+# ssl_session_timeout 5m; # this is a default, but can be changed
 ```
 
 ## Resources and Thanks
