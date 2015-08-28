@@ -67,7 +67,7 @@ GEM
     jekyll-compass (1.2.0)
       compass (~> 1.0)
       jekyll (~> 2.0)
-    jekyll-footnotes (0.6.1)
+    jekyll-footnotes (0.7.0)
     jekyll-gist (1.2.1)
     jekyll-paginate (1.1.0)
     jekyll-picture-tag (0.2.3)
