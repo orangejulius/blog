@@ -52,7 +52,7 @@ titlecase: false       # Converts page and post titles to titlecase
 #   3rd Party Settings    #
 # ----------------------- #
 # Disqus Comments
-disqus_short_name: juliansimionisblog
+disqus_short_name:
 disqus_show_comment_count: true
 
 # Google Analytics
