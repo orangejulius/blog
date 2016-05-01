@@ -37,24 +37,27 @@ of them. This admission is something I respect about both of these books, which 
 another, _Managing the Unmanagable_, that I couldn't finish years ago: it's author seemed to have
 claimed the problem of working with developers solved.
 
-## Patterns of Enterprise Application Architecture
+## Patterns of Enterprise Application Architecture by Martin Fowler
 
 A classic architecture book from the 90s, today _PEAA_ is not likely to be as practically useful as
 it once was, but is now almost a history book. The proliferation of powerful open source software
 frameworks means few people will need to use the techniques in this book. But it's place as a
-foundational tome of knowledge on which many of those tools are based is obvious: the first
+foundational tome of knowledge on which many of those tools are based is obvious. The first
 architecture pattern it describes is familiar to anyone from the Rails world: active record.
 
-## Flatland
+## Flatland by Edwin Abbott Abbott
 
 A silly, short, enjoyable story that is as much a window into its times as it is a dive into
 mathematics and abstract thought.
 
-## The Little Tea Book
+## The Little Tea Book by George Washington Hood
 
 I don't remember anything about this book.
 
 ## Working Effectively with Unit Tests by Jay Fields
+
+A great and focused book on unit tests. I find myself using and sharing ideas from this book all the
+time, and definitely recommend more developers read it.
 
 ## From Eternity to Here by Sean Carroll
 
@@ -62,14 +65,14 @@ I bought this book perhaps 5 years ago, and nearly read through it. I'm glad to 
 re-read and finish it. Mr. Carroll is a fantastic writer and scientists. This book covers issues
 deep enough to fill philosophy, as well as science texts, but is still easy to read.
 
-## The Orphan Master's Son
+## The Orphan Master's Son by Adam Johnson
 
 A rather surreal fiction based in North Korea, I enjoyed and disliked this book for its ridiculously
 outlandish plot and characters. It was frustratingly unclear how much of this books ideas are based
 in actual facts about North Korea, and which were invented by the author, but none the less it has
 some fantastic sections that make it worthwhile.
 
-## The Girl With the Dragon Tattoo by Steig Larsson
+## **The Girl With the Dragon Tattoo by Steig Larsson**
 
 In the past I've claimed to prefer non-fiction books to fiction, arguing history gives us enough
 fascinating stories that there is no need to invent our own. However after _The Girl With the Dragon
@@ -77,7 +80,7 @@ Tattoo_ I can no longer defend that position.
 
 Fantastic characters, deep plot with incredible mystery, and scenes that make the suspense of any
 horror film feel mild make this one of the best books I've ever read. While it uses the real
-political and historical climate in Sweeden to make the story even more riveting, it's immediately
+political and historical climate in Sweden to make the story even more riveting, it's immediately
 clear where the fiction begins, unlike _The Orphan Master's Son_.
 
 My only complaint about this book is a practical one: at the time I read it, I had been travelling
@@ -85,21 +88,21 @@ between the US and Europe frequently, and used reading as a way to get my sleep 
 track. Mr. Larson's writing ruined those plans: unlike every other book, normally unconquerable
 exhaustion after international flights couldn't stop me from staying up all night to finish it.
 
-## 102 Minutes
+## 102 Minutes by Jim Dwyer
 
 It would probably be insensitive to say I enjoyed this book, but whatever I felt, I couldn't put
 this book down and finished in only a few days. Supported by what must have been a superhuman
 quantity of research, _102 Minutes_ covers every human emotion in detailing the heroism and tragedy
 of September 11th.
 
-Refreshingly, _102 Minutes_ leaves no room for conspiracy theories, villification of Muslims or
+Refreshingly, _102 Minutes_ leaves no room for conspiracy theories, vilification of Muslims or
 Islam, or irrational fear of terrorists. In fact, it might be argued the book blames building codes
 more than anything for the tragedy: in a break from the minute-by-minute account of the morning of
 September 11th, the book details how building codes of the time were written to fit the design of
-the twin towers, rather than vice versa, and allowed for a construction that enabled the horriffic
+the twin towers, rather than vice versa, and allowed for a construction that enabled the horrific
 collapse of the buildings.
 
-## The Island at the Center of the World by Russel Shorto
+## **The Island at the Center of the World by Russel Shorto**
 
 Second in my reading list after moving to New York City, this was a wonderful history on par with
 any other I've read. Despite a setting over 300 years in the past, I see the influence of the
@@ -107,17 +110,17 @@ characters and events in this book everywhere I go in New York, which brings me 
 
 ## The Girl Who Played With Fire by Steig Larsson
 
-The sequil to _The Girl With the Dragon Tattoo_ contains the same spectacular writing and
+The sequel to _The Girl With the Dragon Tattoo_ contains the same spectacular writing and
 characters, so it's still immensely enjoyable, but it's more complex plot doesn't surpass the first.
 
 ## The Girl who Played With Fire by Steig Larsson
 
 Following up on what is in some respects a cliffhanger ending, it's inevitable that you will read
-this book to conclusion once you start on the second book in the trilogy, but despite Larsson's
-continued excellent writing, I was happy to be done with this book. I haven't yet decided if I'll
-read the fourth book.
+this book to conclusion once you start on the second book in the trilogy. Despite Larsson's
+continued excellent writing, I was happy to be done with this book: the story had gotten rather
+boring. I haven't yet decided if I'll read the fourth book.
 
-## The Martian
+## **The Martian by Andy Weir**
 
 Bookless before a short flight, I bought _The Martian_ at an airport bookstore and finished it less
 than 12 hours later. I had already seen the film but it didn't reduce my enjoyment of this funny and
