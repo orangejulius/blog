@@ -1,0 +1,148 @@
+---
+layout: post
+title: "2015 Books"
+date: "2016-02-22 15:18:03 -0500"
+comments: true
+categories: book-reviews
+---
+
+Like [last year](/blog/2014-books), I've been up to some reading this past year. Here's the list
+along with some thoughts. As done by aaronsw, books I especially enjoyed are in bold
+
+## Moby Dick by Herman Melville
+
+I read most of this book in 2014, but didn't quite finish it. There's no doubt Melville has an
+unparalleled skill with the English language. Strangely, I found all the characters, especially
+Ahab, comical, rather than frightening. Perhaps Ricardo Montalban's performance in _The Wrath of
+Khan_ has set the bar too high. A great read both as fiction and as a historical depiction of the
+times.
+
+## Talking with Tech Leads by Patrick Kua
+
+Although not the case for a few years after college, these days I find myself more fascinated and
+interested in the challenges of growing and organizing people, rather than software or other
+technology. This book, with its many short investigations into the delicate balance the two inherent
+in the tech lead role, is a helpful resource. Each essay has a different author and so covers a wide
+range of viewpoints and situations. Far from being a deficit, the conclusion of this book -- that
+the tech lead role is itself nearly undefinable and that there are no perfect solutions to
+efficiently lead groups of people working with software -- is actually a valuable lesson.
+
+## career.fork()
+
+Having just moved to Berlin and looking for work at the time, I felt compelled to investigate
+contracting and freelancing options, as many in Berlin do. Another short read, _career.fork()_
+touches on, but doesn't attempt to completely cover, all the challenges one will face working for
+themselves. Like _Tech Leads_, this brevity is useful, as there aren't any simple solutions to most
+of them. This admission is something I respect about both of these books, which was absent in
+another, _Managing the Unmanagable_, that I couldn't finish years ago: it's author seemed to have
+claimed the problem of working with developers solved.
+
+## Patterns of Enterprise Application Architecture by Martin Fowler
+
+A classic architecture book from the 90s, today _PEAA_ is not likely to be as practically useful as
+it once was, but is now almost a history book. The proliferation of powerful open source software
+frameworks means few people will need to use the techniques in this book. But it's place as a
+foundational tome of knowledge on which many of those tools are based is obvious. The first
+architecture pattern it describes is familiar to anyone from the Rails world: active record.
+
+## Flatland by Edwin Abbott Abbott
+
+A silly, short, enjoyable story that is as much a window into its times as it is a dive into
+mathematics and abstract thought.
+
+## The Little Tea Book by George Washington Hood
+
+I don't remember anything about this book.
+
+## Working Effectively with Unit Tests by Jay Fields
+
+A great and focused book on unit tests. I find myself using and sharing ideas from this book all the
+time, and definitely recommend more developers read it.
+
+## From Eternity to Here by Sean Carroll
+
+I bought this book perhaps 5 years ago, and nearly read through it. I'm glad to have decided to
+re-read and finish it. Mr. Carroll is a fantastic writer and scientists. This book covers issues
+deep enough to fill philosophy, as well as science texts, but is still easy to read.
+
+## The Orphan Master's Son by Adam Johnson
+
+A rather surreal fiction based in North Korea, I enjoyed and disliked this book for its ridiculously
+outlandish plot and characters. It was frustratingly unclear how much of this books ideas are based
+in actual facts about North Korea, and which were invented by the author, but none the less it has
+some fantastic sections that make it worthwhile.
+
+## **The Girl With the Dragon Tattoo by Steig Larsson**
+
+In the past I've claimed to prefer non-fiction books to fiction, arguing history gives us enough
+fascinating stories that there is no need to invent our own. However after _The Girl With the Dragon
+Tattoo_ I can no longer defend that position.
+
+Fantastic characters, deep plot with incredible mystery, and scenes that make the suspense of any
+horror film feel mild make this one of the best books I've ever read. While it uses the real
+political and historical climate in Sweden to make the story even more riveting, it's immediately
+clear where the fiction begins, unlike _The Orphan Master's Son_.
+
+My only complaint about this book is a practical one: at the time I read it, I had been travelling
+between the US and Europe frequently, and used reading as a way to get my sleep schedule back on
+track. Mr. Larson's writing ruined those plans: unlike every other book, normally unconquerable
+exhaustion after international flights couldn't stop me from staying up all night to finish it.
+
+## 102 Minutes by Jim Dwyer
+
+It would probably be insensitive to say I enjoyed this book, but whatever I felt, I couldn't put
+this book down and finished in only a few days. Supported by what must have been a superhuman
+quantity of research, _102 Minutes_ covers every human emotion in detailing the heroism and tragedy
+of September 11th.
+
+Refreshingly, _102 Minutes_ leaves no room for conspiracy theories, vilification of Muslims or
+Islam, or irrational fear of terrorists. In fact, it might be argued the book blames building codes
+more than anything for the tragedy: in a break from the minute-by-minute account of the morning of
+September 11th, the book details how building codes of the time were written to fit the design of
+the twin towers, rather than vice versa, and allowed for a construction that enabled the horrific
+collapse of the buildings.
+
+## **The Island at the Center of the World by Russel Shorto**
+
+Second in my reading list after moving to New York City, this was a wonderful history on par with
+any other I've read. Despite a setting over 300 years in the past, I see the influence of the
+characters and events in this book everywhere I go in New York, which brings me great joy.
+
+## The Girl Who Played With Fire by Steig Larsson
+
+The sequel to _The Girl With the Dragon Tattoo_ contains the same spectacular writing and
+characters, so it's still immensely enjoyable, but it's more complex plot doesn't surpass the first.
+
+## Aviation Weather by the FAA
+
+Long ago, the FAA distributed information on weather phenomena and the technology used to predict
+and measure it together. It turns out weather itself doesn't change, but our weather related tools
+sure do, so the topics were split into two books in the 70s. This book covers the former topic, and
+it hasn't seen a republishing since 1975. All the information it contains is useful, but it could
+use with a bit of modernization still, if even just to show higher quality pictures of different
+types of clouds.
+
+## Starting Strength by Mark Rippetoe
+
+A great and complete book on weight training. Rippetoe has a character that is unforgettable if not
+always PC or likable, but he seems to for the most part really know what he's talking about. Why
+does he love milk so much though?
+
+## The Girl who Played With Fire by Steig Larsson
+
+Following up on what is in some respects a cliffhanger ending, it's inevitable that you will read
+this book to conclusion once you start on the second book in the trilogy. Despite Larsson's
+continued excellent writing, I was happy to be done with this book: the story had gotten rather
+boring. I haven't yet decided if I'll read the fourth book.
+
+## **The Martian by Andy Weir**
+
+Bookless before a short flight, I bought _The Martian_ at an airport bookstore and finished it less
+than 12 hours later. I had already seen the film but it didn't reduce my enjoyment of this funny and
+scientifically accurate story.
+
+The movie and book are both excellent, but differ especially in theme. I'd love to discuss the
+details more with anyone who has enjoyed both.
+
+Notably, I find that my consumption of potatoes has considerably increased since reading this book.
+
