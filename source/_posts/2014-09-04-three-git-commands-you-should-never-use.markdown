@@ -46,7 +46,7 @@ there that shouldn't be committed, you can skip right over it.
 
 There are two reasons why I hate `git commit -m`.
 
-First, it incentives short, unhelpful commit messages. On any size team (even a team of one),
+First, it incentivises short, unhelpful commit messages. On any size team (even a team of one),
 commit messages are one of the most useful ways to record knowledge from that critical time when code
 is actually written. `git commit -m "fixed big"` throws that opportunity right out the window.
 Please everyone take a second and write awesome commit messages. Did you know Git commit messages
