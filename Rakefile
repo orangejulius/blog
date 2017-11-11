@@ -170,6 +170,11 @@ task :rsync do
   ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
 end
 
+desc "Export built site as a tar file to STDOUT"
+task :archive do
+  system("tar cvjp - #{public_dir}/")
+end
+
 def ok_failed(condition)
   if (condition)
     puts "OK"
