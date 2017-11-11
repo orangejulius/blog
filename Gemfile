@@ -10,6 +10,7 @@ group :development do
 
   gem 'jekyll', '~> 2.5'
   gem 'shrimp'
+  gem 'therubyracer'
 end
 
 group :jekyll_plugins do
