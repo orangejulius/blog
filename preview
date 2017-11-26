@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -ex
+
+DIR=`pwd`
+
+docker build . -t orangejulius/blog && \
+  docker run \
+  -v $DIR/public:/blog/public \
+  -v $DIR/source:/blog/source:ro \
+  -p 4000:4000 \
+  orangejulius/blog
