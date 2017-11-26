@@ -12,7 +12,7 @@ Despite having most of my [configs](https://github.com/orangejulius/dotfiles) in
 otherwise tracked, I ran into a problem with setting this up.
 
 Here's the error:
-```
+```console
 $ git commit
 error: gpg failed to sign the data
 fatal: failed to write commit object
@@ -25,7 +25,7 @@ silly, but there are some easy ways to get it wrong. First, some correct example
 
 #### Standard long key format (recommended)
 
-```
+```ini
 [user]
     name = Julian Simioni
     email = julian@simioni.org
@@ -36,7 +36,7 @@ That's `0x` followed by the last 16 characters of your key id. At least as of `g
 standard output of a command like `gpg --list-secret-keys`
 
 #### Long key format without the hexidecimal prefix
-```
+```ini
 [user]
     # ...
     signingkey = 4CEEB1E5A7FD15E1
@@ -46,7 +46,7 @@ Still 16 characters, but without the prefix clarifying that the value is written
 
 #### Short key format (works, but not recommended)
 
-```
+```ini
 [user]
     # ...
     signingkey = A7FD15E1
@@ -80,7 +80,7 @@ Many of these came from [this helpful Stackoverflow thread](https://stackoverflo
 
 A simple way to test `gpg` and your secret key itself is to issue a command like the following:
 
-```
+```bash
 echo "test" | gpg ---clearsign
 ```
 
@@ -96,13 +96,13 @@ the background that will stick around. That process is used to remember your pas
 for convenience, and probably other things.
 
 In the past, ensuring the `gpg` command you run on the command line can communicate with this agent
-has been challenging. If you've ever seen instructions regarding adding various `GPG_AGENT_INFO`,
-its an attempt to properly set up this communication channel.
+has been challenging. If you've ever seen instructions regarding adding various `GPG_AGENT_INFO`
+environment variables, its an attempt to properly set up this communication channel.
 
 The good news is that as of `GnuPG` version 2.1.0, __none of this is needed__. There is now a
 "standard" method of connecting to the agent and everything is supposed to just work. Compare the
-instructions for using the gpg agent in the documentation for [version 2.0](https://gnupg.org/documentation/manuals/gnupg-2.0/Invoking-GPG_002dAGENT.html)
-and the [current latest version](https://gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html) to see
+instructions in the documentation for [version 2.0](https://gnupg.org/documentation/manuals/gnupg-2.0/Invoking-GPG_002dAGENT.html)
+and the [latest version](https://gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html) to see
 what I mean.
 
 ### GPG_TTY environment variable
@@ -111,7 +111,7 @@ This variable _is_ important to set up. It will help GPG know which terminal it 
 that the prompt to enter your key passphrase is shown in the correct place. Again, from the GnuPG
 documentation, this will do the trick:
 
-```
+```bash
 GPG_TTY=$(tty)
 export GPG_TTY
 ```
@@ -124,8 +124,8 @@ itself, rather than in your SSH session.
 
 Fortunately, its easy to tell `pinentry`, the underlying program responsible for managing passphrase
 entry, to do the right thing during SSH sessions.
-```
-if [[ -n "$SSH_CONNECTION" ]] ;then
+```bash
+if [[ -n "$SSH_CONNECTION" ]]; then
     export PINENTRY_USER_DATA="USE_CURSES=1"
 fi
 ```
