@@ -172,7 +172,7 @@ end
 
 desc "Export built site as a tar file to STDOUT"
 task :archive do
-  system("tar cvjp - #{public_dir}/")
+  system("tar cvjp #{public_dir}/")
 end
 
 def ok_failed(condition)
