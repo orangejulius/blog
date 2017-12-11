@@ -6,17 +6,6 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Julian Simioni's Resume</title>
 		<link href="/resume/style.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-35876353-1']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-		</script>
 	</head>
 	<body>
 		<div id="container">
@@ -29,19 +18,49 @@
 			</div>
 
 			<div class="content">
-				<h2>Senior Full-Stack Software Developer</h2>
-				<p>An experienced full-stack developer with an appreciation for the human side: I
-				believe communication is one of the hardest, most important, and most interesting
-				part of software development. Backend/infrastructure/scalability specialist: I've built
-				systems that scaled to tens of millions of users. User of, advocate
-				for, and contributor to open source software. Private pilot, amateur cyclist, novice
-				public speaker.</p>
+				<h2>Senior Backend Software Developer</h2>
+				<p>Experienced backend developer and open source community builder.
+				I've built systems that scaled to over 100 million users.  Firm believer in the
+				power of effective teams and good communication.  Private pilot, cyclist, public
+				speaker.</p>
 
 				<h2>Work Experience</h2>
+
+				<section class="job">
+					<header class="row1">
+						<span class="location">New York, NY</span>
+						<span class="company">Mapzen (Samsung Accelerator)</span>
+					</header>
+					<div class="row2">
+						<span class="date">July 2015 - current</span>
+						<span class="jobtitle">Senior Software Developer</span>
+					</div>
+					<div class="description">
+						<p>Core team member of the open-source Pelias geocoder project and
+						corresponding hosted SaaS product, Mapzen Search</p>
+						<p>Prototyped and onboarded developers to a Kubernetes based infrastructure
+						on AWS</p>
+						<p>Developed features and techniques for processing and searching global
+						datasets under constant flux as part of a distributed team across several
+						time-zones</p>
+						<p>Mentored interns and open source contributors</p>
+						<p>Created new tools and team workflows to improve testing, continuous
+						integration, code review, on call procedures, and load testing</p>
+						<p>Identify service bottlenecks leading to a 5x performance
+						increase and (separately) a 40% reduction in server costs<p>
+						<p>Supported external customers and community members with bug triage, setup,
+						feature requests</p>
+						<p>Evaluated technology for improved operations including Terraform, ECS,
+						Docker, and Kubernetes</p>
+						<p>Presented on geocoding and systems related topics at conferences, workshops, and other
+						outreach events</p>
+					</div>
+				</section>
+
 				<section class="job">
 					<header class="row1">
 						<span class="location">San Francisco, CA</span>
-						<span class="company">42floors</span>
+						<span class="company">42floors (YC W12)</span>
 					</header>
 					<div class="row2">
 						<span class="date">May 2013 - October 2014</span>
@@ -49,14 +68,14 @@
 					</div>
 
 					<div class="description">
-						<p>Completed projects from the infrastructure to front end as part of a
-						small, focused team of developers, working on a mix of internal and external
-						software.</p>
+						<p>Led product design and engineering for an online service for commercial
+						real estate brokers written with Backbone and Ruby on Rails.</p>
 						<p>Built a code deployment system that allowed for any team member to
 						perform easy A/B testing of large changes to both browser and server
 						code.</p>
-						<p>Lead product design and engineering for an online service for commercial
-						real estate brokers.</p>
+						<p>Completed numerous projects from the infrastructure to front end as part of a
+						small, focused team of developers, working on a mix of internal and external
+						software.</p>
 					</div>
 				</section>
 
@@ -70,14 +89,11 @@
 						<span class="jobtitle">Full-Stack Software Developer</span>
 					</div>
 					<div class="description">
-						<p>Contributor to multiple software projects across the company spanning the
-						full technology stack.</p>
-						<p>Member of a small team for an unannounced project: an experimental
-						single-page app written in Backbone with offline support, extensive use of
-						Web Storage and other new web browser features.</p>
-						<p>As a member of the goodreads.com Ruby on Rails backend team, rewrote and
-						improved the payment system for a self-serve advertisement platform with
-						several years worth of customers and features to support.</p>
+						<p>Contributed features to a browser based e-reader app written in Backbone with offline
+						support, extensive use of Web Storage and other then new browser
+						features.</p>
+						<p>Improved implementation and testing of the self-serve advertisement
+						payment platform.</p>
 					</div>
 				</section>
 
@@ -91,15 +107,21 @@
 						<span class="jobtitle">Backend Software Engineer</span>
 					</div>
 
-					<p class="description">Worked in multiple fast-paced, high growth game teams,
+					<div class="description"><p>Worked in multiple fast-paced, high growth game teams,
 					focusing on backend development and systems scalability. Occasional forays into
-					frontend development, security, and product design.<br/> Worked with multiple
-					new games during launch to improve scaling/performance.<br /> Major
-					contributions to multiple internal systems. Some interesting creations:<br/> -
-					Virtual machine configuration management system that is used on multiple
-					deployments of up to 5000 servers.<br /> - Remote command execution system (used
-					for code deployment) capable of issuing commands to over 30,000 servers in under
-					5 seconds.  </p> </section>
+					frontend development, security, and product design.</p>
+					<p>Core member of the ops team for Farmville, supporting the game while it grew
+					from 10MM daily users to 32MM in 3 months.</p>
+					<p>Founding member of Zynga central ops team supporting multiple new games
+					during the entire launch process.</p>
+					<p>Developed and helped teams transition to an automated VM configuration management system that is used on multiple
+					deployments of 5000+ servers.</p>
+					<p>Designed, implemented, and shipped a code deployment system built on
+					Zookeeper and BitTorrent capable of deploying to 30,000 servers in under 5
+					seconds.</p>
+					</section>
+
+				<div style="page-break-after:always;"></div>
 
 				<section class="job">
 					<header class="row1">
@@ -115,35 +137,6 @@
 
 				<section class="job">
 					<header class="row1">
-						<span class="location">Mountain View, CA</span>
-						<span class="company">Intuit Inc.</span>
-					</header>
-					<div class="row2">
-						<span class="date">May 2008 - Aug 2008</span>
-						<span class="jobtitle">Software Engineering Intern</span>
-					</div>
-					<p class="description">Designed and developed a stand-alone application for secure
-					transfer of QuickBooks files over the internet. Designed database schemas as part
-					of an all-intern project creating a Facebook application.</p>
-				</section>
-
-				<section class="job">
-					<header class="row1">
-						<span class="location">Mountain View, CA</span>
-						<span class="company">Intuit Inc.</span>
-					</header>
-					<div class="row2">
-						<span class="date">May 2007 - Aug 2007</span>
-						<span class="jobtitle">IT Intern</span>
-					</div>
-					<p class="description">Worked with web service QA teams performing unit and end-to-end
-					testing. Replaced crude in-house testing utilities with more powerful and better
-					supported external software. Developed automated replacements for manual tests saving
-					hours of developer time.</p>
-				</section>
-
-				<section class="job">
-					<header class="row1">
 						<span class="location">East Lansing, MI</span>
 						<span class="company">Michigan State University High Performance Computing Center</span>
 					</header>
@@ -152,22 +145,9 @@
 						<span class="jobtitle">Infrastructure Developer</span>
 					</div>
 					<p class="description">Built and supported tools to facilitate computationally
-					intensive university research. Maintained and troubleshot high performance
+					intensive university research. Maintained and improved on premises high performance
 					computing systems consisting of hundreds of servers.</p>
 				</section>
-
-				<section class="job">
-					<header class="row1">
-						<span class="location">East Lansing, MI</span>
-						<span class="company">Michigan State University College of Agriculture</span>
-					</header>
-					<div class="row2">
-						<span class="date">Nov 2005 - May 2006</span>
-						<span class="jobtitle">Web Developer</span>
-					</div>
-					<p class="description">Designed, developed, tested, and deployed web sites for multiple clients.</p>
-				</section>
-				<div style="page-break-after:always;"></div>
 
 				<h2>Education</h2>
 
@@ -184,19 +164,21 @@
 						GPA: 3.4/4.0<br />
 						Cognate (Minor): Business<br />
 						Cycling Club: President (2 years), webmaster (3 years)<br />
-						Notable course work: algorithms and object oriented design (both in C++),
-						assembly programming with the SPARC ISA, 3D graphics with OpenGL,
-						advanced computer architecture, circuit design.
+						Notable course work: algorithms and object oriented design (C++),
+						SPARC assembly programming, 3D graphics with OpenGL, compiler design (C++).
 					</p>
 				</section>
 
 				<h2>Skills</h2>
 				<ul>
-					<li>Prefers Ruby, C, Javascript. Experienced with Python, Scala, Java, Go, PHP,
+					<li>Most experienced with Javascript, Ruby, C. Projects completed in Python, Scala, Java, Go, PHP,
 					C++, Bash, HTML, CSS, SQL, many others.</li>
+					<li>Public speaking: RailsCamp, Rocky Mountain Ruby, JSGeo, FOSS4g, GeoNYC, more</li>
+					<li>Volunteer mentor: RailsBridge, CoderDojo, HackerHours</li>
 					<li>CCNA (Cisco Certified Network Associate) 2004-2007</li>
 					<li>US Private Pilot License issued 2012</li>
 					<li>Spoken languages: English (fluent)</li>
+					<li>Citizenship: USA, Italy</li>
 				</ul>
 			</div>
 			<div id="references">References available upon request.</div>
