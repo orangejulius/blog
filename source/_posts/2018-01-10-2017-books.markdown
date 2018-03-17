@@ -1,0 +1,118 @@
+---
+layout: post
+title: "2017 Books"
+date: "2018-01-10 17:55:04 +0000"
+comments: true
+categories: book-reviews
+---
+
+It's time for another year of book reviews! This was not the year where I read the most, but those I
+got to I really enjoyed.
+
+## The Brilliant Disaster by Jim Rasenberger
+
+This is an incredible story that is so much more complex than is capable of being understood just
+from popular knowledge about the famous events involved.
+
+It's a timely book to read and will continue to be relevant as we continue to discover more and more
+negative effects of the USA's involvement in other countries affairs.
+
+## Chasing Space by Leland Melvin
+
+The path astronauts take to space is not always a direct route, and no one can speak to that truth
+more than Leland Melvin, the only professional football player to also fly in space and visit the
+International Space Station.
+
+This book is a must-read for those interested in the space program, but not for the reasons one
+might expect. Our nation and world needs, more than ever, to hear stories about the challenges
+people of color and other minorities face to get to the places white people have been from the
+beginning. Leland Melvin tells that story well and we should listen.
+
+## Kubernetes: Up and Running by Kelsey Hightower, Brendan Burns, and Joe Beda
+
+Kubernetes has been one of the hottest technology topics of the year. The authors of this book have
+been around the scene since the very beginning. This is a short book, perfect for ensuring
+you know the core concepts of, and have a basic familiarity with, Kubernetes.
+
+There is obviously much more to learn, but having confidence in your base knowledge is well worth
+the time. In fact, I am now purchasing other books in the O'Reilly "Up and Running" series expecting
+to see similar benefit.
+
+## Cloud Native Infrastructure by Justin Garrison and Kris Nova
+
+The technology world is constantly changing and those of us who deal with software infrastructure
+would do well to read this book. Unlike _Kubernetes: Up and Running_, you won't run to the command
+line and immediately put to use the knowledge from this book. However, after reading this book you
+will think about the changing trends of this industry with a bit more clarity.
+
+I find myself frequently thinking back to nuggets of information from this book when weighing
+decisions for new software project architecture, and likely will for some time.
+
+## A Room of One's Own by Virginia Wolf
+
+If you adjust the currencies for the present day (£500/yr won't really cut it anymore), you'd be
+hard pressed to find any part of this book that isn't just as relevant today as it was almost 90
+years ago. Like the stories from people of color, we need to listen to stories from women just as
+much today as in 1929.
+
+Wolf's writing style is wonderful: elegant, flowing, deep, and complex. I'd like to think I
+recognize elements of it in the writing of talented women I read today. It would makes sense that
+this is true.
+
+## The Manager's Path by Camille Fournier
+
+This is one of those books where you are actually reading about yourself. Hopefully, it's in the
+incredibly useful descriptions of how to be a good employee/manager/CTO/etc that are in this book.
+
+Most likely, the toughest but most useful parts of this book will be when you see a bit of yourself
+in the "Good Manager/Bad Manager" sections that detail various levels of unhelpful behavior that all
+sorts of team members can exhibit. It was definitely true for me, but that's part of what makes this
+book so helpful.
+
+## The Secret Race by Tyler Hamilton and Daniel Coyle
+
+We all knew professional cycling was full of performance enhancing drugs. But there was always a
+shroud of mystery and just enough unknown to ignore it or make it not worth thinking about.
+Obviously that's no longer true. Tyler Hamilton does an incredible job with a first hand story that
+gives all the details of what being a top level pro cyclist was REALLY like.
+
+It may not really make pro cycling appealing, but if you ever thought about living in Girona, Spain,
+you will think about it even more after this book.
+
+## Lance Armstrong's War by Daniel Coyle
+
+I read this book many years ago (before I was writing about the books I read). Back then, I treated
+it like a bible. What you wanted to aspire to, how you should act, if you wanted to become a true
+cyclist.
+
+I don't feel that way anymore. The second time reading this book, I read it as a companion to _The
+Secret Race_. When Coyle wrote this book, he could only hint at the things he knew about the real
+state of professional cycling. And he didn't know nearly as much as we all do now.
+
+Reading these two books is a great combo. One is direct with every detail. _Lance Armstrong's War_
+is best if you read behind the lines. Most of the wild speculation about how corrupted professional
+cycling _might_ be turned out to be true.
+
+## Long Walk to Freedom by Nelson Mandela
+
+This year, I didn't write my reading list in the order I completed books, because I had to save this
+one for last. Without a doubt, this is the best book I have ever read.
+
+Nelson Mandela tells a story with a unique blend of clarity, emotion, humor, and care. And the story he
+has to tell is one of the most important of the 20th century.
+
+Throughout this book I was brought to laughter, and to tears. I felt hope and despair. I was along
+for the entire journey with Mandela and 40 million South Africans.
+
+As an added bonus, I read much of this book while in Cape Town, South Africa. It is not lost on me
+that while I was reading, I was smelling the exact same ocean air that Mandela was smelling when he
+wrote much of it from a few miles away on Robben Island.
+
+After I was done, I spent hours reading other accounts. A huge treasure we have today is that there
+are countless videos of Mandela available instantly on the internet. Some of them cover his speeches
+or other events he wrote about in the book. I can confirm that his incredible wit, charm, and
+unstoppable vision is as present when he is speaking live as when he has endless hours in his cell
+to write down his thoughts.
+
+I can't recommend enough a trip to South Africa and a read of this book. But if the cost of flying
+almost to one end of this Earth is enough, at least read the book.
