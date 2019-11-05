@@ -81,7 +81,7 @@ Many of these came from [this helpful Stackoverflow thread](https://stackoverflo
 A simple way to test `gpg` and your secret key itself is to issue a command like the following:
 
 ```bash
-echo "test" | gpg ---clearsign
+echo "test" | gpg --clearsign
 ```
 
 This will send a small bit of text ("test") to gpg, and have it print out the same text, but with a
