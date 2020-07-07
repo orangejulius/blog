@@ -49,9 +49,9 @@ There are two reasons why I hate `git commit -m`.
 First, it leads to short, unhelpful commit messages. On any size team (even a team of one),
 commit messages are one of the most useful ways to record knowledge from that critical time when code
 is actually written. `git commit -m "fixed big"` throws that opportunity right out the window.
+
 Please everyone take a second and write awesome commit messages. Did you know Git commit messages
-have a [well established
-format](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) that all editors will
+have a [well established format](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) that all editors will
 help you with, and allows writing as much of a description as you want? It wasn't written for
 nothing.
 
